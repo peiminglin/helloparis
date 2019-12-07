@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "TravelPoints";
+var curTopNvLink = "<a href='/TravelPoints/index.html'>Travel Points</a>";
+var curSubNv = "Landmarks";
+var curSubNvLink = "<a href='/TravelPoints/Landmarks/index.html'>Landmarks</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,true);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1><a href="index.html">Landmarks</a></h1>
+  <p>Paris is famous for its landmarks like the Eiffel Tower, but there are also many other landmarks that are world renowned like the Champs-Elysees for its shopping, fashion and culture, along with its history, you will never be without somewhere to go or something to do in Paris.</p>
+
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Landmarks &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="arc-de-triomphe.html">Arc de Triomphe</a></li>
+        	<li><a href="la-tour-eiffel.html">La Tour Eiffel</a></li>
+        	<li><a href="chateau-de-versailles.html">Château de Versailles</a></li>
+        	<li><a href="chateau-de-fontainebleau.html">Chateau de Fontainebleau</a></li>
+        	<li><a href="la-defense.html">La Défense</a></li>
+        	<li><a href="opera-garnier.html">Opera Garnier</a></li>
+        	<li><a href="le-pantheon.html">Le Pantheon</a></li>
+        	<li><a href="pont-alexandre-iii.html">Pont Alexandre III</a></li>
+        	<li><a href="cimetiere-du-pere-lachaise.html">Cimetière du Père Lachaise</a></li>
+        	<li><a href="la-seine.html">La Seine</a></li>
+        	<li><a href="avenue-des-champs-elysees.html">Avenue des Champs Elysées</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Mesuems and Galleries &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Mesuems-and-Galleries/the-louvre.html">The Louvre</a></li>
+        	<li><a href="../Mesuems-and-Galleries/musee-dorsay.html">Musée d'Orsay</a></li>
+        	<li><a href="../Mesuems-and-Galleries/les-invalides.html">Les Invalides</a></li>
+        	<li><a href="../Mesuems-and-Galleries/picasso-museum.html">Picasso Museum</a></li>
+        	<li><a href="../Mesuems-and-Galleries/centre-georges-pompidou.html">Centre Georges Pompidou</a></li>
+        	<li><a href="../Mesuems-and-Galleries/rodin-museum.html">Rodin Museum</a></li>
+        	<li><a href="../Mesuems-and-Galleries/lhotel-de-cluny.html">L'Hotel de Cluny</a></li>
+        	<li><a href="../Mesuems-and-Galleries/palais-de-chaillot.html">Palais de Chaillot</a></li>
+        	<li><a href="../Mesuems-and-Galleries/lespace-dali.html">L'Espace Dali</a></li>
+        	<li><a href="../Mesuems-and-Galleries/la-villette.html">La Villette</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Churches &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Churches/notre-dame-cathedral.html">Notre Dame Cathedral</a></li>
+        	<li><a href="../Churches/sacre-coeur.html">Sacré Coeur</a></li>
+        	<li><a href="../Churches/sainte-chapelle.html">Sainte Chapelle</a></li>
+        	<li><a href="../Churches/eglise-de-la-madeleine.html">Eglise de la Madeleine</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Parks and Squares &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Parks-and-Squares/jardin-luxembourg.html">Jardin Luxembourg</a></li>
+            <li><a href="../Parks-and-Squares/jardin-des-tuileries.html">Jardin des Tuileries</a></li>
+            <li><a href="../Parks-and-Squares/champs-de-mars.html">Champs de Mars</a></li>
+            <li><a href="../Parks-and-Squares/place-vendome.html">Place Vendôme</a></li>
+            <li><a href="../Parks-and-Squares/place-de-la-concorde.html">Place de la Concorde</a></li>
+            <li><a href="../Parks-and-Squares/place-bastille.html">Place Bastille</a></li>
+            <li><a href="../Parks-and-Squares/la-place-des-vosges.html">La Place des Vosges</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="padding:20px;"> 
+  <h1><a style="text-transform:uppercase;">La Tour Eiffel</a></h1>
+  <br />
+  <p><img src="../../imgs/la-tour-eiffel-big.jpg" alt="La Tour Eiffel" /></p>
+  <p>
+The Eiffel Tower (French: La Tour Eiffel, [tuʁ ɛfɛl], nickname La dame de fer, the iron lady) is a puddle iron lattice tower located on the Champ de Mars in Paris. Built in 1889, it has become both a global icon of France and one of the most recognizable structures in the world. The tower is the tallest building in Paris[10] and the most-visited paid monument in the world; millions of people ascend it every year. Named after its designer, engineer Gustave Eiffel, the tower was built as the entrance arch to the 1889 World's Fair.<br /><br />
+The tower stands 324 metres (1,063 ft) tall, about the same height as an 81-storey building. During its construction, the Eiffel Tower surpassed the Washington Monument to assume the title of the tallest man-made structure in the world, a title it held for 41 years, until the Chrysler Building in New York City was built in 1930. However, due to the addition, in 1957, of the antenna atop the Eiffel Tower, it is now taller than the Chrysler Building. Not including broadcast antennas, it is the second-tallest structure in France, after the Millau Viaduct.<br /><br />
+The tower has three levels for visitors. Tickets can be purchased to ascend, by stairs or lift, to the first and second levels. The walk from ground level to the first level is over 300 steps, as is the walk from the first to the second level. The third and highest level is accessible only by elevator. Both the first and second levels feature restaurants.<br /><br />
+The tower has become the most prominent symbol of both Paris and France, often in the establishing shot of films set in the city.<br /><br />
+</p>
+
+
+  </div>
+
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

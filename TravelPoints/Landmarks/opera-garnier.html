@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "TravelPoints";
+var curTopNvLink = "<a href='/TravelPoints/index.html'>Travel Points</a>";
+var curSubNv = "Landmarks";
+var curSubNvLink = "<a href='/TravelPoints/Landmarks/index.html'>Landmarks</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,true);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1><a href="../index.html">Landmarks</a></h1>
+  <p>Paris is famous for its landmarks like the Eiffel Tower, but there are also many other landmarks that are world renowned like the Champs-Elysees for its shopping, fashion and culture, along with its history, you will never be without somewhere to go or something to do in Paris.</p>
+
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Landmarks &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="arc-de-triomphe.html">Arc de Triomphe</a></li>
+        	<li><a href="la-tour-eiffel.html">La Tour Eiffel</a></li>
+        	<li><a href="chateau-de-versailles.html">Château de Versailles</a></li>
+        	<li><a href="chateau-de-fontainebleau.html">Chateau de Fontainebleau</a></li>
+        	<li><a href="la-defense.html">La Défense</a></li>
+        	<li><a href="opera-garnier.html">Opera Garnier</a></li>
+        	<li><a href="le-pantheon.html">Le Pantheon</a></li>
+        	<li><a href="pont-alexandre-iii.html">Pont Alexandre III</a></li>
+        	<li><a href="cimetiere-du-pere-lachaise.html">Cimetière du Père Lachaise</a></li>
+        	<li><a href="la-seine.html">La Seine</a></li>
+        	<li><a href="avenue-des-champs-elysees.html">Avenue des Champs Elysées</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Mesuems and Galleries &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Mesuems-and-Galleries/the-louvre.html">The Louvre</a></li>
+        	<li><a href="../Mesuems-and-Galleries/musee-dorsay.html">Musée d'Orsay</a></li>
+        	<li><a href="../Mesuems-and-Galleries/les-invalides.html">Les Invalides</a></li>
+        	<li><a href="../Mesuems-and-Galleries/picasso-museum.html">Picasso Museum</a></li>
+        	<li><a href="../Mesuems-and-Galleries/centre-georges-pompidou.html">Centre Georges Pompidou</a></li>
+        	<li><a href="../Mesuems-and-Galleries/rodin-museum.html">Rodin Museum</a></li>
+        	<li><a href="../Mesuems-and-Galleries/lhotel-de-cluny.html">L'Hotel de Cluny</a></li>
+        	<li><a href="../Mesuems-and-Galleries/palais-de-chaillot.html">Palais de Chaillot</a></li>
+        	<li><a href="../Mesuems-and-Galleries/lespace-dali.html">L'Espace Dali</a></li>
+        	<li><a href="../Mesuems-and-Galleries/la-villette.html">La Villette</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Churches &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Churches/notre-dame-cathedral.html">Notre Dame Cathedral</a></li>
+        	<li><a href="../Churches/sacre-coeur.html">Sacré Coeur</a></li>
+        	<li><a href="../Churches/sainte-chapelle.html">Sainte Chapelle</a></li>
+        	<li><a href="../Churches/eglise-de-la-madeleine.html">Eglise de la Madeleine</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Parks and Squares &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Parks-and-Squares/jardin-luxembourg.html">Jardin Luxembourg</a></li>
+            <li><a href="../Parks-and-Squares/jardin-des-tuileries.html">Jardin des Tuileries</a></li>
+            <li><a href="../Parks-and-Squares/champs-de-mars.html">Champs de Mars</a></li>
+            <li><a href="../Parks-and-Squares/place-vendome.html">Place Vendôme</a></li>
+            <li><a href="../Parks-and-Squares/place-de-la-concorde.html">Place de la Concorde</a></li>
+            <li><a href="../Parks-and-Squares/place-bastille.html">Place Bastille</a></li>
+            <li><a href="../Parks-and-Squares/la-place-des-vosges.html">La Place des Vosges</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="padding:20px;"> 
+  <h1><a style="text-transform:uppercase;">Opera Garnier</a></h1>
+  <br />
+  <p><img src="../../imgs/opera-garnier-big.jpg" alt="Opera Garnier" /></p>
+  <p>
+The Palais Garnier, known also as the Opéra de Paris or Opéra Garnier, but more commonly as the Paris Opéra, is a 1,600-seat opera house on the Place de l'Opéra in Paris, France, which was the primary home of the Paris Opera from 1875 until 1989. A grand building designed by Charles Garnier in the Neo-Baroque (or "Baroque Revival") style (it is also said to be of the related Second Empire style), it is regarded as one of the architectural masterpieces of its time.<br /><br />
+Comparable to La Scala, the Vienna State Opera, Dresden's Semperoper, and the Teatro Colón in Buenos Aires, is an unambiguous indicator of dedication and unmissable for those who love music.<br /><br />
+The building is located in the 2nd arrondissement of Paris and is served by the metro station Opéra and bus 21, 22, 27, 29, 42, 53, 66, 68, 81, 95.<br /><br />
+Upon its inauguration during 1875, the opera house was named officially the Académie Nationale de Musique - Théâtre de l'Opéra. It retained this title until 1978 when it was re-named the Théâtre National de l'Opéra de Paris. After the opera company chose the Opéra Bastille as their principal theatre upon its completion during 1989, the theatre was re-named as the Palais Garnier, though Académie Nationale de Musique is still sprawled above the columns of its front façade. In spite of the change of names and the Opera company's relocation to the Opéra Bastille, the Palais Garnier is still known by many people as the Paris Opéra, as have all of the several theatres which have served as the principal venues of the Parisian Opera and Ballet since its initiation.<br /><br />
+</p>
+
+
+
+  </div>
+
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

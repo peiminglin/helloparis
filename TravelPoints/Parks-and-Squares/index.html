@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "TravelPoints";
+var curTopNvLink = "<a href='/TravelPoints/index.html'>Travel Points</a>";
+var curSubNv = "Parks";
+var curSubNvLink = "<a href='/TravelPoints/Parks-and-Squares/index.html'>Parks and Squares</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,false);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Parks and Squares</h1>
+  <p>Paris is known for its many elegant parks, but the city boasts a large number of very diverse parks. While some date back to the 17th century, many modern parks have been created in the last couple of decades. Even though Paris has a dense urban structure, the city boasts more than 400 parks.<br />
+The Paris squares or places that we want to peak at are those that are more secluded - somewhat like a park in miniature. These will be the locations that can give you respite from a busy day. As you restore your spirit, enjoy the French architecture around the squares, the beautiful plants and the peaceful quiet.</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Landmarks &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Landmarks/arc-de-triomphe.html">Arc de Triomphe</a></li>
+        	<li><a href="../Landmarks/la-tour-eiffel.html">La Tour Eiffel</a></li>
+        	<li><a href="../Landmarks/chateau-de-versailles.html">Château de Versailles</a></li>
+        	<li><a href="../Landmarks/chateau-de-fontainebleau.html">Chateau de Fontainebleau</a></li>
+        	<li><a href="../Landmarks/la-defense.html">La Défense</a></li>
+        	<li><a href="../Landmarks/opera-garnier.html">Opera Garnier</a></li>
+        	<li><a href="../Landmarks/le-pantheon.html">Le Pantheon</a></li>
+        	<li><a href="../Landmarks/pont-alexandre-iii.html">Pont Alexandre III</a></li>
+        	<li><a href="../Landmarks/cimetiere-du-pere-lachaise.html">Cimetière du Père Lachaise</a></li>
+        	<li><a href="../Landmarks/la-seine.html">La Seine</a></li>
+        	<li><a href="../Landmarks/avenue-des-champs-elysees.html">Avenue des Champs Elysées</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Museums and Galleries &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Mesuems-and-Galleries/the-louvre.html">The Louvre</a></li>
+        	<li><a href="../Mesuems-and-Galleries/musee-dorsay.html">Musée d'Orsay</a></li>
+        	<li><a href="../Mesuems-and-Galleries/les-invalides.html">Les Invalides</a></li>
+        	<li><a href="../Mesuems-and-Galleries/picasso-museum.html">Picasso Museum</a></li>
+        	<li><a href="../Mesuems-and-Galleries/centre-georges-pompidou.html">Centre Georges Pompidou</a></li>
+        	<li><a href="../Mesuems-and-Galleries/rodin-museum.html">Rodin Museum</a></li>
+        	<li><a href="../Mesuems-and-Galleries/lhotel-de-cluny.html">L'Hotel de Cluny</a></li>
+        	<li><a href="../Mesuems-and-Galleries/palais-de-chaillot.html">Palais de Chaillot</a></li>
+        	<li><a href="../Mesuems-and-Galleries/lespace-dali.html">L'Espace Dali</a></li>
+        	<li><a href="../Mesuems-and-Galleries/la-villette.html">La Villette</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Churches &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Churches/notre-dame-cathedral.html">Notre Dame Cathedral</a></li>
+        	<li><a href="../Churches/sacre-coeur.html">Sacré-Cœur Basilica</a></li>
+        	<li><a href="../Churches/sainte-chapelle.html">Sainte Chapelle</a></li>
+        	<li><a href="../Churches/eglise-de-la-madeleine.html">Eglise de la Madeleine</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Parks and Squares &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="jardin-luxembourg.html">Jardin Luxembourg</a></li>
+            <li><a href="jardin-des-tuileries.html">Jardin des Tuileries</a></li>
+            <li><a href="champs-de-mars.html">Champs de Mars</a></li>
+            <li><a href="place-vendome.html">Place Vendôme</a></li>
+            <li><a href="place-de-la-concorde.html">Place de la Concorde</a></li>
+            <li><a href="place-bastille.html">Place Bastille</a></li>
+            <li><a href="la-place-des-vosges.html">La Place des Vosges</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="http://en.wikipedia.org/wiki/Jardin_du_Luxembourg"><img src="../../imgs/jardin-luxembourg.jpg" style="float:left;" alt="Jardin du Luxembourg" /></a>
+  <div class="subpageItemInfo"><h3><a href="jardin-luxembourg.html" style="text-transform:uppercase;">Jardin du Luxembourg</a></h3>
+  <br />
+The Jardin du Luxembourg, or the Luxembourg Gardens, is the second largest public park in Paris[1] (224,500 m² (22.5 hectares) located in the 6th arrondissement of Paris, France. The park is the garden of the French Senate, which is itself housed in the Luxembourg Palace.
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Jardin_des_Tuileries"><img src="../../imgs/jardin-des-tuileries.jpg" style="float:left;" alt="Jardin des Tuileries" /></a>
+  <div class="subpageItemInfo"><h3><a href="jardin-des-tuileries.html" style="text-transform:uppercase;">Jardin des Tuileries</a></h3>
+<br />
+
+The Tuileries Garden (French: Jardin des Tuileries) is a public garden located between the Louvre Museum and the Place de la Concorde in the 1st arrondissement of Paris. Created by Catherine de Medicis as the garden of the Tuileries Palace in 1564, it was first opened to the public in 1667, and became a public park after the French Revolution. 
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Champs_de_Mars"><img src="../../imgs/champs-de-mars.jpg" style="float:left;" alt="Champs de Mars" /></a>
+  <div class="subpageItemInfo"><h3><a href="champs-de-mars.html" style="text-transform:uppercase;">Champs de Mars</a></h3>
+	<br />
+
+The Champ de Mars (English: Field of Mars) is a large public greenspace in Paris, France, located in the seventh arrondissement, between the Eiffel Tower to the northwest and the École Militaire to the southeast. The park is named after the Campus Martius ("Mars Field") in Rome, a tribute to the Roman god of war. 
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Place_Vend%C3%B4me"><img src="../../imgs/place-vendome.jpg" style="float:left;" alt="Place Vendôme" /></a>
+  <div class="subpageItemInfo"><h3><a href="place-vendome.html" style="text-transform:uppercase;">Place Vendôme</a></h3>
+
+  <br />
+
+Place Vendôme is a square in the 1st arrondissement of Paris, France, located to the north of the Tuileries Gardens and east of the Église de la Madeleine. It is the starting point of the Rue de la Paix.
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Place_de_la_Concorde"><img src="../../imgs/place-de-la-concorde.jpg" style="float:left;" alt="Place de la Concorde" /></a>
+  <div class="subpageItemInfo"><h3><a href="place-de-la-concorde.html" style="text-transform:uppercase;">Place de la Concorde</a></h3>
+
+  <br />
+
+The Place de la Concorde is one of the major public squares in Paris, France. In fact, in terms of area, its 8.64 hectares (21.35 acres) make it the largest square in the French capital. It is located in the city's eighth arrondissement, at the eastern end of the Champs-Élysées.
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Place_de_la_Bastille"><img src="../../imgs/place-bastille.jpg" style="float:left;" alt="Place de la Bastille" /></a>
+  <div class="subpageItemInfo"><h3><a href="place-bastille.html" style="text-transform:uppercase;">Place de la Bastille</a></h3>
+<br />
+The Place de la Bastille is a square in Paris, where the Bastille prison stood until the 'Storming of the Bastille' and its subsequent physical destruction between 14 July 1789 and 14 July 1790 during the French Revolution; no vestige of it remains.
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Place_des_Vosges"><img src="../../imgs/la-place-des-vosges.jpg" style="float:left;" alt="Place des Vosges" /></a>
+  <div class="subpageItemInfo"><h3><a href="la-place-des-vosges.html" style="text-transform:uppercase;">Place des Vosges</a></h3>
+
+ <br />
+  
+The Place des Vosges is the oldest planned square in Paris. It is located in the Marais district, and it straddles the dividing-line between the 3rd and 4th arrondissements of Paris.
+</div>
+  </div>
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

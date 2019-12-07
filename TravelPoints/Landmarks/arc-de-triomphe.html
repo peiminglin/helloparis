@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "TravelPoints";
+var curTopNvLink = "<a href='/TravelPoints/index.html'>Travel Points</a>";
+var curSubNv = "Landmarks";
+var curSubNvLink = "<a href='/TravelPoints/Landmarks/index.html'>Landmarks</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,true);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1><a href="index.html">Landmarks</a></h1>
+  <p>Paris is famous for its landmarks like the Eiffel Tower, but there are also many other landmarks that are world renowned like the Champs-Elysees for its shopping, fashion and culture, along with its history, you will never be without somewhere to go or something to do in Paris.</p>
+
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Landmarks &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="arc-de-triomphe.html">Arc de Triomphe</a></li>
+        	<li><a href="la-tour-eiffel.html">La Tour Eiffel</a></li>
+        	<li><a href="chateau-de-versailles.html">Château de Versailles</a></li>
+        	<li><a href="chateau-de-fontainebleau.html">Chateau de Fontainebleau</a></li>
+        	<li><a href="la-defense.html">La Défense</a></li>
+        	<li><a href="opera-garnier.html">Opera Garnier</a></li>
+        	<li><a href="le-pantheon.html">Le Pantheon</a></li>
+        	<li><a href="pont-alexandre-iii.html">Pont Alexandre III</a></li>
+        	<li><a href="cimetiere-du-pere-lachaise.html">Cimetière du Père Lachaise</a></li>
+        	<li><a href="la-seine.html">La Seine</a></li>
+        	<li><a href="avenue-des-champs-elysees.html">Avenue des Champs Elysées</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Mesuems and Galleries &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Mesuems-and-Galleries/the-louvre.html">The Louvre</a></li>
+        	<li><a href="../Mesuems-and-Galleries/musee-dorsay.html">Musée d'Orsay</a></li>
+        	<li><a href="../Mesuems-and-Galleries/les-invalides.html">Les Invalides</a></li>
+        	<li><a href="../Mesuems-and-Galleries/picasso-museum.html">Picasso Museum</a></li>
+        	<li><a href="../Mesuems-and-Galleries/centre-georges-pompidou.html">Centre Georges Pompidou</a></li>
+        	<li><a href="../Mesuems-and-Galleries/rodin-museum.html">Rodin Museum</a></li>
+        	<li><a href="../Mesuems-and-Galleries/lhotel-de-cluny.html">L'Hotel de Cluny</a></li>
+        	<li><a href="../Mesuems-and-Galleries/palais-de-chaillot.html">Palais de Chaillot</a></li>
+        	<li><a href="../Mesuems-and-Galleries/lespace-dali.html">L'Espace Dali</a></li>
+        	<li><a href="../Mesuems-and-Galleries/la-villette.html">La Villette</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Churches &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Churches/notre-dame-cathedral.html">Notre Dame Cathedral</a></li>
+        	<li><a href="../Churches/sacre-coeur.html">Sacré Coeur</a></li>
+        	<li><a href="../Churches/sainte-chapelle.html">Sainte Chapelle</a></li>
+        	<li><a href="../Churches/eglise-de-la-madeleine.html">Eglise de la Madeleine</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Parks and Squares &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Parks-and-Squares/jardin-luxembourg.html">Jardin Luxembourg</a></li>
+            <li><a href="../Parks-and-Squares/jardin-des-tuileries.html">Jardin des Tuileries</a></li>
+            <li><a href="../Parks-and-Squares/champs-de-mars.html">Champs de Mars</a></li>
+            <li><a href="../Parks-and-Squares/place-vendome.html">Place Vendôme</a></li>
+            <li><a href="../Parks-and-Squares/place-de-la-concorde.html">Place de la Concorde</a></li>
+            <li><a href="../Parks-and-Squares/place-bastille.html">Place Bastille</a></li>
+            <li><a href="../Parks-and-Squares/la-place-des-vosges.html">La Place des Vosges</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="padding:20px;"> 
+  <h1><a style="text-transform:uppercase;">Arc De Triomphe</a></h1>
+  <br />
+  <p><img src="../../imgs/arc-de-triomphe-big.jpg" alt="arc-de-triomphe" /></p>
+  <p>
+The Arc de Triomphe (Arc de Triomphe de l'Étoile) is one of the most famous monuments in Paris. It stands in the centre of the Place Charles de Gaulle (originally named Place de l'Étoile), at the western end of the Champs-Élysées. There is a smaller arch, the Arc de Triomphe du Carrousel, which stands west of the Louvre. The Arc de Triomphe (in English: "Triumphal Arch") honours those who fought and died for France in the French Revolutionary and the Napoleonic Wars, with the names of all French victories and generals inscribed on its inner and outer surfaces. Beneath its vault lies the Tomb of the Unknown Soldier from World War I.<br /><br />
+The Arc de Triomphe is the linchpin of the historic axis (Axe historique) – a sequence of monuments and grand thoroughfares on a route which goes from the courtyard of the Louvre, to the Grande Arche de la Défense. The monument was designed by Jean Chalgrin in 1806, and its iconographic program pitted heroically nude French youths against bearded Germanic warriors in chain mail. It set the tone for public monuments, with triumphant patriotic messages.<br /><br />
+The monument stands 50 metres (164 ft) in height, 45 m (148 ft) wide and 22 m (72 ft) deep. The large vault is 29.19 m (95.8 ft) high and 14.62 m (48.0 ft) wide. The small vault is 18.68 m (61.3 ft) high and 8.44 m (27.7 ft) wide. It is the second largest triumphal arch in existence (after Arch of Triumph in Pyongyang). Its design was inspired by the Roman Arch of Titus. The Arc de Triomphe is so colossal that three weeks after the Paris victory parade in 1919, (marking the end of hostilities in World War I), Charles Godefroy flew his Nieuport biplane through it, with the event captured on newsreel.</p>
+
+
+  </div>
+
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

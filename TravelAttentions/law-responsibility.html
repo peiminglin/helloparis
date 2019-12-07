@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Travel Attentions</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "TravelAttentions";
+var curTopNvLink = "<a href='/TravelAttentions/index.html'>Travel Attentions</a>";
+//var curSubNv = "French";
+//var curSubNvLink = "<a href='/Restaurants/French/index.html'>French</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../js/banner.html");
+	$("#NaviBox").load("../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+	//	setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; "+curTopNvLink + " &gt; ");
+		naviEvent();
+	});	
+	$("#Footer").load("../js/footer.html");
+	
+	setTrigger("side");
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1><a href="index.html">Travel Attentions</a></h1>
+  <p>These driving distances are in kilometres using motorways and mountain roads that are open all year, or through train tunnels that take cars. The kilometres for the loading of cars onto trains and ferries are not included. 
+</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Travel Attentions&gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="road-rules.html">Road Rules</a></li>
+        	<li><a href="law-responsibility.html">Law & Responsibility </a></li>
+            <li><a href="common-shams.html">Common Sheams </a></li>
+            <li><a href="security.html">Security </a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer"> 
+  <h1><a href="index.html">Law &amp; Responsibility</a></h1>
+  <p>Any driver under the influence of alcohol seriously compromises   the safety of passengers and other road users. <br />
+    As a result, driving with a   level of alcohol in the blood equal to or higher than 0.5g per litre of blood is   prohibited. </p>
+  <p><strong>The police and gendarmerie can test blood for   alcohol.</strong></p>
+  <p>It is prohibited to travel (even on foot) under the influence of   alcohol along a public highway.</p>
+  <p>Anyone who allows a minor to drink until they are in a state of   drunkenness is committing a crime.</p>
+  <p>It is prohibited to sell or offer alcoholic drinks to minors   aged under 16 years old (in drinks outlets, shops and public places). </p>
+  <p>According to the law of 10 January 1991 it is prohibited to   introduce alcoholic drinks into establishments for physical and sporting   activities. </p>
+  <p>The use of drugs and bringing them into France is strictly   forbidden, including &quot;soft&quot; drugs. </p>
+  <h5>&nbsp;</h5></div>
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

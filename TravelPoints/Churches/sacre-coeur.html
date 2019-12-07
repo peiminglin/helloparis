@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "TravelPoints";
+var curTopNvLink = "<a href='/TravelPoints/index.html'>Travel Points</a>";
+var curSubNv = "Churches";
+var curSubNvLink = "<a href='/TravelPoints/Churches/index.html'>Churches</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,true);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1><a href="index.html">Churches</a></h1>
+  <p>Paris houses many of history's more stunning spiritual relics-- cathedrals and chuches that stand today as breathtaking testimonials to a complex heritage of Christianity that dominated in Paris from the fall of the Roman Empire to the French Revolution. Many of these majestic cathedrals and churches fell into near-ruin in the wake of the Revolution, but revived interest in the 19th century brought about their restoration.</p>
+
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Landmarks &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Landmarks/arc-de-triomphe.html">Arc de Triomphe</a></li>
+        	<li><a href="../Landmarks/la-tour-eiffel.html">La Tour Eiffel</a></li>
+        	<li><a href="../Landmarks/chateau-de-versailles.html">Château de Versailles</a></li>
+        	<li><a href="../Landmarks/chateau-de-fontainebleau.html">Chateau de Fontainebleau</a></li>
+        	<li><a href="../Landmarks/la-defense.html">La Défense</a></li>
+        	<li><a href="../Landmarks/opera-garnier.html">Opera Garnier</a></li>
+        	<li><a href="../Landmarks/le-pantheon.html">Le Pantheon</a></li>
+        	<li><a href="../Landmarks/pont-alexandre-iii.html">Pont Alexandre III</a></li>
+        	<li><a href="../Landmarks/cimetiere-du-pere-lachaise.html">Cimetière du Père Lachaise</a></li>
+        	<li><a href="../Landmarks/la-seine.html">La Seine</a></li>
+        	<li><a href="../Landmarks/avenue-des-champs-elysees.html">Avenue des Champs Elysées</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Museums and Galleries &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Mesuems-and-Galleries/the-louvre.html">The Louvre</a></li>
+        	<li><a href="../Mesuems-and-Galleries/musee-dorsay.html">Musée d'Orsay</a></li>
+        	<li><a href="../Mesuems-and-Galleries/les-invalides.html">Les Invalides</a></li>
+        	<li><a href="../Mesuems-and-Galleries/picasso-museum.html">Picasso Museum</a></li>
+        	<li><a href="../Mesuems-and-Galleries/centre-georges-pompidou.html">Centre Georges Pompidou</a></li>
+        	<li><a href="../Mesuems-and-Galleries/rodin-museum.html">Rodin Museum</a></li>
+        	<li><a href="../Mesuems-and-Galleries/lhotel-de-cluny.html">L'Hotel de Cluny</a></li>
+        	<li><a href="../Mesuems-and-Galleries/palais-de-chaillot.html">Palais de Chaillot</a></li>
+        	<li><a href="../Mesuems-and-Galleries/lespace-dali.html">L'Espace Dali</a></li>
+        	<li><a href="../Mesuems-and-Galleries/la-villette.html">La Villette</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Churches &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="notre-dame-cathedral.html">Notre Dame Cathedral</a></li>
+        	<li><a href="sacre-coeur.html">Sacré-Cœur Basilica</a></li>
+        	<li><a href="sainte-chapelle.html">Sainte Chapelle</a></li>
+        	<li><a href="eglise-de-la-madeleine.html">Eglise de la Madeleine</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Parks and Squares &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Parks-and-Squares/jardin-luxembourg.html">Jardin Luxembourg</a></li>
+            <li><a href="../Parks-and-Squares/jardin-des-tuileries.html">Jardin des Tuileries</a></li>
+            <li><a href="../Parks-and-Squares/champs-de-mars.html">Champs de Mars</a></li>
+            <li><a href="../Parks-and-Squares/place-vendome.html">Place Vendôme</a></li>
+            <li><a href="../Parks-and-Squares/place-de-la-concorde.html">Place de la Concorde</a></li>
+            <li><a href="../Parks-and-Squares/place-bastille.html">Place Bastille</a></li>
+            <li><a href="../Parks-and-Squares/la-place-des-vosges.html">La Place des Vosges</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="padding:20px;"> 
+  <h1><a style="text-transform:uppercase;">Basilique du Sacré-Cœur</a></h1>
+  <br />
+  <p><img src="../../imgs/sacre-coeur-big.jpg" alt="Basilique du Sacré-Cœur" /></p>
+  <p>
+The Basilica of the Sacred Heart of Paris, commonly known as Sacré-Cœur Basilica (French: Basilique du Sacré-Cœur, pronounced [sakʁe kœʁ]), is a Roman Catholic church and minor basilica, dedicated to the Sacred Heart of Jesus, in Paris, France. A popular landmark, the basilica is located at the summit of the butte Montmartre, the highest point in the city. Sacré-Cœur is a double monument, political and cultural, both a national penance for the supposed excesses of the Second Empire and socialist Paris Commune of 1871 crowning its most rebellious neighborhood, and an embodiment of conservative moral order, publicly dedicated to the Sacred Heart of Jesus, which was an increasingly popular vision of a loving and sympathetic Christ.<br /><br />
+The Sacré-Cœur Basilica was designed by Paul Abadie. Construction began in 1875 and was finished in 1914. It was consecrated after the end of World War I in 1919.<br /><br />
+The inspiration for Sacré Cœur's design originated in the wake of the division in French society that arose in the decades following French Revolution, between devout Catholics and legitimist royalists on one side,　and democrats, secularists, socialists and radicals on the other. This schism became particularly pronounced after the Franco-Prussian War and the ensuing uprising of the Paris Commune of 1870-71. Though today the Basilica is asserted to be dedicated in honor of the 58,000 who lost their lives during the war, the decree of the Assemblée nationale, 24 January 2010, responding to a request by the archbishop of Paris by voting its construction, specifies that it is to "expiate the crimes of the Commune". Montmartre had been the site of the Commune's first insurrection, and many dedicated communards were forever entombed in the subterranean galleries of former gypsum mines where they had retreated, by explosives detonated at the entrances by the Army of Versailles. Hostages had been executed on both sides, and the Communards had executed Georges Darboy, Archbishop of Paris, who became a martyr for the resurgent Catholic Church. His successor Guibert, climbing the Butte Montmartre in October 1872, was reported to have had a vision, as clouds dispersed over the panorama: "It is here, it is here where the martyrs are, it is here that the Sacred Heart must reign so that it can beckon all to come".<br /><br />
+In the moment of inertia following the resignation of the government of Adolphe Thiers, 24 May 1873, François Pie, bishop of Poitiers, expressed the national yearning for spiritual renewal— "the hour of the Church has come"— that would be expressed through the "Government of Moral Order" of the Third Republic, which linked Catholic institutions with secular ones, in "a project of religious and national renewal, the main features of which were the restoration of monarchy and the defense of Rome within a cultural framework of official piety", of which Sacré-Cœur is the chief lasting triumphalist monument.<br /><br />
+The decree voting its construction as a "matter of public utility", 24 July, followed close on Thiers' resignation. The project was expressed by the Church as a National Vow (Voeu national) and financial support came from parishes throughout France. The dedicatory inscription records the Basilica as the accomplishment of a vow by Alexandre Legentil and Hubert Rohault de Fleury, ratified by Joseph-Hippolyte Guibert, Archbishop of Paris. The project took many years to complete.<br /><br />
+
+</p>
+
+ </div>
+
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "TravelPoints";
+var curTopNvLink = "<a href='/TravelPoints/index.html'>Travel Points</a>";
+var curSubNv = "Museums";
+var curSubNvLink = "<a href='/TravelPoints/Mesuems-and-Galleries/index.html'>Museums and Galleries</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,true);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1><a href="index.html">Museums and Galleries</a></h1>
+  <p>At last count, there were over 83 museums in Paris. (And that's not including the Cinematheque Francaise which for some reason isn't included in any of the official tourist information listing of National, Private, and City museums.) There are probably a few small private museums that fall below the radar, but not to worry. Those are the museums that will find you rather than vice-versa. No matter what's on your must-see list, there are bound to be tough decisions to make when your time is limited.</p>
+
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Landmarks &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Landmarks/arc-de-triomphe.html">Arc de Triomphe</a></li>
+        	<li><a href="../Landmarks/la-tour-eiffel.html">La Tour Eiffel</a></li>
+        	<li><a href="../Landmarks/chateau-de-versailles.html">Château de Versailles</a></li>
+        	<li><a href="../Landmarks/chateau-de-fontainebleau.html">Chateau de Fontainebleau</a></li>
+        	<li><a href="../Landmarks/la-defense.html">La Défense</a></li>
+        	<li><a href="../Landmarks/opera-garnier.html">Opera Garnier</a></li>
+        	<li><a href="../Landmarks/le-pantheon.html">Le Pantheon</a></li>
+        	<li><a href="../Landmarks/pont-alexandre-iii.html">Pont Alexandre III</a></li>
+        	<li><a href="../Landmarks/cimetiere-du-pere-lachaise.html">Cimetière du Père Lachaise</a></li>
+        	<li><a href="../Landmarks/la-seine.html">La Seine</a></li>
+        	<li><a href="../Landmarks/avenue-des-champs-elysees.html">Avenue des Champs Elysées</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Museums and Galleries &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="the-louvre.html">The Louvre</a></li>
+        	<li><a href="musee-dorsay.html">Musée d'Orsay</a></li>
+        	<li><a href="les-invalides.html">Les Invalides</a></li>
+        	<li><a href="picasso-museum.html">Picasso Museum</a></li>
+        	<li><a href="centre-georges-pompidou.html">Centre Georges Pompidou</a></li>
+        	<li><a href="rodin-museum.html">Rodin Museum</a></li>
+        	<li><a href="lhotel-de-cluny.html">L'Hotel de Cluny</a></li>
+        	<li><a href="palais-de-chaillot.html">Palais de Chaillot</a></li>
+        	<li><a href="lespace-dali.html">L'Espace Dali</a></li>
+        	<li><a href="la-villette.html">La Villette</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Churches &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Churches/notre-dame-cathedral.html">Notre Dame Cathedral</a></li>
+        	<li><a href="../Churches/sacre-coeur.html">Sacré Coeur</a></li>
+        	<li><a href="../Churches/sainte-chapelle.html">Sainte Chapelle</a></li>
+        	<li><a href="../Churches/eglise-de-la-madeleine.html">Eglise de la Madeleine</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Parks and Squares &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Parks-and-Squares/jardin-luxembourg.html">Jardin Luxembourg</a></li>
+            <li><a href="../Parks-and-Squares/jardin-des-tuileries.html">Jardin des Tuileries</a></li>
+            <li><a href="../Parks-and-Squares/champs-de-mars.html">Champs de Mars</a></li>
+            <li><a href="../Parks-and-Squares/place-vendome.html">Place Vendôme</a></li>
+            <li><a href="../Parks-and-Squares/place-de-la-concorde.html">Place de la Concorde</a></li>
+            <li><a href="../Parks-and-Squares/place-bastille.html">Place Bastille</a></li>
+            <li><a href="../Parks-and-Squares/la-place-des-vosges.html">La Place des Vosges</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="padding:20px;"> 
+  <h1><a style="text-transform:uppercase;">L'Hotel de Cluny</a></h1>
+  <br />
+  <p><img src="../../imgs/lhotel-de-cluny-big.jpg" alt="L'Hotel de Cluny" /></p>
+  <p>
+The Musée de Cluny (French pronunciation: [myze də klyni]), officially known as Musée National du Moyen Âge (National Museum of the Middle Ages), is a museum in Paris, France. It is located in the 5th arrondissement at 6 Place Paul Painlevé, south of the Boulevard Saint-Germain, between the Boulevard Saint-Michel and the Rue Saint-Jacques.<br /><br />
+Among the principal holdings of the museum are the six La Dame à la Licorne (The Lady and the Unicorn) tapestries, from the late fifteenth century, often considered one of the greatest works of art of the Middle Ages in Europe.<br /><br />
+The structure is perhaps the most outstanding example still extant of civic architecture in medieval Paris. It was formerly the town house (hôtel) of the abbots of Cluny, started in 1334. The structure was rebuilt by Jacques d'Amboise, abbot in commendam of Cluny 1485-1510; it combines Gothic and Renaissance elements. In 1843 it was made into a public museum, to contain relics of France's Gothic past preserved in the building by Alexandre du Sommerard.<br /><br />
+Though it no longer possesses anything originally connected with the abbey of Cluny, the hôtel was at first part of a larger Cluniac complex that also included a building (no longer standing) for a religious college in the Place de la Sorbonne, just south of the present day Hôtel de Cluny along Boulevard Saint-Michel. Although originally intended for the use of the Cluny abbots, the residence was taken over by Jacques d'Amboise, Bishop of Clermont and Abbot of Jumièges, and rebuilt to its present form in the period of 1485-1500. Occupants of the house over the years have included Mary Tudor, the sister of Henry VIII of England. She was installed here after the death of her husband Louis XII by his successor Francis I of France in 1515; Francis wished to monitor Mary closely, particularly to see if she was pregnant. Seventeenth-century occupants included several papal nuncios, including Mazarin.<br /><br />
+In 1793 it was confiscated by the state, and for the next three decades served several functions. At one point it was owned by a physician who used the magnificent Flamboyant chapel on the first floor as a dissection room. <br /><br />
+In 1833 Alexandre du Sommerard moved here and installed his large collection of medieval and Renaissance objects. Upon his death in 1842 the collection was purchased by the state; the building was opened as a museum in 1843, with du Sommerard's son serving as the first curator. The present gardens, opened in 1971, include a "Forêt de la Licorne" inspired by the tapestries.<br /><br />
+The Hôtel de Cluny is partially constructed on the remains of Gallo-Roman baths dating from the third century (known as the Thermes de Cluny ), which are famous in their own right and which may still be visited. In fact, the museum itself actually consists of two buildings: the frigidarium ("cooling room"), where the remains of the Thermes de Cluny are, and the Hôtel de Cluny itself, which houses its impressive collections.<br /><br />
+</p>
+
+
+
+  </div>
+
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

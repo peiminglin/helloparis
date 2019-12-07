@@ -1,0 +1,10 @@
+Alex	Project Management
+	Graphic Design
+	HTML and Jquery Effect Code Design
+	Website Testing & Errors fixing
+	Information Collection : Home, Restaurants, Hotels, Travel Points, Sitemap.
+
+Runji	Home Page wireframe design
+	Information Collection : Transports, Events and Travel Attentions
+
+Nick	Information Collection : Culture, Shopping and Contact Us

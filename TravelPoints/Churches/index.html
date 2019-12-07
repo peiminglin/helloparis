@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "TravelPoints";
+var curTopNvLink = "<a href='/TravelPoints/index.html'>Travel Points</a>";
+var curSubNv = "Churches";
+var curSubNvLink = "<a href='/TravelPoints/Churches/index.html'>Churches</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,false);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Churches</h1>
+  <p>Paris houses many of history's more stunning spiritual relics-- cathedrals and chuches that stand today as breathtaking testimonials to a complex heritage of Christianity that dominated in Paris from the fall of the Roman Empire to the French Revolution. Many of these majestic cathedrals and churches fell into near-ruin in the wake of the Revolution, but revived interest in the 19th century brought about their restoration.</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Landmarks &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Landmarks/arc-de-triomphe.html">Arc de Triomphe</a></li>
+        	<li><a href="../Landmarks/la-tour-eiffel.html">La Tour Eiffel</a></li>
+        	<li><a href="../Landmarks/chateau-de-versailles.html">Château de Versailles</a></li>
+        	<li><a href="../Landmarks/chateau-de-fontainebleau.html">Chateau de Fontainebleau</a></li>
+        	<li><a href="../Landmarks/la-defense.html">La Défense</a></li>
+        	<li><a href="../Landmarks/opera-garnier.html">Opera Garnier</a></li>
+        	<li><a href="../Landmarks/le-pantheon.html">Le Pantheon</a></li>
+        	<li><a href="../Landmarks/pont-alexandre-iii.html">Pont Alexandre III</a></li>
+        	<li><a href="../Landmarks/cimetiere-du-pere-lachaise.html">Cimetière du Père Lachaise</a></li>
+        	<li><a href="../Landmarks/la-seine.html">La Seine</a></li>
+        	<li><a href="../Landmarks/avenue-des-champs-elysees.html">Avenue des Champs Elysées</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Museums and Galleries &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Mesuems-and-Galleries/the-louvre.html">The Louvre</a></li>
+        	<li><a href="../Mesuems-and-Galleries/musee-dorsay.html">Musée d'Orsay</a></li>
+        	<li><a href="../Mesuems-and-Galleries/les-invalides.html">Les Invalides</a></li>
+        	<li><a href="../Mesuems-and-Galleries/picasso-museum.html">Picasso Museum</a></li>
+        	<li><a href="../Mesuems-and-Galleries/centre-georges-pompidou.html">Centre Georges Pompidou</a></li>
+        	<li><a href="../Mesuems-and-Galleries/rodin-museum.html">Rodin Museum</a></li>
+        	<li><a href="../Mesuems-and-Galleries/lhotel-de-cluny.html">L'Hotel de Cluny</a></li>
+        	<li><a href="../Mesuems-and-Galleries/palais-de-chaillot.html">Palais de Chaillot</a></li>
+        	<li><a href="../Mesuems-and-Galleries/lespace-dali.html">L'Espace Dali</a></li>
+        	<li><a href="../Mesuems-and-Galleries/la-villette.html">La Villette</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Churches &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="notre-dame-cathedral.html">Notre Dame Cathedral</a></li>
+        	<li><a href="sacre-coeur.html">Sacré-Cœur Basilica</a></li>
+        	<li><a href="sainte-chapelle.html">Sainte Chapelle</a></li>
+        	<li><a href="eglise-de-la-madeleine.html">Eglise de la Madeleine</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Parks and Squares &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Parks-and-Squares/jardin-luxembourg.html">Jardin Luxembourg</a></li>
+            <li><a href="../Parks-and-Squares/jardin-des-tuileries.html">Jardin des Tuileries</a></li>
+            <li><a href="../Parks-and-Squares/champs-de-mars.html">Champs de Mars</a></li>
+            <li><a href="../Parks-and-Squares/place-vendome.html">Place Vendôme</a></li>
+            <li><a href="../Parks-and-Squares/place-de-la-concorde.html">Place de la Concorde</a></li>
+            <li><a href="../Parks-and-Squares/place-bastille.html">Place Bastille</a></li>
+            <li><a href="../Parks-and-Squares/la-place-des-vosges.html">La Place des Vosges</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="http://en.wikipedia.org/wiki/Notre_Dame_Cathedral"><img src="../../imgs/notre-dame-cathedral.jpg" style="float:left;" alt="Notre Dame Cathedral" /></a>
+  <div class="subpageItemInfo"><h3><a href="notre-dame-cathedral.html" style="text-transform:uppercase;">Notre Dame Cathedral</a></h3>
+  <br />
+
+Notre Dame de Paris (French for Our Lady of Paris), also known as Notre Dame Cathedral, is a Gothic, Catholic cathedral on the eastern half of the Île de la Cité in the fourth arrondissement of Paris, France. 
+ </div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Basilique_du_Sacr%C3%A9-C%C5%93ur,_Paris"><img src="../../imgs/sacre-coeur.jpg" style="float:left;" alt="Sacré-Cœur Basilica" /></a>
+  <div class="subpageItemInfo"><h3><a href="sacre-coeur.html" style="text-transform:uppercase;">Sacré-Cœur Basilica</a></h3>
+<br />
+The Basilica of the Sacred Heart of Paris, commonly known as Sacré-Cœur Basilica (French: Basilique du Sacré-Cœur), is a Roman Catholic church and minor basilica, dedicated to the Sacred Heart of Jesus, in Paris, France. 
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Sainte_Chapelle"><img src="../../imgs/sainte-chapelle.jpg" style="float:left;" alt="Sainte Chapelle" /></a>
+  <div class="subpageItemInfo"><h3><a href="sainte-chapelle.html" style="text-transform:uppercase;">Sainte Chapelle</a></h3>
+	<br />
+La Sainte-Chapelle (The Holy Chapel) is the only surviving building of the Capetian royal palace on the Île de la Cité in the heart of Paris, France. It was commissioned by King Louis IX of France to house his collection of Passion Relics, including the Crown of Thorns - one of the most important relics in medieval Christendom. 
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Eglise_de_la_Madeleine"><img src="../../imgs/eglise-de-la-madeleine.jpg" style="float:left;" alt="Eglise de la Madeleine" /></a>
+  <div class="subpageItemInfo"><h3><a href="eglise-de-la-madeleine.html" style="text-transform:uppercase;">Eglise de la Madeleine</a></h3>
+
+  <br />
+L'église de la Madeleine (Madeleine Church; more formally, L'église Sainte-Marie-Madeleine; less formally, just La Madeleine) is a Roman Catholic church occupying a commanding position in the 8th arrondissement of Paris. It was designed in its present form as a temple to the glory of Napoleon's army. 
+
+</div>
+  </div>
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

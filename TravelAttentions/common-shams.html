@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Common Shams</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "TravelAttentions";
+var curTopNvLink = "<a href='/TravelAttentions/index.html'>Travel Attentions</a>";
+//var curSubNv = "French";
+//var curSubNvLink = "<a href='/Restaurants/French/index.html'>French</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../js/banner.html");
+	$("#NaviBox").load("../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+	//	setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; "+curTopNvLink + " &gt; ");
+		naviEvent();
+	});	
+	$("#Footer").load("../js/footer.html");
+	
+	setTrigger("side");
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1><a href="index.html">Travel Attentions</a></h1>
+  <p>These driving distances are in kilometres using motorways and mountain roads that are open all year, or through train tunnels that take cars. The kilometres for the loading of cars onto trains and ferries are not included. 
+</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Travel Attentions&gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="road-rules.html">Road Rules</a></li>
+        	<li><a href="law-responsibility.html">Law & Responsibility </a></li>
+            <li><a href="common-shams.html">Common Sheams </a></li>
+            <li><a href="security.html">Security </a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer"> 
+  <h1><a href="index.html">Common Shams</a></h1>
+<br />
+  <p><img src="../imgs/Common Shams.JPG" alt="French restaurant" /></p>
+  <p>Tourists are targeted by scam and rip-off artists everywhere in Europe. If   you know the games (spilling the mustard, bus 64 in Rome, and so on), you're   less likely to be a victim. By sharing the latest scams (and learning from each   others' mistakes) we'll all travel more safely. </p>
+  <p>Remember, pickpocketing attempts throughout Europe can be expected unless you   wear a moneybelt under your clothing. Smart travelers leave wallets at home and   store their credit cards, passport, paper money and rail ticket(s) in a secure   moneybelt. Visit our Travel   Store for Rick Steves' recommended moneybelts.</p>
+  <p><br />
+  </p>
+  </div>
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Home";
+var curTopNvAdd = "/index.html";
+
+$(document).ready(function(){
+	$("#Banner").load("js/banner.html");
+	$("#NaviBox").load("js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setCurrentPos(homeLink);
+		naviEvent();
+	});	
+	$("#Footer").load("js/footer.html");
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo">
+<h1>Contact Us</h1>
+  <p>Level 2, 7 Kelly Street<br />
+  Ultimo NSW 2007 Australia<br />
+ PO Box K913, Haymarket NSW 1240<br /><br />
+
+T +61 (2) 9211 8399 | F +61 (2) 9211 8355<br />
+E info@ait.nsw.edu.au<br />
+
+</p>
+  </div>
+ 
+  <!--   Footer    -->
+  <div id="Footer">
+  </div>
+</div>
+  
+</body>
+</html>

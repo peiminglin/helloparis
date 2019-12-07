@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "TravelPoints";
+var curTopNvLink = "<a href='/TravelPoints/index.html'>Travel Points</a>";
+var curSubNv = "Landmarks";
+var curSubNvLink = "<a href='/TravelPoints/Landmarks/index.html'>Landmarks</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,true);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1><a href="../index.html">Landmarks</a></h1>
+  <p>Paris is famous for its landmarks like the Eiffel Tower, but there are also many other landmarks that are world renowned like the Champs-Elysees for its shopping, fashion and culture, along with its history, you will never be without somewhere to go or something to do in Paris.</p>
+
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Landmarks &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="arc-de-triomphe.html">Arc de Triomphe</a></li>
+        	<li><a href="la-tour-eiffel.html">La Tour Eiffel</a></li>
+        	<li><a href="chateau-de-versailles.html">Château de Versailles</a></li>
+        	<li><a href="chateau-de-fontainebleau.html">Chateau de Fontainebleau</a></li>
+        	<li><a href="la-defense.html">La Défense</a></li>
+        	<li><a href="opera-garnier.html">Opera Garnier</a></li>
+        	<li><a href="le-pantheon.html">Le Pantheon</a></li>
+        	<li><a href="pont-alexandre-iii.html">Pont Alexandre III</a></li>
+        	<li><a href="cimetiere-du-pere-lachaise.html">Cimetière du Père Lachaise</a></li>
+        	<li><a href="la-seine.html">La Seine</a></li>
+        	<li><a href="avenue-des-champs-elysees.html">Avenue des Champs Elysées</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Mesuems and Galleries &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Mesuems-and-Galleries/the-louvre.html">The Louvre</a></li>
+        	<li><a href="../Mesuems-and-Galleries/musee-dorsay.html">Musée d'Orsay</a></li>
+        	<li><a href="../Mesuems-and-Galleries/les-invalides.html">Les Invalides</a></li>
+        	<li><a href="../Mesuems-and-Galleries/picasso-museum.html">Picasso Museum</a></li>
+        	<li><a href="../Mesuems-and-Galleries/centre-georges-pompidou.html">Centre Georges Pompidou</a></li>
+        	<li><a href="../Mesuems-and-Galleries/rodin-museum.html">Rodin Museum</a></li>
+        	<li><a href="../Mesuems-and-Galleries/lhotel-de-cluny.html">L'Hotel de Cluny</a></li>
+        	<li><a href="../Mesuems-and-Galleries/palais-de-chaillot.html">Palais de Chaillot</a></li>
+        	<li><a href="../Mesuems-and-Galleries/lespace-dali.html">L'Espace Dali</a></li>
+        	<li><a href="../Mesuems-and-Galleries/la-villette.html">La Villette</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Churches &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Churches/notre-dame-cathedral.html">Notre Dame Cathedral</a></li>
+        	<li><a href="../Churches/sacre-coeur.html">Sacré Coeur</a></li>
+        	<li><a href="../Churches/sainte-chapelle.html">Sainte Chapelle</a></li>
+        	<li><a href="../Churches/eglise-de-la-madeleine.html">Eglise de la Madeleine</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Parks and Squares &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Parks-and-Squares/jardin-luxembourg.html">Jardin Luxembourg</a></li>
+            <li><a href="../Parks-and-Squares/jardin-des-tuileries.html">Jardin des Tuileries</a></li>
+            <li><a href="../Parks-and-Squares/champs-de-mars.html">Champs de Mars</a></li>
+            <li><a href="../Parks-and-Squares/place-vendome.html">Place Vendôme</a></li>
+            <li><a href="../Parks-and-Squares/place-de-la-concorde.html">Place de la Concorde</a></li>
+            <li><a href="../Parks-and-Squares/place-bastille.html">Place Bastille</a></li>
+            <li><a href="../Parks-and-Squares/la-place-des-vosges.html">La Place des Vosges</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="padding:20px;"> 
+  <h1><a style="text-transform:uppercase;">Château de Versailles</a></h1>
+  <br />
+  <p><img src="../../imgs/chateau-de-versailles-big.jpg" alt="Château de Versailles" /></p>
+  <p>
+The Palace of Versailles, or simply Versailles, is a royal château in Versailles in the Île-de-France region of France. In French it is the Château de Versailles.<br /><br />
+When the château was built, Versailles was a country village; today, however, it is a suburb of Paris, some 20 kilometres southwest of the French capital. The court of Versailles was the centre of political power in France from 1682, when Louis XIV moved from Paris, until the royal family was forced to return to the capital in October 1789 after the beginning of the French Revolution. Versailles is therefore famous not only as a building, but as a symbol of the system of absolute monarchy of the Ancien Régime.<br /><br />
+
+The earliest mention of the name of Versailles is found in a document dated 1038, the Charte de l'abbaye Saint-Père de Chartres (Charter of the Saint-Père de Chartres Abbey) (Guérard, 1840), in which one of the signatories was a certain Hugo de Versailliis (Hugues de Versailles), who was seigneur of Versailles. During this period, the village of Versailles centred on a small castle and church and the area was governed by a local lord. Its location on the road from Paris to Dreux and Normandy brought some prosperity to the village but, following an outbreak of the Plague and the Hundred Years' War, the village was largely destroyed and its population sharply declined (Bluche, 1991; Thompson, 2006; Verlet, 1985)<br /><br />
+In 1575, Albert de Gondi, a naturalized Florentine who gained prominence at the court of Henry II, purchased the seigneury of Versailles. In the early seventeenth century, Gondi invited Louis XIII on several hunting trips in the forests surrounding Versailles. Pleased with the location, Louis ordered the construction of a hunting lodge in 1624. Designed by Philibert Le Roy, the structure, a small château, was constructed of stone and red brick with a based roof. Eight years later, Louis obtained the seigneury of Versailles from the Gondi family and began to make enlargements to the château (Batiffol, 1913; Bluche, 1991; Marie, 1968; Nolhac, 1901; Verlet, 1985).<br /><br />
+Louis XIV had played and hunted at the site as a boy. This structure would become the core of the new palace.<br /><br />
+</p>
+
+
+
+  </div>
+
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

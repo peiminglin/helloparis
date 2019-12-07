@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "TravelPoints";
+var curTopNvLink = "<a href='/TravelPoints/index.html'>Travel Points</a>";
+//var curSubNv = "French";
+//var curSubNvLink = "<a href='/Restaurants/French/index.html'>French</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../js/banner.html");
+	$("#NaviBox").load("../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+	//	setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; "+curTopNvLink + " &gt; ");
+		naviEvent();
+	});	
+	$("#Footer").load("../js/footer.html");
+	
+	setTrigger("side");
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Travel Points</h1>
+  <p>If you think that the Eiffel Tower is the best among the Paris attractions that you will get to see once you pay the city a visit, think again.  Although this towering structure has become the national symbol of France to the rest of the world, there’s more to this dazzling city than meets the eye.<br /><br />
+  First visits to Paris can be daunting: nearly every square inch of the city seems to be seeping with history and beauty. All of it is worth seeing and exploring, but there are some Paris tourist attractions that simply shouldn't be missed. </p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">LandMarks &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="Landmarks/arc-de-triomphe.html">Arc de Triomphe</a></li>
+        	<li><a href="Landmarks/la-tour-eiffel.html">La Tour Eiffel</a></li>
+        	<li><a href="Landmarks/chateau-de-versailles.html">Château de Versailles</a></li>
+        	<li><a href="Landmarks/chateau-de-fontainebleau.html">Chateau de Fontainebleau</a></li>
+        	<li><a href="Landmarks/la-defense.html">La Défense</a></li>
+        	<li><a href="Landmarks/opera-garnier.html">Opera Garnier</a></li>
+        	<li><a href="Landmarks/le-pantheon.html">Le Pantheon</a></li>
+        	<li><a href="Landmarks/pont-alexandre-iii.html">Pont Alexandre III</a></li>
+        	<li><a href="Landmarks/cimetiere-du-pere-lachaise.html">Cimetière du Père Lachaise</a></li>
+        	<li><a href="Landmarks/la-seine.html">La Seine - LandMarks</a></li>
+        	<li><a href="Landmarks/avenue-des-champs-elysees.html">Avenue des Champs Elysées</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Mesuems and Galleries &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="Mesuems-and-Galleries/the-louvre.html">The Louvre</a></li>
+        	<li><a href="Mesuems-and-Galleries/musee-dorsay.html">Musée d'Orsay</a></li>
+        	<li><a href="Mesuems-and-Galleries/les-invalides.html">Les Invalides</a></li>
+        	<li><a href="Mesuems-and-Galleries/picasso-museum.html">Picasso Museum</a></li>
+        	<li><a href="Mesuems-and-Galleries/centre-georges-pompidou.html">Centre Georges Pompidou</a></li>
+        	<li><a href="Mesuems-and-Galleries/rodin-museum.html">Rodin Museum</a></li>
+        	<li><a href="Mesuems-and-Galleries/lhotel-de-cluny.html">L'Hotel de Cluny</a></li>
+        	<li><a href="Mesuems-and-Galleries/palais-de-chaillot.html">Palais de Chaillot</a></li>
+        	<li><a href="Mesuems-and-Galleries/lespace-dali.html">L'Espace Dali</a></li>
+        	<li><a href="Mesuems-and-Galleries/la-villette.html">La Villette</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Churches &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="Churches/notre-dame-cathedral.html">Notre Dame Cathedral</a></li>
+        	<li><a href="Churches/sacre-coeur.html">Sacré Coeur</a></li>
+        	<li><a href="Churches/sainte-chapelle.html">Sainte Chapelle</a></li>
+        	<li><a href="Churches/eglise-de-la-madeleine.html">Eglise de la Madeleine</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Parks and Squares &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="Parks-and-Squares/jardin-luxembourg.html">Jardin Luxembourg</a></li>
+            <li><a href="Parks-and-Squares/jardin-des-tuileries.html">Jardin des Tuileries</a></li>
+            <li><a href="Parks-and-Squares/champs-de-mars.html">Champs de Mars</a></li>
+            <li><a href="Parks-and-Squares/place-vendome.html">Place Vendôme</a></li>
+            <li><a href="Parks-and-Squares/place-de-la-concorde.html">Place de la Concorde</a></li>
+            <li><a href="Parks-and-Squares/place-bastille.html">Place Bastille</a></li>
+            <li><a href="Parks-and-Squares/la-place-des-vosges.html">La Place des Vosges</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="Landmarks/index.html"><img src="../imgs/arc-de-triomphe.jpg" style="float:left;" alt="Landmarks" /></a>
+  <div class="subpageItemInfo"><h3><a href="Landmarks/index.html">LANDMARKS</a></h3><br /><a>Paris is famous for its landmarks like the Eiffel Tower, but there are also many other landmarks that are world renowned like the Champs-Elysees for its shopping, fashion and culture, along with its history, you will never be without somewhere to go or something to do in Paris.
+</a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="Mesuems-and-Galleries/index.html"><img src="../imgs/the-louvre.jpg" style="float:left;" alt="Mesuems-and-Galleries" /></a>
+  <div class="subpageItemInfo"><h3><a href="Mesuems-and-Galleries/index.html">MESUEMS AND GALLERIES</a></h3><br /><a>At last count, there were over 83 museums in Paris. (And that's not including the Cinematheque Francaise which for some reason isn't included in any of the official tourist information listing of National, Private, and City museums.) 
+</a></div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="Churches/index.html"><img src="../imgs/notre-dame-cathedral.jpg" style="float:left;" alt="Churches" /></a>
+  <div class="subpageItemInfo"><h3><a href="Churches/index.html">CHURCHES</a></h3><br /><a>Paris houses many of history's more stunning spiritual relics-- cathedrals and chuches that stand today as breathtaking testimonials to a complex heritage of Christianity that dominated in Paris from the fall of the Roman Empire to the French Revolution. 
+</a></div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="Parks-and-Squares/index.html"><img src="../imgs/jardin-luxembourg.jpg" style="float:left;" alt="Parks-and-Squares" /></a>
+  <div class="subpageItemInfo"><h3><a href="Parks-and-Squares/index.html">PARKS AND SQUARES</a></h3><br /><a>Paris is known for its many elegant parks, but the city boasts a large number of very diverse parks. While some date back to the 17th century, many modern parks have been created in the last couple of decades. Even though Paris has a dense urban structure, the city boasts more than 400 parks. 
+</a></div>
+  </div>
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

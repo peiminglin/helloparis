@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "TravelPoints";
+var curTopNvLink = "<a href='/TravelPoints/index.html'>Travel Points</a>";
+var curSubNv = "Landmarks";
+var curSubNvLink = "<a href='/TravelPoints/Landmarks/index.html'>Landmarks</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,false);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Landmarks</h1>
+  <p>Paris is famous for its landmarks like the Eiffel Tower, but there are also many other landmarks that are world renowned like the Champs-Elysees for its shopping, fashion and culture, along with its history, you will never be without somewhere to go or something to do in Paris.</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Landmarks &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="arc-de-triomphe.html">Arc de Triomphe</a></li>
+        	<li><a href="la-tour-eiffel.html">La Tour Eiffel</a></li>
+        	<li><a href="chateau-de-versailles.html">Château de Versailles</a></li>
+        	<li><a href="chateau-de-fontainebleau.html">Chateau de Fontainebleau</a></li>
+        	<li><a href="la-defense.html">La Défense</a></li>
+        	<li><a href="opera-garnier.html">Opera Garnier</a></li>
+        	<li><a href="le-pantheon.html">Le Pantheon</a></li>
+        	<li><a href="pont-alexandre-iii.html">Pont Alexandre III</a></li>
+        	<li><a href="cimetiere-du-pere-lachaise.html">Cimetière du Père Lachaise</a></li>
+        	<li><a href="la-seine.html">La Seine</a></li>
+        	<li><a href="avenue-des-champs-elysees.html">Avenue des Champs Elysées</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Mesuems and Galleries &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Mesuems-and-Galleries/the-louvre.html">The Louvre</a></li>
+        	<li><a href="../Mesuems-and-Galleries/musee-dorsay.html">Musée d'Orsay</a></li>
+        	<li><a href="../Mesuems-and-Galleries/les-invalides.html">Les Invalides</a></li>
+        	<li><a href="../Mesuems-and-Galleries/picasso-museum.html">Picasso Museum</a></li>
+        	<li><a href="../Mesuems-and-Galleries/centre-georges-pompidou.html">Centre Georges Pompidou</a></li>
+        	<li><a href="../Mesuems-and-Galleries/rodin-museum.html">Rodin Museum</a></li>
+        	<li><a href="../Mesuems-and-Galleries/lhotel-de-cluny.html">L'Hotel de Cluny</a></li>
+        	<li><a href="../Mesuems-and-Galleries/palais-de-chaillot.html">Palais de Chaillot</a></li>
+        	<li><a href="../Mesuems-and-Galleries/lespace-dali.html">L'Espace Dali</a></li>
+        	<li><a href="../Mesuems-and-Galleries/la-villette.html">La Villette</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Churches &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Churches/notre-dame-cathedral.html">Notre Dame Cathedral</a></li>
+        	<li><a href="../Churches/sacre-coeur.html">Sacré Coeur</a></li>
+        	<li><a href="../Churches/sainte-chapelle.html">Sainte Chapelle</a></li>
+        	<li><a href="../Churches/eglise-de-la-madeleine.html">Eglise de la Madeleine</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Parks and Squares &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Parks-and-Squares/jardin-luxembourg.html">Jardin Luxembourg</a></li>
+            <li><a href="../Parks-and-Squares/jardin-des-tuileries.html">Jardin des Tuileries</a></li>
+            <li><a href="../Parks-and-Squares/champs-de-mars.html">Champs de Mars</a></li>
+            <li><a href="../Parks-and-Squares/place-vendome.html">Place Vendôme</a></li>
+            <li><a href="../Parks-and-Squares/place-de-la-concorde.html">Place de la Concorde</a></li>
+            <li><a href="../Parks-and-Squares/place-bastille.html">Place Bastille</a></li>
+            <li><a href="../Parks-and-Squares/la-place-des-vosges.html">La Place des Vosges</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="http://en.wikipedia.org/wiki/Arc_de_Triomphe"><img src="../../imgs/arc-de-triomphe.jpg" style="float:left;" alt="Arc de Triomphe" /></a>
+  <div class="subpageItemInfo"><h3><a href="arc-de-triomphe.html" style="text-transform:uppercase;">Arc de Triomphe</a></h3>
+  <br />
+
+The Arc de Triomphe is one of the most famous monuments in Paris. It stands in the centre of the Place Charles de Gaulle (originally named Place de l'Étoile), at the western end of the Champs-Élysées. There is a smaller arch, the Arc de Triomphe du Carrousel, which stands west of the Louvre. 
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/La_Tour_Eiffel"><img src="../../imgs/la-tour-eiffel.jpg" style="float:left;" alt="La Tour Eiffel" /></a>
+  <div class="subpageItemInfo"><h3><a href="la-tour-eiffel.html" style="text-transform:uppercase;">La Tour Eiffel</a></h3>
+<br />
+
+The Eiffel Tower (French: La Tour Eiffel, nickname La dame de fer, the iron lady) is a puddle iron lattice tower located on the Champ de Mars in Paris. Built in 1889, it has become both a global icon of France and one of the most recognizable structures in the world. The tower is the tallest building in Paris and the most-visited paid monument in the world.</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Ch%C3%A2teau_de_Versailles"><img src="../../imgs/chateau-de-versailles.jpg" style="float:left;" alt="Château de Versailles" /></a>
+  <div class="subpageItemInfo"><h3><a href="chateau-de-versailles.html" style="text-transform:uppercase;">Château de Versailles</a></h3>
+	<br />
+
+The Palace of Versailles, or simply Versailles, is a royal château in Versailles in the Île-de-France region of France. In French it is the Château de Versailles.
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Chateau_de_Fontainebleau"><img src="../../imgs/chateau-de-fontainebleau.jpg" style="float:left;" alt="Chateau de Fontainebleau" /></a>
+  <div class="subpageItemInfo"><h3><a href="chateau-de-fontainebleau.html" style="text-transform:uppercase;">Chateau de Fontainebleau</a></h3>
+
+  <br />
+
+The Palace of Fontainebleau, located 55 kilometres from the centre of Paris, is one of the largest French royal châteaux. The palace as it is today is the work of many French monarchs, building on an early 16th century structure of Francis I. The building is arranged around a series of courtyards.</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/La_D%C3%A9fense"><img src="../../imgs/la-defense.jpg" style="float:left;" alt="La Défense" /></a>
+  <div class="subpageItemInfo"><h3><a href="la-defense.html" style="text-transform:uppercase;">La Défense</a></h3>
+
+  <br />
+
+La Défense is a major business district of the Paris aire urbaine. With a population of 20,000, it is centered in an orbital motorway straddling the Hauts-de-Seine département municipalities of Nanterre, Courbevoie and Puteaux.
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Opera_Garnier"><img src="../../imgs/opera-garnier.jpg" style="float:left;" alt="Opera Garnier" /></a>
+  <div class="subpageItemInfo"><h3><a href="opera-garnier.html" style="text-transform:uppercase;">Opera Garnier</a></h3>
+<br />
+The Palais Garnier, known also as the Opéra de Paris or Opéra Garnier, but more commonly as the Paris Opéra, is a 1,600-seat opera house on the Place de l'Opéra in Paris, France, which was the primary home of the Paris Opera from 1875 until 1989. A grand building designed by Charles Garnier in the Neo-Baroque style.
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Le_Pantheon"><img src="../../imgs/le-pantheon.jpg" style="float:left;" alt="Le Pantheon" /></a>
+  <div class="subpageItemInfo"><h3><a href="le-pantheon.html" style="text-transform:uppercase;">Le Pantheon</a></h3>
+
+ <br />
+  
+The Panthéon (from Greek Πάνθειον meaning "Every god") is a building in the Latin Quarter in Paris. It was originally built as a church dedicated to St. Genevieve and to house the reliquary châsse containing her relics but, after many changes, now functions as a secular mausoleum containing the remains of distinguished French citizens. 
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Pont_Alexandre_III"><img src="../../imgs/pont-alexandre-iii.jpg" style="float:left;" alt="Pont Alexandre III" /></a>
+  <div class="subpageItemInfo"><h3><a href="pont-alexandre-iii.html" style="text-transform:uppercase;">Pont Alexandre III</a></h3>
+
+<br />
+The Pont Alexandre III is an arch bridge that spans the Seine, connecting the Champs-Élysées quarter and the Invalides and Eiffel Tower quarter, widely regarded as the most ornate, extravagant bridge in Paris.
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Cimeti%C3%A8re_du_P%C3%A8re_Lachaise"><img src="../../imgs/cimetiere-du-pere-lachaise.jpg" style="float:left;" alt="Cimetière du Père Lachaise" /></a>
+  <div class="subpageItemInfo"><h3><a href="cimetiere-du-pere-lachaise.html" style="text-transform:uppercase;">Cimetière du Père Lachaise</a></h3>
+
+ <br />
+Père Lachaise Cemetery (French: Cimetière du Père-Lachaise; officially, cimetière de l'Est, "East Cemetery") is the largest cemetery in the city of Paris, France (48 ha, 118.6 acres), though there are larger cemeteries in the city's suburbs.
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/La_Seine"><img src="../../imgs/la-seine.jpg" style="float:left;" alt="La Seine" /></a>
+  <div class="subpageItemInfo"><h3><a href="la-seine.html" style="text-transform:uppercase;">La Seine</a></h3>
+
+  <br />
+The Seine (French: La Seine) is a major river and commercial waterway within the regions of the Île-de-France and Haute-Normandie in France. It is 776 km (486 miles) long, rising at Saint-Seine near Dijon in center-eastern France in the Langres plateau, flowing through Paris and into the English Channel at Le Havre.
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Champs-%C3%89lys%C3%A9es"><img src="../../imgs/avenue-des-champs-elysees.jpg" style="float:left;" alt="Avenue des Champs Elysées" /></a>
+  <div class="subpageItemInfo"><h3><a href="avenue-des-champs-elysees.html" style="text-transform:uppercase;">Avenue des Champs Elysées</a></h3>
+
+  <br />
+The Avenue des Champs-Élysées is a prestigious avenue in Paris, France. With its cinemas, cafés, luxury specialty shops and clipped horse-chestnut trees, the Avenue des Champs-Élysées is one of the most famous streets and one of the most expensive strip of real estate in the world. The name is French for Elysian Fields, the place of the blessed dead in Greek mythology. 
+</div>
+  </div>
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

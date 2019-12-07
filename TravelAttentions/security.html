@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Security</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "TravelAttentions";
+var curTopNvLink = "<a href='/TravelAttentions/index.html'>Travel Attentions</a>";
+//var curSubNv = "French";
+//var curSubNvLink = "<a href='/Restaurants/French/index.html'>French</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../js/banner.html");
+	$("#NaviBox").load("../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+	//	setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; "+curTopNvLink + " &gt; ");
+		naviEvent();
+	});	
+	$("#Footer").load("../js/footer.html");
+	
+	setTrigger("side");
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1><a href="index.html">Travel Attentions</a></h1>
+  <p>These driving distances are in kilometres using motorways and mountain roads that are open all year, or through train tunnels that take cars. The kilometres for the loading of cars onto trains and ferries are not included. 
+</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Travel Attentions&gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="road-rules.html">Road Rules</a></li>
+        	<li><a href="law-responsibility.html">Law & Responsibility </a></li>
+            <li><a href="common-shams.html">Common Sheams </a></li>
+            <li><a href="security.html">Security </a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+   
+  <div id="PrimaryContainer">
+  <div class="floatLayer"> 
+  <h1><a href="security.html">Security</a></h1>
+<br />
+  <p><img src="../imgs/Security.JPG" alt="French restaurant" /></p>
+  <ul>
+    <li>
+      <div>
+        <div>1. Crossing the Road </div>
+        <div>
+          <p>Take care when crossing Paris’s roads. French drivers are not known for   respecting pedestrians, though a red light will usually – although not always –   make them stop. Pedestrians do not have automatic priority on a crossing, unless   lights are also in their favour. On pedestrian crossings, motorists often have   the right to turn right, so always look before you start to   cross.</p>
+        </div>
+      </div>
+      <div></div>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <div>
+        <div>2. Pickpockets </div>
+        <div>
+          <p>Gangs of pickpockets do frequent tourist spots such as the Eiffel Tower and   the Arc de Triomphe, as well as wandering the metro system. Some are amateur   gangs and easy to spot, but others are more subtle so guard your belongings at   all times.</p>
+        </div>
+      </div>
+      <div></div>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <div>
+        <div>3. Mugging </div>
+        <div>
+          <p>Mugging is less of a problem in Paris than in other big cities, but it can   happen. Try not to travel alone late at night and avoid unlit streets. Try to   avoid long interchanges between metro stations too: better a longer journey than   an unfortunate experience. The main stations you should avoid at night are Les   Halles and St Lazare.</p>
+        </div>
+      </div>
+      <div></div>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <div>
+        <div>4. Police </div>
+        <div>
+          <p>There are a number of police stations in central Paris. These are listed in   the phone book, or call the Préfecture Centrale for details. All crimes should   be reported, if only for insurance purposes.</p>
+        </div>
+      </div>
+      <div></div>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <div>
+        <div>5. Women Travellers </div>
+        <div>
+          <p>Parisian men are generally courteous. A firm rebuttal usually halts unwanted   attention. If not, try to seek the help of another man: they do not like to see   a woman being pestered.</p>
+        </div>
+      </div>
+      <div></div>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <div>
+        <div>6. Insurance </div>
+        <div>
+          <p>Paris medical treatment is very good but it can be expensive, so be sure to   have good health insurance. Visitors from EU countries should be equipped with a   European Health Insurance card to avoid emergency fees. All other nationalities   should take out private insurance. Report all crimes or lost property, and keep   a copy of the statement you make to the police.</p>
+        </div>
+      </div>
+      <div></div>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <div>
+        <div>7. Hospitals </div>
+        <div>
+          <p>English-speaking visitors might want to contact the British or the American   Hospitals, both open 24 hours a day. Paris hospitals are listed in the phone   book, or call Hôpital Assistance Publique.</p>
+        </div>
+      </div>
+      <div></div>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <div>
+        <div>8. Ambulances </div>
+        <div>
+          <p>If you need an ambulance, dial the emergency number. Fire stations also have   ambulances and are qualified to carry out first aid.</p>
+        </div>
+      </div>
+      <div></div>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <div>
+        <div>9. Pharmacies </div>
+        <div>
+          <p>A green cross indicates a pharmacy (chemist). They are usually open between   9am–7pm Monday to Saturday. At other times, each pharmacy will have the address   of the nearest one open on the door or window. Pharmacies can tell you where the   nearest doctor is.</p>
+        </div>
+      </div>
+      <div></div>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <div>
+        <div>10. Dentists </div>
+        <div>
+          <p>These are listed in the Paris Pages Jaunes   (Yellow Pages ) under Médecins Qualifiés . In a dire emergency, a service called   SOS Dentistes will provide a house call, but be prepared to pay. A large dental   practice is at the Centre Médical Europe.</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <p><br />
+  </p>
+  <p><br />
+  </p>
+  </div>
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

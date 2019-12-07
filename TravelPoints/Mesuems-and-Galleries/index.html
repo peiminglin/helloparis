@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "TravelPoints";
+var curTopNvLink = "<a href='/TravelPoints/index.html'>Travel Points</a>";
+var curSubNv = "Museums";
+var curSubNvLink = "<a href='/TravelPoints/Mesuems-and-Galleries/index.html'>Museums and Galleries</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,false);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Museums and Galleries</h1>
+  <p>At last count, there were over 83 museums in Paris. (And that's not including the Cinematheque Francaise which for some reason isn't included in any of the official tourist information listing of National, Private, and City museums.) There are probably a few small private museums that fall below the radar, but not to worry. Those are the museums that will find you rather than vice-versa. No matter what's on your must-see list, there are bound to be tough decisions to make when your time is limited.</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Landmarks &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Landmarks/arc-de-triomphe.html">Arc de Triomphe</a></li>
+        	<li><a href="../Landmarks/la-tour-eiffel.html">La Tour Eiffel</a></li>
+        	<li><a href="../Landmarks/chateau-de-versailles.html">Château de Versailles</a></li>
+        	<li><a href="../Landmarks/chateau-de-fontainebleau.html">Chateau de Fontainebleau</a></li>
+        	<li><a href="../Landmarks/la-defense.html">La Défense</a></li>
+        	<li><a href="../Landmarks/opera-garnier.html">Opera Garnier</a></li>
+        	<li><a href="../Landmarks/le-pantheon.html">Le Pantheon</a></li>
+        	<li><a href="../Landmarks/pont-alexandre-iii.html">Pont Alexandre III</a></li>
+        	<li><a href="../Landmarks/cimetiere-du-pere-lachaise.html">Cimetière du Père Lachaise</a></li>
+        	<li><a href="../Landmarks/la-seine.html">La Seine</a></li>
+        	<li><a href="../Landmarks/avenue-des-champs-elysees.html">Avenue des Champs Elysées</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Museums and Galleries &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="the-louvre.html">The Louvre</a></li>
+        	<li><a href="musee-dorsay.html">Musée d'Orsay</a></li>
+        	<li><a href="les-invalides.html">Les Invalides</a></li>
+        	<li><a href="picasso-museum.html">Picasso Museum</a></li>
+        	<li><a href="centre-georges-pompidou.html">Centre Georges Pompidou</a></li>
+        	<li><a href="rodin-museum.html">Rodin Museum</a></li>
+        	<li><a href="lhotel-de-cluny.html">L'Hotel de Cluny</a></li>
+        	<li><a href="palais-de-chaillot.html">Palais de Chaillot</a></li>
+        	<li><a href="lespace-dali.html">L'Espace Dali</a></li>
+        	<li><a href="la-villette.html">La Villette</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Churches &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Churches/notre-dame-cathedral.html">Notre Dame Cathedral</a></li>
+        	<li><a href="../Churches/sacre-coeur.html">Sacré Coeur</a></li>
+        	<li><a href="../Churches/sainte-chapelle.html">Sainte Chapelle</a></li>
+        	<li><a href="../Churches/eglise-de-la-madeleine.html">Eglise de la Madeleine</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Parks and Squares &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Parks-and-Squares/jardin-luxembourg.html">Jardin Luxembourg</a></li>
+            <li><a href="../Parks-and-Squares/jardin-des-tuileries.html">Jardin des Tuileries</a></li>
+            <li><a href="../Parks-and-Squares/champs-de-mars.html">Champs de Mars</a></li>
+            <li><a href="../Parks-and-Squares/place-vendome.html">Place Vendôme</a></li>
+            <li><a href="../Parks-and-Squares/place-de-la-concorde.html">Place de la Concorde</a></li>
+            <li><a href="../Parks-and-Squares/place-bastille.html">Place Bastille</a></li>
+            <li><a href="../Parks-and-Squares/la-place-des-vosges.html">La Place des Vosges</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="http://en.wikipedia.org/wiki/The_Louvre"><img src="../../imgs/the-louvre.jpg" style="float:left;" alt="The Louvre" /></a>
+  <div class="subpageItemInfo"><h3><a href="the-louvre.html" style="text-transform:uppercase;">The Louvre</a></h3>
+  <br />
+The Musée du Louvre – in English, the Louvre Museum or simply the Louvre – is one of the world's largest museums, the most visited art museum in the world and a historic monument. A central landmark of Paris, it is located on the Right Bank of the Seine in the 1st arrondissement (district). Nearly 35,000 objects from prehistory to the 19th century are exhibited over an area of 60,600 square metres (652,300 square feet).
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Mus%C3%A9e_d%27Orsay"><img src="../../imgs/musee-dorsay.jpg" style="float:left;" alt="Musée d'Orsay" /></a>
+  <div class="subpageItemInfo"><h3><a href="musee-dorsay.html" style="text-transform:uppercase;">Musée d'Orsay</a></h3>
+<br />
+The Musée d'Orsay is a museum in Paris, France, on the left bank of the Seine. It is housed in the former Gare d'Orsay, an impressive Beaux-Arts railway station built between 1898 and 1900. The museum holds mainly French art dating from 1848 to 1915, including paintings, sculptures, furniture, and photography.</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Les_Invalides"><img src="../../imgs/les-invalides.jpg" style="float:left;" alt="Les Invalides" /></a>
+  <div class="subpageItemInfo"><h3><a href="les-invalides.html" style="text-transform:uppercase;">Les Invalides</a></h3>
+	<br />
+
+Les Invalides (French pronunciation: [lezɛ̃valid]), officially known as L'Hôtel national des Invalides (The National Residence of the Invalids), is a complex of buildings in the 7th arrondissement of Paris, France, containing museums and monuments, all relating to the military history of France, as well as a hospital and a retirement home for war veterans, the building's original purpose.
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Mus%C3%A9e_Picasso"><img src="../../imgs/picasso-museum.jpg" style="float:left;" alt="Picasso Museum" /></a>
+  <div class="subpageItemInfo"><h3><a href="picasso-museum.html" style="text-transform:uppercase;">Picasso Museum</a></h3>
+
+  <br />
+
+The Musée Picasso is an art gallery located in the Hôtel Salé in rue de Thorigny, in the Marais district of Paris. The hôtel particulier that houses the collection was built between 1656 and 1659 for Pierre Aubert, seigneur de Fontenay, a tax farmer who became rich collecting the gabelle or salt tax (the name of the building means "salted"). 
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Centre_Georges_Pompidou"><img src="../../imgs/centre-georges-pompidou.jpg" style="float:left;" alt="Centre Georges Pompidou" /></a>
+  <div class="subpageItemInfo"><h3><a href="centre-georges-pompidou.html" style="text-transform:uppercase;">Centre Georges Pompidou</a></h3>
+
+  <br />
+
+Centre Georges Pompidou (also known as the Pompidou Centre in English) is a complex in the Beaubourg area of the 4th arrondissement of Paris, near Les Halles, rue Montorgueil and the Marais. It was designed in the style of high-tech architecture.
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Rodin_Museum"><img src="../../imgs/rodin-museum.jpg" style="float:left;" alt="Rodin Museum" /></a>
+  <div class="subpageItemInfo"><h3><a href="rodin-museum.html" style="text-transform:uppercase;">Rodin Museum</a></h3>
+<br />
+The Rodin Museum is a museum located in Philadelphia, Pennsylvania which contains the largest collection of sculptor Auguste Rodin's works outside Paris.
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Hotel_de_Cluny"><img src="../../imgs/lhotel-de-cluny.jpg" style="float:left;" alt="L'Hotel de Cluny" /></a>
+  <div class="subpageItemInfo"><h3><a href="lhotel-de-cluny.html" style="text-transform:uppercase;">L'Hotel de Cluny</a></h3>
+
+ <br />
+  
+The Musée de Cluny, officially known as Musée National du Moyen Âge (National Museum of the Middle Ages), is a museum in Paris, France. It is located in the 5th arrondissement at 6 Place Paul Painlevé, south of the Boulevard Saint-Germain, between the Boulevard Saint-Michel and the Rue Saint-Jacques.
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Palais_de_Chaillot"><img src="../../imgs/palais-de-chaillot.jpg" style="float:left;" alt="Palais de Chaillot" /></a>
+  <div class="subpageItemInfo"><h3><a href="palais-de-chaillot.html" style="text-transform:uppercase;">Palais de Chaillot</a></h3>
+
+<br />
+The Trocadéro, site of the Palais de Chaillot, is an area of Paris, France, in the 16th arrondissement, across the Seine from the Eiffel Tower. The hill of the Trocadéro is the hill of Chaillot, a former village.</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/L%27Espace_Dali"><img src="../../imgs/lespace-dali.jpg" style="float:left;" alt="L'Espace Dali" /></a>
+  <div class="subpageItemInfo"><h3><a href="lespace-dali.html" style="text-transform:uppercase;">L'Espace Dali</a></h3>
+
+ <br />
+The Espace Dali is a unique permanent exhibition in France entirely devoted to the master of surrealism, Salvador Dali and more particularly to his sculptures and engravings. The museum, near the famous Place du Tertre in Montmartre, has more than 300 original artworks which feature the phantasmagorical world of one of the major 20th century artists.</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://en.wikipedia.org/wiki/Parc_de_la_Villette"><img src="../../imgs/la-villette.jpg" style="float:left;" alt=">La Villette" /></a>
+  <div class="subpageItemInfo"><h3><a href="la-villette.html" style="text-transform:uppercase;">La Villette</a></h3>
+
+  <br />
+La Villette, an area in Paris, known for its Cité des Sciences et de l'Industrie, the biggest science museum in Europe.</div>
+  </div>
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

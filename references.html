@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Home";
+var curTopNvAdd = "/index.html";
+
+$(document).ready(function(){
+	$("#Banner").load("js/banner.html");
+	$("#NaviBox").load("js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setCurrentPos(homeLink);
+		naviEvent();
+	});	
+	$("#Footer").load("js/footer.html");
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo">
+<h1>Hello Paris</h1>
+  <p>Paris, the cosmopolitan capital of France, is one of the largest agglomerations in Europe. Located in the north of the country on the river Seine, Paris has the reputation of being the most beautiful and romantic of all cities, brimming with historic associations and remaining vastly influential in the realms of culture, art, fashion, food and design. Dubbed the City of Light (la Ville LumiÃ¨re) and Capital of Fashion, it is home to the world's finest and most luxurious fashion designers and cosmetics, such as Chanel, Christian Dior, Yves Saint-Laurent, Guerlain, LancÃ´me, L'OrÃ©al, Clarins, etc. </p>  </div>
+
+  <div class="floatLayer">
+  
+<h2>References</h2><br />
+<a>
+<h3>Culture:</h3>
+http://www.europe-cities.com/en/600/france/paris/culture/<br />
+http://www.discoverfrance.net/France/Paris/Paris_history.shtml<br />
+http://wiki.answers.com/Q/What_are_examples_of_the_traditional_food_in_Paris<br />
+http://www.pittsburghsymphony.org/pghsymph.nsf/web/sub12parisfestival.html<br />
+http://www.e-architect.co.uk/paris_architecture.htm<br /><br />
+<h3>Events:</h3>
+http://www.viakeo.com/Paris/events/Comme_a_Vienne-3<br />
+http://www.cosylogis.com/paris/events.php?Paris_Main_Annual_Events=Jan&parismonth=January<br />
+http://en.wikipedia.org/wiki/Andros_Trophy<br />
+http://www.sevierwines.com/ParisWineFair.htm<br />
+http://en.wikipedia.org/wiki/Saint_Valentine<br />
+http://www.planet-agri.com/en/content/upcoming-events/the-paris-international-agricultural-show<br />
+http://en.wikipedia.org/wiki/Fashion_week <br />
+http://www.whatsonwhen.com/sisp/?fx=event&amp;event_id=69755<br />
+http://en.wikipedia.org/wiki/Auto_racing<br />
+http://www.cineffable.fr/en/editoEn.htm<br />
+http://www.24-7pressrelease.com/press-release/festival-of-short-shorts-in-paris-93362.php<br />
+http://en.wikipedia.org/wiki/Paris_Marathon<br />
+http://www.timeout.com/paris/features/161/festivals-events-in-paris<br />
+http://en.wikipedia.org/wiki/Culture_of_France<br />
+http://livelearnloveleave.com/must-see/35-best-salvador-dalia-paintings/<br />
+http://www.iaaf.org/gle08/news/newsid=44641.html<br />
+http://www.parisperfect.com/paris-flea-markets.php<br />
+http://www.europa-cinemas.org/en/programmes/media-international/index.php<br />
+http://www.viaducdesarts.fr/index.php?lang=en<br /><br />
+<h3>Shopping:</h3>
+All the informations and images come from http://www.google.com/<br /><br />
+
+<h3>Restaurants: </h3>
+All the informations and images come from http://www.bestrestaurantsparis.com/<br /><br />
+<h3>Hotels: </h3>
+All the informations and images come from http://www.webjet.com/<br /><br />
+<h3>TravelPoints: </h3>
+All the informations and images come from http://www.wikipedia.com/<br /><br />
+<h3>Transports:</h3>
+http://www.parismetro.com/<br />
+http://www.viator.com/Paris-recommendations/d479<br />
+http://www.taxi-paris.net/page19.html<br /><br />
+<h3>Travel Attention:</h3>
+http://traveldk.com/paris/topten/security-health-11<br />
+http://www.francetourism.com/practicalinfo/locallaws.htm<br />
+http://www.eusa-edu.com/sites/europe/paris/arrival-handbook/emergency-info/398-security-in-paris.html<br /><br />
+
+
+</a>
+
+  </div>
+
+  
+  <!--   Footer    -->
+  <div id="Footer">
+  </div>
+</div>
+  
+</body>
+</html>

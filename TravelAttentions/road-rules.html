@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Road Rules</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "TravelAttentions";
+var curTopNvLink = "<a href='/TravelAttentions/index.html'>Travel Attentions</a>";
+//var curSubNv = "French";
+//var curSubNvLink = "<a href='/Restaurants/French/index.html'>French</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../js/banner.html");
+	$("#NaviBox").load("../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+	//	setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; "+curTopNvLink + " &gt; ");
+		naviEvent();
+	});	
+	$("#Footer").load("../js/footer.html");
+	
+	setTrigger("side");
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1><a href="index.html">Travel Attentions</a></h1>
+  <p>These driving distances are in kilometres using motorways and mountain roads that are open all year, or through train tunnels that take cars. The kilometres for the loading of cars onto trains and ferries are not included. 
+</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Travel Attentions&gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="road-rules.html">Road Rules</a></li>
+        	<li><a href="law-responsibility.html">Law & Responsibility </a></li>
+            <li><a href="common-shams.html">Common Sheams </a></li>
+            <li><a href="security.html">Security </a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer"> 
+  <h1><a href="road-rules.html">Road Rules</a></h1>
+<br />
+  <p><img src="../imgs/Road Rules.JPG" alt="French restaurant" /></p>
+  <h5>Rules &amp; Regulations</h5>
+  <ul>
+    <li>Drive on the <strong>right</strong> in France </li>
+    <li>It is compulsory to wear a seat belt front and rear (if fitted) </li>
+    <li>Children under 10 years of age must travel in the back seat of a car (if   there are back seats), unless there are no seatbelts in the back or if there is   no room on the back seat because it's already utilised by other children under   10. Children under 10 must wear a seat belt adapted for children or be strapped   into a proper child seat. If a car seat is used in the front seat, it must be   forward-facing unless the passenger-side airbag has been turned off </li>
+    <li>Mobile cellular telephones may not be used while driving except with a   &quot;handsfree&quot; system </li>
+    <li>It is compulsory to carry a<strong> driving licence</strong>, car   registration papers and insurance   documents. These must be the original documents; keep copies separately </li>
+    <li>Third party <strong>insurance</strong> is compulsory </li>
+    <li>
+      <p>Driving with lights on by day is optional.</p>
+    </li>
+  </ul>
+  <p>&nbsp;</p>
+  </div>
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

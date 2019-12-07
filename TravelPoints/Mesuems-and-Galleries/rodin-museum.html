@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "TravelPoints";
+var curTopNvLink = "<a href='/TravelPoints/index.html'>Travel Points</a>";
+var curSubNv = "Museums";
+var curSubNvLink = "<a href='/TravelPoints/Mesuems-and-Galleries/index.html'>Museums and Galleries</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,true);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1><a href="index.html">Museums and Galleries</a></h1>
+  <p>At last count, there were over 83 museums in Paris. (And that's not including the Cinematheque Francaise which for some reason isn't included in any of the official tourist information listing of National, Private, and City museums.) There are probably a few small private museums that fall below the radar, but not to worry. Those are the museums that will find you rather than vice-versa. No matter what's on your must-see list, there are bound to be tough decisions to make when your time is limited.</p>
+
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Landmarks &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Landmarks/arc-de-triomphe.html">Arc de Triomphe</a></li>
+        	<li><a href="../Landmarks/la-tour-eiffel.html">La Tour Eiffel</a></li>
+        	<li><a href="../Landmarks/chateau-de-versailles.html">Château de Versailles</a></li>
+        	<li><a href="../Landmarks/chateau-de-fontainebleau.html">Chateau de Fontainebleau</a></li>
+        	<li><a href="../Landmarks/la-defense.html">La Défense</a></li>
+        	<li><a href="../Landmarks/opera-garnier.html">Opera Garnier</a></li>
+        	<li><a href="../Landmarks/le-pantheon.html">Le Pantheon</a></li>
+        	<li><a href="../Landmarks/pont-alexandre-iii.html">Pont Alexandre III</a></li>
+        	<li><a href="../Landmarks/cimetiere-du-pere-lachaise.html">Cimetière du Père Lachaise</a></li>
+        	<li><a href="../Landmarks/la-seine.html">La Seine</a></li>
+        	<li><a href="../Landmarks/avenue-des-champs-elysees.html">Avenue des Champs Elysées</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Museums and Galleries &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="the-louvre.html">The Louvre</a></li>
+        	<li><a href="musee-dorsay.html">Musée d'Orsay</a></li>
+        	<li><a href="les-invalides.html">Les Invalides</a></li>
+        	<li><a href="picasso-museum.html">Picasso Museum</a></li>
+        	<li><a href="centre-georges-pompidou.html">Centre Georges Pompidou</a></li>
+        	<li><a href="rodin-museum.html">Rodin Museum</a></li>
+        	<li><a href="lhotel-de-cluny.html">L'Hotel de Cluny</a></li>
+        	<li><a href="palais-de-chaillot.html">Palais de Chaillot</a></li>
+        	<li><a href="lespace-dali.html">L'Espace Dali</a></li>
+        	<li><a href="la-villette.html">La Villette</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Churches &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Churches/notre-dame-cathedral.html">Notre Dame Cathedral</a></li>
+        	<li><a href="../Churches/sacre-coeur.html">Sacré Coeur</a></li>
+        	<li><a href="../Churches/sainte-chapelle.html">Sainte Chapelle</a></li>
+        	<li><a href="../Churches/eglise-de-la-madeleine.html">Eglise de la Madeleine</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Parks and Squares &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Parks-and-Squares/jardin-luxembourg.html">Jardin Luxembourg</a></li>
+            <li><a href="../Parks-and-Squares/jardin-des-tuileries.html">Jardin des Tuileries</a></li>
+            <li><a href="../Parks-and-Squares/champs-de-mars.html">Champs de Mars</a></li>
+            <li><a href="../Parks-and-Squares/place-vendome.html">Place Vendôme</a></li>
+            <li><a href="../Parks-and-Squares/place-de-la-concorde.html">Place de la Concorde</a></li>
+            <li><a href="../Parks-and-Squares/place-bastille.html">Place Bastille</a></li>
+            <li><a href="../Parks-and-Squares/la-place-des-vosges.html">La Place des Vosges</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="padding:20px;"> 
+  <h1><a style="text-transform:uppercase;">Rodin Museum</a></h1>
+  <br />
+  <p><img src="../../imgs/rodin-museum-big.jpg" alt="Rodin Museum" /></p>
+  <p>
+The Rodin Museum is a museum located in Philadelphia, Pennsylvania which contains the largest collection of sculptor Auguste Rodin's works outside Paris.<br /><br />
+The Museum was the gift of movie-theater magnate Jules Mastbaum (1872–1926) to the city of Philadelphia. Mastbaum began collecting works by Rodin in 1923 with the intent of founding a museum to enrich the lives of his fellow citizens. Within just three years, he had assembled the largest collection of Rodin's works outside Paris, including bronze castings, plaster studies, drawings, prints, letters, and books. In 1926, Mastbaum commissioned French architects Paul Cret and Jacques Gréber to design the museum building and gardens. Unfortunately, the collector did not live to see his dream realized, but his widow honored his commitment to the city, and the Museum was inaugurated on November 29, 1929.<br /><br />
+The best-known of Rodin's works, The Thinker (1880–1882), sits outside the museum in the entry courtyard. Visitors once entered through a cast of The Gates of Hell, located at the main entrance to the museum, which is no longer used. This massive 5.5-m-tall bronze doorway was originally created for the Museum of Decorative Arts (which was to have been located in Paris but never came into existence). Rodin sculpted more than 100 figures for these doors from 1880 until his death in 1917. This casting is one of the three originals; several others have been made since. Several of his most famous works, including The Thinker, are actually studies for these doors which were later expanded into separate works.<br /><br />
+The museum's several rooms house many more of the artist's works, including The Kiss (1886), Eternal Springtime (1884), The Age of Bronze (1875–76), and The Burghers of Calais, a monument commissioned by the City of Calais in 1884.<br /><br />
+</p>
+
+
+
+  </div>
+
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

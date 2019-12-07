@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "TravelPoints";
+var curTopNvLink = "<a href='/TravelPoints/index.html'>Travel Points</a>";
+var curSubNv = "Landmarks";
+var curSubNvLink = "<a href='/TravelPoints/Landmarks/index.html'>Landmarks</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,true);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1><a href="../index.html">Landmarks</a></h1>
+  <p>Paris is famous for its landmarks like the Eiffel Tower, but there are also many other landmarks that are world renowned like the Champs-Elysees for its shopping, fashion and culture, along with its history, you will never be without somewhere to go or something to do in Paris.</p>
+
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Landmarks &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="arc-de-triomphe.html">Arc de Triomphe</a></li>
+        	<li><a href="la-tour-eiffel.html">La Tour Eiffel</a></li>
+        	<li><a href="chateau-de-versailles.html">Château de Versailles</a></li>
+        	<li><a href="chateau-de-fontainebleau.html">Chateau de Fontainebleau</a></li>
+        	<li><a href="la-defense.html">La Défense</a></li>
+        	<li><a href="opera-garnier.html">Opera Garnier</a></li>
+        	<li><a href="le-pantheon.html">Le Pantheon</a></li>
+        	<li><a href="pont-alexandre-iii.html">Pont Alexandre III</a></li>
+        	<li><a href="cimetiere-du-pere-lachaise.html">Cimetière du Père Lachaise</a></li>
+        	<li><a href="la-seine.html">La Seine</a></li>
+        	<li><a href="avenue-des-champs-elysees.html">Avenue des Champs Elysées</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Mesuems and Galleries &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Mesuems-and-Galleries/the-louvre.html">The Louvre</a></li>
+        	<li><a href="../Mesuems-and-Galleries/musee-dorsay.html">Musée d'Orsay</a></li>
+        	<li><a href="../Mesuems-and-Galleries/les-invalides.html">Les Invalides</a></li>
+        	<li><a href="../Mesuems-and-Galleries/picasso-museum.html">Picasso Museum</a></li>
+        	<li><a href="../Mesuems-and-Galleries/centre-georges-pompidou.html">Centre Georges Pompidou</a></li>
+        	<li><a href="../Mesuems-and-Galleries/rodin-museum.html">Rodin Museum</a></li>
+        	<li><a href="../Mesuems-and-Galleries/lhotel-de-cluny.html">L'Hotel de Cluny</a></li>
+        	<li><a href="../Mesuems-and-Galleries/palais-de-chaillot.html">Palais de Chaillot</a></li>
+        	<li><a href="../Mesuems-and-Galleries/lespace-dali.html">L'Espace Dali</a></li>
+        	<li><a href="../Mesuems-and-Galleries/la-villette.html">La Villette</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Churches &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Churches/notre-dame-cathedral.html">Notre Dame Cathedral</a></li>
+        	<li><a href="../Churches/sacre-coeur.html">Sacré Coeur</a></li>
+        	<li><a href="../Churches/sainte-chapelle.html">Sainte Chapelle</a></li>
+        	<li><a href="../Churches/eglise-de-la-madeleine.html">Eglise de la Madeleine</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Parks and Squares &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Parks-and-Squares/jardin-luxembourg.html">Jardin Luxembourg</a></li>
+            <li><a href="../Parks-and-Squares/jardin-des-tuileries.html">Jardin des Tuileries</a></li>
+            <li><a href="../Parks-and-Squares/champs-de-mars.html">Champs de Mars</a></li>
+            <li><a href="../Parks-and-Squares/place-vendome.html">Place Vendôme</a></li>
+            <li><a href="../Parks-and-Squares/place-de-la-concorde.html">Place de la Concorde</a></li>
+            <li><a href="../Parks-and-Squares/place-bastille.html">Place Bastille</a></li>
+            <li><a href="../Parks-and-Squares/la-place-des-vosges.html">La Place des Vosges</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="padding:20px;"> 
+  <h1><a style="text-transform:uppercase;">Cimetière du Père Lachaise</a></h1>
+  <br />
+  <p><img src="../../imgs/cimetiere-du-pere-lachaise-big.jpg" alt="Cimetière du Père Lachaise" /></p>
+  <p>
+Père Lachaise Cemetery (French: Cimetière du Père-Lachaise, [simtjɛːʁ pɛːʁ laʃɛːz]; officially, cimetière de l'Est, "East Cemetery") is the largest cemetery in the city of Paris, France (44 hectares (110 acres)), though there are larger cemeteries in the city's suburbs.<br /><br />
+Père Lachaise is in the 20th arrondissement, and is reputed to be the world's most-visited cemetery, attracting hundreds of thousands of visitors annually to the graves of those who have enhanced French life over the past 200 years. It is also the site of three World War I memorials.<br /><br />
+The cemetery is on Boulevard de Ménilmontant. The Paris Métro station Philippe Auguste on line 2 is next to the main entrance, while the station called Père Lachaise, on line 3, is 500 metres away near a side entrance. Many tourists prefer the Gambetta station on line 3 as it allows them to enter near the tomb of Oscar Wilde and then walk downhill to visit the rest of the cemetery.<br /><br />
+The cemetery takes its name from the confessor to Louis XIV, Père François de la Chaise (1624–1709), who lived in the Jesuit house rebuilt in 1682 on the site of the chapel. The property, situated on the hillside from which the king during the Fronde, watched skirmishing between the Condé and Turenne, was bought by the city in 1804. Established by Napoleon in this year, the cemetery was laid out by Alexandre-Théodore Brongniart, and later extended.<br /><br />
+Several new cemeteries replaced the Parisian ones, outside the precincts of the capital: Montmartre Cemetery in the north, Père Lachaise in the east, and Montparnasse Cemetery in the south. At the heart of the city, in the shadow of the Eiffel Tower, is Passy Cemetery.<br /><br />
+At the time of its opening, the cemetery was considered to be situated too far from the city and attracted few funerals. Consequently, the administrators devised a marketing strategy and in 1804 with great fanfare organised the transfer of the remains of La Fontaine and Molière. Then, in another great spectacle in 1817, the purported remains of Pierre Abélard and Héloïse were also transferred to the cemetery with their monument's canopy made from fragments of the abbey of Nogent-sur-Seine (by tradition, lovers or lovelorn singles leave letters at the crypt in tribute to the couple or in hope of finding true love) (see disputation).<br /><br />
+This strategy achieved its desired effect when people began clamouring to be buried among the famous citizens. Records show that, within a few years, Père Lachaise went from containing a few dozen permanent residents to more than 33,000. Today there are over 1 million bodies buried there, and many more in the columbarium, which holds the remains of those who had requested cremation.<br /><br />
+The Communards' Wall (Mur des Fédérés) is also located in the cemetery. This is the site where 147 Communards, the last defenders of the workers' district of Belleville, were shot on 28 May 1871 – the last day of the "Bloody Week" (Semaine Sanglante) in which the Paris Commune was crushed.<br /><br />
+</p>
+
+
+
+  </div>
+
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

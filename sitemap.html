@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Home";
+var curTopNvAdd = "/index.html";
+
+$(document).ready(function(){
+	$("#Banner").load("js/banner.html");
+	$("#NaviBox").load("js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setCurrentPos(homeLink);
+		naviEvent();
+	});	
+	$("#Footer").load("js/footer.html");
+
+	setTrigger("map");
+	setTrigger("map1");
+
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo">
+<h1>Hello Paris</h1>
+  <p>Paris, the cosmopolitan capital of France, is one of the largest agglomerations in Europe. Located in the north of the country on the river Seine, Paris has the reputation of being the most beautiful and romantic of all cities, brimming with historic associations and remaining vastly influential in the realms of culture, art, fashion, food and design. Dubbed the City of Light (la Ville LumiÃ¨re) and Capital of Fashion, it is home to the world's finest and most luxurious fashion designers and cosmetics, such as Chanel, Christian Dior, Yves Saint-Laurent, Guerlain, LancÃ´me, L'OrÃ©al, Clarins, etc. </p>  </div>
+
+  <div class="floatLayer">
+  
+<a style="font-size:18pt; font-weight:bold;">SiteMap</a>
+<br /><br />
+	<a class="sitemapTitle" href="Culture/index.html">Culture</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map_container side_container">
+
+  	<a href="Culture/History/index.html">History</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Culture/History/medieval.html"> Medieval </a></li>
+        	<li><a href="Culture/History/early-modern.html"> Early Modern</a></li>
+        	<li><a href="Culture/History/18th-19th.html"> 18th and 19th Centuries </a></li>
+        	<li><a href="Culture/History/20th.html"> 20th Century</a></li>
+        	<li><a href="Culture/History/general.html"> General </a></li>
+        </ul>
+    </div>
+  	<a href="Culture/Food/index.html">Traditional Food</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Culture/Food/food.html">Food</a></li>
+        	<li><a href="Culture/Food/drink.html">Drink</a></li>
+        </ul>
+    </div>
+  	<a href="Culture/Festival/index.html">Festival</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Culture/Festival/parthenay.html">Parthenay</a></li>
+        	<li><a href="Culture/Festival/cognac.html">Cognac</a></li>
+        	<li><a href="Culture/Festival/mainfonds.html">Mainfonds</a></li>
+        	<li><a href="Culture/Festival/confolens.html">Confolens</a></li>
+        	<li><a href="Culture/Festival/vouvant.html"> Vouvant</a></li>
+        	<li><a href="Culture/Festival/melle.html"> Melle</a></li>
+        </ul>
+    </div>
+  	<a href="Culture/Building/index.html">Building</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Culture/Building/ancient.html">Ancient Building</a></li>
+        	<li><a href="Culture/Building/modern.html"> Modern Building</a></li>
+        </ul>
+    </div>
+
+    </div>
+
+
+
+  	<a class="sitemapTitle" href="Shopping/index.html">Shopping</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map_container side_container">
+
+  	<a href="Shopping/Souvenirs/index.html">Souvenirs</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Shopping/Souvenirs/replicas.html">Replicas</a></li>
+        	<li><a href="Shopping/Souvenirs/key-chains.html">Key Chains</a></li>
+        	<li><a href="Shopping/Souvenirs/snowglobes.htm">Snowglobes</a></li>
+        	<li><a href="Shopping/Souvenirs/magnets.html">Magnets</a></li>
+        	<li><a href="Shopping/Souvenirs/coasters.html">Coasters</a></li>
+        </ul>
+    </div>
+  	<a href="Shopping/Jewellery/index.html">Jewellery</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Shopping/Jewellery/chaumet.html">Chaumet </a></li>
+        	<li><a href="Shopping/Jewellery/boucheron.html"> Boucheron </a></li>
+            <li><a href="Shopping/Jewellery/cartier.html">Cartie</a></li>
+            <li><a href="Shopping/Jewellery/hermes.html"> Hermes </a></li>
+        </ul>
+    </div>
+  	<a href="Shopping/Perfume/index.html">Perfume</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Shopping/Perfume/cartier.html"> Cartier </a></li>
+        	<li><a href="Shopping/Perfume/guerlain.html">Guerlain</a></li>
+        	<li><a href="Shopping/Perfume/gucci.html">Gucci </a></li>
+        	<li><a href="Shopping/Perfume/chanel.html">Chanel</a></li>
+        	<li><a href="Shopping/Perfume/dior.html"> Dior </a></li>
+        </ul>
+    </div>
+  	<a href="Shopping/Accessories/index.html">Accessories</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Shopping/Accessories/french-berets.html">French Berets</a></li>
+        	<li><a href="Shopping/Accessories/scarves.html"> Scarves</a></li>
+            <li><a href="Shopping/Accessories/ties.html">Ties </a></li>
+            <li><a href="Shopping/Accessories/bags.html">  Bags </a></li>
+            <li><a href="Shopping/Accessories/purses.html">Purses</a></li>
+        </ul>
+    </div>
+  	<a href="Shopping/Fashion/index.html">Fashion</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Shopping/Fashion/shoes.html"> Shoes </a></li>
+        	<li><a href="Shopping/Fashion/clothes.html"> Clothes</a></li>
+        	<li><a href="Shopping/Fashion/glasses.html">Glasses </a></li>
+        	<li><a href="Shopping/Fashion/hats.html">Hats</a></li>
+        </ul>
+    </div>
+
+    </div>
+
+
+
+  	<a class="sitemapTitle" href="Restaurants/index.html">Restaurants</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map_container side_container">
+
+  	<a href="Restaurants/French/index.html">Traditional French</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Restaurants/French/le-ciel-de-paris.html">Le Ciel De Paris</a></li>
+        	<li><a href="Restaurants/French/des-gars-dans-la-cuisine.html">Des Gars Dans La Cuisine</a></li>
+        	<li><a href="Restaurants/French/pierre-au-palais-royal.html">Pierre Au Palais Royal</a></li>
+        	<li><a href="Restaurants/French/fouquets.html">Fouquet's</a></li>
+        	<li><a href="Restaurants/French/pavillon-des-princes.html">Pavillon Des Princes</a></li>
+        	<li><a href="Restaurants/French/la-truffe-marbeuf.html">La Truffe Marbeuf</a></li>
+        </ul>
+    </div>
+  	<a href="Restaurants/International/index.html">International</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Restaurants/International/au-zen-garden.html">Au Zen Garden</a></li>
+        	<li><a href="Restaurants/International/benkay.html">Benkay</a></li>
+        	<li><a href="Restaurants/International/lao-lane-xang2.html">Lao Lane Xang2</a></li>
+        	<li><a href="Restaurants/International/khun-akorn.html">Khun Akorn</a></li>
+        	<li><a href="Restaurants/International/kok-ping.html">Kok Ping</a></li>
+        	<li><a href="Restaurants/International/ratn.html">Ratn</a></li>
+        </ul>
+    </div>
+  	<a href="Restaurants/Ita-medi/index.html">Italian &amp; Mediterranean</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Restaurants/Ita-medi/casa-luca.html">Casa Luca</a></li>
+        	<li><a href="Restaurants/Ita-medi/mavrommatis.html">Mavrommatis</a></li>
+        	<li><a href="Restaurants/Ita-medi/bastide-blanche.html">Bastide Blanche</a></li>
+        	<li><a href="Restaurants/Ita-medi/laltro.html">L'Altro</a></li>
+        	<li><a href="Restaurants/Ita-medi/a-casaluna.html">A Casaluna</a></li>
+        	<li><a href="Restaurants/Ita-medi/finzi.html">Finzi</a></li>
+        </ul>
+    </div>
+  	<a href="Restaurants/Design/index.html">Design Restaurant</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Restaurants/Design/market.html">Market</a></li>
+        	<li><a href="Restaurants/Design/kong.html">Kong</a></li>
+        	<li><a href="Restaurants/Design/le-roland-garros.html">Le Roland Garros</a></li>
+        	<li><a href="Restaurants/Design/les-ombres.html">Les Ombres</a></li>
+        	<li><a href="Restaurants/Design/osmose.html">Osmose</a></li>
+        	<li><a href="Restaurants/Design/georges.html">Restaurant Georges</a></li>
+        </ul>
+    </div>
+  	<a href="Restaurants/Bistrot/index.html">Bistrot</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Restaurants/Bistrot/la-bonne-franquette.html">La Bonne Franquette</a></li>
+        	<li><a href="Restaurants/Bistrot/le-brandevin.html">Le Brandevin</a></li>
+        	<li><a href="Restaurants/Bistrot/la-guinguette-de-neuilly.html">La Guinguette De Neuilly</a></li>
+        	<li><a href="Restaurants/Bistrot/bistrot-de-loulette.html">Bistrot De L'Oulette</a></li>
+        	<li><a href="Restaurants/Bistrot/monsieur-le-prince.html">Monsieur Le Prince</a></li>
+        	<li><a href="Restaurants/Bistrot/le-tourbillon.html">Le Tourbillon</a></li>
+        </ul>
+    </div>
+
+    </div>
+
+
+  	<a class="sitemapTitle" href="Hotels/index.html">Hotels</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map_container side_container">
+    	<ul>
+        	<li><a href="Hotels/star5.html">5 Stars</a></li>
+        	<li><a href="Hotels/star4.html">4 Stars</a></li>
+        	<li><a href="Hotels/star3.html">3 Stars</a></li>
+        	<li><a href="Hotels/star2.html">2 Stars</a></li>
+        </ul>
+    </div>
+
+
+  	<a class="sitemapTitle" href="TravelPoints/index.html">Travel Points</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map_container side_container">
+
+  	<a href="TravelPoints/Landmarks/index.html">Landmarks</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="TravelPoints/Landmarks/arc-de-triomphe.html">Arc de Triomphe</a></li>
+        	<li><a href="TravelPoints/Landmarks/la-tour-eiffel.html">La Tour Eiffel</a></li>
+        	<li><a href="TravelPoints/Landmarks/chateau-de-versailles.html">Château de Versailles</a></li>
+        	<li><a href="TravelPoints/Landmarks/chateau-de-fontainebleau.html">Chateau de Fontainebleau</a></li>
+        	<li><a href="TravelPoints/Landmarks/la-defense.html">La Défense</a></li>
+        	<li><a href="TravelPoints/Landmarks/opera-garnier.html">Opera Garnier</a></li>
+        	<li><a href="TravelPoints/Landmarks/le-pantheon.html">Le Pantheon</a></li>
+        	<li><a href="TravelPoints/Landmarks/pont-alexandre-iii.html">Pont Alexandre III</a></li>
+        	<li><a href="TravelPoints/Landmarks/cimetiere-du-pere-lachaise.html">Cimetière du Père Lachaise</a></li>
+        	<li><a href="TravelPoints/Landmarks/la-seine.html">La Seine - LandMarks</a></li>
+        	<li><a href="TravelPoints/Landmarks/avenue-des-champs-elysees.html">Avenue des Champs Elysées</a></li>
+        </ul>
+    </div>
+  	<a href="TravelPoints/Mesuems-and-Galleries/index.html">Museums and Galleries</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="TravelPoints/Mesuems-and-Galleries/the-louvre.html">The Louvre</a></li>
+        	<li><a href="TravelPoints/Mesuems-and-Galleries/musee-dorsay.html">Musée d'Orsay</a></li>
+        	<li><a href="TravelPoints/Mesuems-and-Galleries/les-invalides.html">Les Invalides</a></li>
+        	<li><a href="TravelPoints/Mesuems-and-Galleries/picasso-museum.html">Picasso Museum</a></li>
+        	<li><a href="TravelPoints/Mesuems-and-Galleries/centre-georges-pompidou.html">Centre Georges Pompidou</a></li>
+        	<li><a href="TravelPoints/Mesuems-and-Galleries/rodin-museum.html">Rodin Museum</a></li>
+        	<li><a href="TravelPoints/Mesuems-and-Galleries/lhotel-de-cluny.html">L'Hotel de Cluny</a></li>
+        	<li><a href="TravelPoints/Mesuems-and-Galleries/palais-de-chaillot.html">Palais de Chaillot</a></li>
+        	<li><a href="TravelPoints/Mesuems-and-Galleries/lespace-dali.html">L'Espace Dali</a></li>
+        	<li><a href="TravelPoints/Mesuems-and-Galleries/la-villette.html">La Villette</a></li>
+        </ul>
+    </div>
+  	<a href="TravelPoints/Churches/index.html">Churches</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="TravelPoints/Churches/notre-dame-cathedral.html">Notre Dame Cathedral</a></li>
+        	<li><a href="TravelPoints/Churches/sacre-coeur.html">Sacré Coeur</a></li>
+        	<li><a href="TravelPoints/Churches/sainte-chapelle.html">Sainte Chapelle</a></li>
+        	<li><a href="TravelPoints/Churches/eglise-de-la-madeleine.html">Eglise de la Madeleine</a></li>
+        </ul>
+    </div>
+  	<a href="TravelPoints/Parks-and-Squares/index.html">Parks and Squares</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="TravelPoints/Parks-and-Squares/jardin-luxembourg.html">Jardin Luxembourg</a></li>
+            <li><a href="TravelPoints/Parks-and-Squares/jardin-des-tuileries.html">Jardin des Tuileries</a></li>
+            <li><a href="TravelPoints/Parks-and-Squares/champs-de-mars.html">Champs de Mars</a></li>
+            <li><a href="TravelPoints/Parks-and-Squares/place-vendome.html">Place Vendôme</a></li>
+            <li><a href="TravelPoints/Parks-and-Squares/place-de-la-concorde.html">Place de la Concorde</a></li>
+            <li><a href="TravelPoints/Parks-and-Squares/place-bastille.html">Place Bastille</a></li>
+            <li><a href="TravelPoints/Parks-and-Squares/la-place-des-vosges.html">La Place des Vosges</a></li>
+        </ul>
+    </div>
+
+    </div>
+
+
+
+  	<a class="sitemapTitle" href="Events/index.html">Events</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map_container side_container">
+
+  	<a href="Events/Jan/index.html">Jan</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Events/Jan/comme-a-vienne-opera-comique.html">Comme A Vienne Opera Comique</a></li>
+        	<li><a href="Events/Jan/colette-winter-sale.html">Colette Winter Sale </a></li>
+        </ul>
+    </div>
+  	<a href="Events/Feb/index.html">Feb</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Events/Feb/andros-trophy-finals.html">Andros Trophy Finals</a></li>
+        	<li><a href="Events/Feb/great-wines-fair.html">Great Wines Fair</a></li>
+        	<li><a href="Events/Feb/st-valentine.html">Festival of St. Valentine</a></li>
+        	<li><a href="Events/Feb/international-agriculture-show.html">International Agriculture Show</a></li>
+        </ul>
+    </div>
+  	<a href="Events/Mar/index.html">Mar</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Events/Mar/paris-fashion-week.html">Paris Fashion Week</a></li>
+        	<li><a href="Events/Mar/the-imagination.html">Festival of the Imagination</a></li>
+        	<li><a href="Events/Mar/stock-car-racing.html">Stock Car Racing</a></li>
+        	<li><a href="Events/Mar/paris-film-festival.html">Paris Fashion Week</a></li>
+        </ul>
+    </div>
+  	<a href="Events/Apr/index.html">Apr</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Events/Apr/short-shorts.html">Festival of Short Shorts</a></li>
+        	<li><a href="Events/Apr/marathon.html">Paris Marathon</a></li>
+        </ul>
+    </div>
+  	<a href="Events/May/index.html">May</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Events/May/annual-jazz.html">Annual Jazz Festival</a></li>
+        	<li><a href="Events/May/environment-and-lifestyle-show.html">Environment and Lifestyle Show</a></li>
+        </ul>
+    </div>
+  	<a href="Events/Jun/index.html">Jun</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Events/June/international-cinema-meeting.html">International Cinema Meetings</a></li>
+        </ul>
+    </div>
+  	<a href="Events/Jul/index.html">Jul</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Events/Jul/antiques-fair.html">Antiques Fair</a></li>
+        	<li><a href="Events/Jul/golden-league-athletics.html">Golden League Athletics</a></li>
+        	<li><a href="Events/Jul/international-cinema-meeting.html">International Cinema Meetings</a></li>
+        </ul>
+    </div>
+  	<a href="Events/Aug/index.html">Aug</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Events/Aug/classic-music-festival.html">Classical Music Festival</a></li>
+        </ul>
+    </div>
+  	<a href="Events/Sep/index.html">Sep</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Events/Sep/cocktail-dance.html">Cocktail Dance</a></li>
+        </ul>
+    </div>
+  	<a href="Events/Oct/index.html">Oct</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Events/Oct/fashion-week.html">Paris Fashion Week</a></li>
+        </ul>
+    </div>
+  	<a href="Events/Nov/index.html">Nov</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Events/Nov/christmas-lights.html">Christmas Lights</a></li>
+        </ul>
+    </div>
+  	<a href="Events/Dec/index.html">Dec</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map1_container side_container">
+    	<ul>
+        	<li><a href="Events/Dec/christmas-eve-and-day.html">Christmas Eve and Christmas Day Mas</a></li>
+        </ul>
+    </div>
+
+    </div>
+
+
+  	<a class="sitemapTitle" href="Transports/index.html">Transports</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map_container side_container">
+    	<ul>
+        	<li><a href="Transports/train.html">Train</a></li>
+        	<li><a href="Transports/bus.html">Bus</a></li>
+            <li><a href="Transports/cab.html">Cab</a></li>
+            <li><a href="Transports/car-rent.html">Car rent</a></li>
+        </ul>
+    </div>
+
+
+  	<a class="sitemapTitle" href="Travel Attentions/index.html">Travel Attentions</a>
+    <a class="map_trigger side_trigger" href="#"><img src="imgs/arrow-down.png"/><br /></a>
+    <div class="map_container side_container">
+    	<ul>
+        	<li><a href="Travel Attentions/road-rules.html">Road Rules</a></li>
+        	<li><a href="Travel Attentions/law-responsibility.html">Law &amp; Responsibility </a></li>
+            <li><a href="Travel Attentions/common-shams.html">Common Sheams </a></li>
+            <li><a href="Travel Attentions/security.html">Security </a></li>
+        </ul>
+    </div>
+
+
+
+  </div>
+
+  
+  <!--   Footer    -->
+  <div id="Footer">
+  </div>
+</div>
+  
+</body>
+</html>

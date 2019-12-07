@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Travel Attions</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "TravelAttentions";
+var curTopNvLink = "<a href='/TravelAttentions/index.html'>Travel Attentions</a>";
+//var curSubNv = "French";
+//var curSubNvLink = "<a href='/Restaurants/French/index.html'>French</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../js/banner.html");
+	$("#NaviBox").load("../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+	//	setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; "+curTopNvLink + " &gt; ");
+		naviEvent();
+	});	
+	$("#Footer").load("../js/footer.html");
+	
+	setTrigger("side");
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Travel Attions</h1>
+  <p>Paris, France is one of the most fascinating and romantic cities in Europe, and   tourists visiting this wonderful city will find that things to see and do are   almost limitless. Known as the 'City of Light', the beauty of Paris is   overwhelming and its architectural and artistic heritage combine with undeniable   appeal and world-class tourism to make any visit an unforgettable   experience.<br />
+  </p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Travel Attentions&gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="road-rules.html">Road Rules</a></li>
+        	<li><a href="law-responsibility.html">Law & Responsibility </a></li>
+            <li><a href="common-shams.html">Common Sheams </a></li>
+            <li><a href="security.html">Security </a></li>
+        </ul>
+    </div>
+
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="road-rules.html"><img src="../imgs/Road Rules1.jpg" style="float:left;" alt="French restaurant" /></a>
+  <div class="subpageItemInfo"><h3><a href="road-rules.html">Road Rules</a></h3><br />
+    <div>Motoring notes on the driving laws and you. An introduction   to what you must (and must not) do when driving in France: licences, speeding,   driving and alcohol.</div>
+  </div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="law-responsibility.html"><img src="../imgs/Law & Responsibility1.jpg" style="float:left;" alt="French restaurant" /></a>
+  <div class="subpageItemInfo"><h3><a href="law-responsibility.html">Law & Responsibility</a></h3><br />
+    <p>Paris is a city to be immersed in, with boulevards, monuments, works of art   and magical <a href="/Paris-tours/Night-Tours/d479-g12-c96" jquery1316643408718="54">lights</a>. It's a city to <a href="/Paris-tours/Food-Tours/d479-g6-c80" jquery1316643408718="55">taste</a>:   cheese, chocolate, wine, bread. And it's a city to hear: opera, jazz or world   music, or perhaps you just like the sound of the metro cars whooshing by on   their rubber wheels.</p>
+  </div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="common-shams.html"><img src="../imgs/Common Shams1.jpg" style="float:left;" alt="French restaurant" /></a>
+  <div class="subpageItemInfo"><h3><a href="common-shams.html">Common Shams</a></h3><br /><a>taxi-paris.net, is an information site about taxis in Paris.   Activity area, rules, rates, booking, practical and useful tips. On the other   pages Taxi photo gallery, greeting cards, and taxi forum, make parisian taxis   already familiar.</a></div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="security.html"><img src="../imgs/security1.jpg" style="float:left;" alt="French restaurant" /></a>
+  <div class="subpageItemInfo"><h3><a href="security.html">Security</a></h3><br /><a>The main events during April. <br/>
+  Festival of Short Shorts<br/>
+  Paris Marathon
+</a></div>
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

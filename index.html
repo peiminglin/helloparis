@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Home";
+var curTopNvAdd = "/index.html";
+
+$(document).ready(function(){
+	$("#Banner").load("js/banner.html");
+	$("#NaviBox").load("js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setCurrentPos(homeLink);
+		naviEvent();
+	});	
+	$("#Footer").load("js/footer.html");
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo">
+<h1>Hello Paris</h1>
+  <p>Paris, the cosmopolitan capital of France, is one of the largest agglomerations in Europe. Located in the north of the country on the river Seine, Paris has the reputation of being the most beautiful and romantic of all cities, brimming with historic associations and remaining vastly influential in the realms of culture, art, fashion, food and design. Dubbed the City of Light (la Ville LumiÃ¨re) and Capital of Fashion, it is home to the world's finest and most luxurious fashion designers and cosmetics, such as Chanel, Christian Dior, Yves Saint-Laurent, Guerlain, LancÃ´me, L'OrÃ©al, Clarins, etc. </p>
+  </div>
+
+  <div id="PreviewContainer">  
+  <div class="floatBox">
+  <a href="TravelPoints/index.html"><img src="imgs/preview1.jpg" alt="Preview" /> </a>
+  <div><h3>Travel</h3><br /><a>Lourve, Eiffel Tower, La Defence, Notre Dame, and much More!</a>
+  </div>
+  </div>
+  <div class="floatBox">
+  <a href="Restaurants/index.html"><img src="imgs/preview2.jpg" alt="Preview" />  </a>
+  <div><h3>Restaurants</h3><br /><a>Traditional French, International Cuisine, Italian Food, and More!!</a>
+  </div>
+  </div>
+  <div class="floatBox">
+  <a href="Hotels/index.html"><img src="imgs/preview3.jpg" alt="Preview" />  </a>
+  <div><h3>Hotels</h3><br /><a>Looking for a luxury to enjoy your holiday? Or need a good value but cheap room to save money? </a>
+  </div>
+  </div>
+  <div class="floatBox">
+  <a href="Shopping/index.html"><img src="imgs/preview4.jpg" alt="Preview" />  </a>
+  <div><h3>Shopping</h3><br /><a>Shopping in Paris is always a exciting thing for everyone. Just get your card ready!</a>
+  </div>
+  </div>
+  
+  <div class="floatBox">
+  <a href="Events/index.html"><img src="imgs/preview5.jpg" alt="Preview" />  </a>
+  <div><h3>Events</h3><br /><a>Come and see what's happening here recently! You may find something interesting!</a>
+  </div>
+  </div>
+  <div class="floatBox">
+  <a href="Culture/index.html"><img src="imgs/preview6.jpg" alt="Preview" />  </a>
+  <div><h3>Culture</h3><br /><a>We'll take you to the history of Paris and show you a different Culture!</a>
+  </div>
+  </div>
+  <div class="floatBox">
+  <a href="Transports/index.html"><img src="imgs/preview7.jpg" alt="Preview" />  </a>
+  <div><h3>Transports</h3><br /><a>Find a way to enjoy your holiday in Paris. You will never get lost here!</a>
+  </div>
+  </div>
+  <div class="floatBox">
+  <a href="TravelAttentions/index.html"><img src="imgs/preview8.jpg" alt="Preview" />  </a>
+  <div><h3>Travel Attention</h3><br /><a>While enjoy your trip here, something you may need to know.</a>
+  </div>
+  </div>
+  </div>
+<div id="SideContainer">
+<div class="appLink">
+<iframe width="270" height="232" src="http://www.youtube.com/embed/_8K4qPJ9q4o?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="appLink">
+<iframe width="270" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.au/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Paris,+France&amp;aq=0&amp;sll=48.799627,2.581787&amp;sspn=0.763466,2.113495&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Paris,+%C3%8Ele-de-France,+France&amp;t=m&amp;ll=48.856583,2.352104&amp;spn=0.056472,0.092697&amp;z=12&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com.au/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Paris,+France&amp;aq=0&amp;sll=48.799627,2.581787&amp;sspn=0.763466,2.113495&amp;vpsrc=6&amp;ie=UTF8&amp;hq=&amp;hnear=Paris,+%C3%8Ele-de-France,+France&amp;t=m&amp;ll=48.856583,2.352104&amp;spn=0.056472,0.092697&amp;z=12" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+</div>
+
+</div>
+
+<div class="linksContainer">
+<div class="links"><a href="http://www.webjet.com"><img src="imgs/webjet_logo.png" alt="logo" /></a></div>
+  <div class="links"><a href="http://www.bestrestaurantsparis.com/en"><img src="imgs/bestrestaurantsparis-logo.jpg" alt="logo" /></a></div>
+<div class="links"><a href="http://www.wikipedia.com"><img src="imgs/wikipedia-logo.jpg" alt="logo" /></a></div>
+  </div>
+  </div>
+  
+  <!--   Footer    -->
+  <div id="Footer">
+  </div>
+</div>
+  
+</body>
+</html>
