@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Restaurants";
+var curTopNvLink = "<a href='/Restaurants/index.html'>Restaurants</a>";
+var curSubNv = "Italian";
+var curSubNvLink = "<a href='/Restaurants/Ita-medi/index.html'>Italian and Mediterranean Cuisine</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,false);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Italian and Mediterranean Cuisine</h1>
+  <p>Sun-drenched vegetables seasoned with olive oil, grilled fish, goat and ewe cheeses, spicy dishes, italian specialities... If you're fond of traditional recipes from a Mediterranean cuisine restaurant or italian cuisine, Best Restaurants Paris proposes a selection of the city's leading places. The description sheet for each Mediterranean cuisine restaurant or italian restaurant enables you to have a clearer idea of the services proposed. So check out the photos and extracts from the carte of the Mediterranean and italian cuisine restaurant which attracts you most.</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Traditional French &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../French/le-ciel-de-paris.html">Le Ciel De Paris</a></li>
+        	<li><a href="../French/des-gars-dans-la-cuisine.html">Des Gars Dans La Cuisine</a></li>
+        	<li><a href="../French/pierre-au-palais-royal.html">Pierre Au Palais Royal</a></li>
+        	<li><a href="../French/fouquets.html">Fouquet's</a></li>
+        	<li><a href="../French/pavillon-des-princes.html">Pavillon Des Princes</a></li>
+        	<li><a href="../French/la-truffe-marbeuf.html">La Truffe Marbeuf</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Fine Dining &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../FineDining/la-grande-cascade.html">La Grande Cascade</a></li>
+        	<li><a href="../FineDining/le-bristol.html">Le Bristol</a></li>
+        	<li><a href="../FineDining/guy-savoy.html">Guy Savoy</a></li>
+        	<li><a href="../FineDining/lasserre.html">Lasserre</a></li>
+        	<li><a href="../FineDining/le-meurice.html">Le Meurice</a></li>
+        	<li><a href="../FineDining/taillevent.html">Taillevent</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">International &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../International/au-zen-garden.html">Au Zen Garden</a></li>
+        	<li><a href="../International/benkay.html">Benkay</a></li>
+        	<li><a href="../International/lao-lane-xang2.html">Lao Lane Xang2</a></li>
+        	<li><a href="../International/khun-akorn.html">Khun Akorn</a></li>
+        	<li><a href="../International/kok-ping.html">Kok Ping</a></li>
+        	<li><a href="../International/ratn.html">Ratn</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Italian &amp; Mediterranean &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="casa-luca.html">Casa Luca</a></li>
+        	<li><a href="mavrommatis.html">Mavrommatis</a></li>
+        	<li><a href="bastide-blanche.html">Bastide Blanche</a></li>
+        	<li><a href="laltro.html">L'Altro</a></li>
+        	<li><a href="a-casaluna.html">A Casaluna</a></li>
+        	<li><a href="finzi.html">Finzi</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Design Restaurant &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Design/market.html">Market</a></li>
+        	<li><a href="../Design/kong.html">Kong</a></li>
+        	<li><a href="../Design/le-roland-garros.html">Le Roland Garros</a></li>
+        	<li><a href="../Design/les-ombres.html">Les Ombres</a></li>
+        	<li><a href="../Design/osmose.html">Osmose</a></li>
+        	<li><a href="../Design/georges.html">Restaurant Georges</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Bistrot &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Bistrot/la-bonne-franquette.html">La Bonne Franquette</a></li>
+        	<li><a href="../Bistrot/le-brandevin.html">Le Brandevin</a></li>
+        	<li><a href="../Bistrot/la-guinguette-de-neuilly.html">La Guinguette De Neuilly</a></li>
+        	<li><a href="../Bistrot/bistrot-de-loulette.html">Bistrot De L'Oulette</a></li>
+        	<li><a href="../Bistrot/monsieur-le-prince.html">Monsieur Le Prince</a></li>
+        	<li><a href="../Bistrot/le-tourbillon.html">Le Tourbillon</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="casa-luca.html"><img src="../../imgs/ita-medi1.jpg" style="float:left;" alt="Casa Luca" /></a>
+  <div class="subpageItemInfo"><h3><a href="casa-luca.html" style="text-transform:uppercase;">Casa Luca</a></h3>
+  82, avenue Marceau - Paris 8ème<br /><br />
+  Phone: +33 1 47 20 20 40<br />
+  Fax : +33 1 47 20 95 36<br /><br />
+  <a href="mailto:contact.casaluca@orange.fr">Send Email </a> | 
+  <a href="http://www.casaluca.fr">Visit Our Website</a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="Mavrommatis.html"><img src="../../imgs/ita-medi2.jpg" style="float:left;" alt="Mavrommatis" /></a>
+  <div class="subpageItemInfo"><h3><a href="Mavrommatis.html" style="text-transform:uppercase;">Mavrommatis</a></h3>
+ 42, rue Daubenton - Paris 5ème<br /><br />
+
+Phone : +33 1 43 31 17 17<br />
+Fax : +33 1 43 36 13 08<br /><br />
+<a href="mailto:info@mavrommatis.fr">Send Email </a> | 
+  <a href="http://www.mavrommatis.fr">Visit Our Website</a>
+  
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="bastide-blanche.html"><img src="../../imgs/ita-medi3.jpg" style="float:left;" alt="Bastide Blanche" /></a>
+  <div class="subpageItemInfo"><h3><a href="bastide-blanche.html" style="text-transform:uppercase;">Bastide Blanche</a></h3>
+
+  1, boulevard de Courcelles - Paris 8ème<br /><br />
+
+Phone : +33 1 40 08 08 25<br />
+Fax : +33 1 40 08 08 27<br /><br />
+<a href="mailto:contact@labastideblanche.fr">Send Email </a> | 
+  <a href="http://www.labastideblanche.fr">Visit Our Website</a>
+
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="laltro.html"><img src="../../imgs/ita-medi4.jpg" style="float:left;" alt="L'Altro" /></a>
+  <div class="subpageItemInfo"><h3><a href="laltro.html" style="text-transform:uppercase;">L'Altro</a></h3>
+
+  16, rue du Dragon - Paris 6ème<br /><br />
+
+Phone : +33 1 45 48 49 49<br />
+Fax : +33 1 53 63 44 69<br /><br />
+<a href="mailto:laltro@sljcohen.fr">Send Email </a> | 
+  <a href="http://www.laltro.fr">Visit Our Website</a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="a-casaluna.html"><img src="../../imgs/ita-medi5.jpg" style="float:left;" alt="A Casaluna" /></a>
+  <div class="subpageItemInfo"><h3><a href="a-casaluna.html" style="text-transform:uppercase;">A Casaluna</a></h3>
+
+ 4, rue de Beaujolais - Paris 1er<br /><br />
+
+Phone : +33 1 42 60 05 11<br />
+Fax : +33 1 42 96 16 24<br /><br />
+<a href="mailto:acasaluna@noos.fr">Send Email </a> | 
+  <a href="http://www.acasaluna.com">Visit Our Website</a>
+
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="finzi.html"><img src="../../imgs/ita-medi6.jpg" style="float:left;" alt="Finzi" /></a>
+  <div class="subpageItemInfo"><h3><a href="finzi.html" style="text-transform:uppercase;">Finzi</a></h3>
+
+  182, boulevard Haussmann - Paris 8ème<br /><br />
+  
+  Phone : +33 1 45 62 88 68<br />
+Fax : +33 1 45 61 41 05<br /><br />
+<a href="mailto:restofinzi@gmail.com">Send Email </a> | 
+<a href="http://www.finzi.fr">Visit Our Website</a> 
+</div>
+  </div>
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

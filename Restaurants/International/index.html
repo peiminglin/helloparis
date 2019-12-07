@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Restaurants";
+var curTopNvLink = "<a href='/Restaurants/index.html'>Restaurants</a>";
+var curSubNv = "International";
+var curSubNvLink = "<a href='/Restaurants/International/index.html'>International Cuisine</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,false);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>International Cuisine</h1>
+  <p>Discover a selection of the best International cuisine restaurants in Paris with Best Restaurants Paris. Our International cuisine restaurants are listed by district or by budget. Visit Best Restaurants Paris!</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Traditional French &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../French/le-ciel-de-paris.html">Le Ciel De Paris</a></li>
+        	<li><a href="../French/des-gars-dans-la-cuisine.html">Des Gars Dans La Cuisine</a></li>
+        	<li><a href="../French/pierre-au-palais-royal.html">Pierre Au Palais Royal</a></li>
+        	<li><a href="../French/fouquets.html">Fouquet's</a></li>
+        	<li><a href="../French/pavillon-des-princes.html">Pavillon Des Princes</a></li>
+        	<li><a href="../French/la-truffe-marbeuf.html">La Truffe Marbeuf</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Fine Dining &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../FineDining/la-grande-cascade.html">La Grande Cascade</a></li>
+        	<li><a href="../FineDining/le-bristol.html">Le Bristol</a></li>
+        	<li><a href="../FineDining/guy-savoy.html">Guy Savoy</a></li>
+        	<li><a href="../FineDining/lasserre.html">Lasserre</a></li>
+        	<li><a href="../FineDining/le-meurice.html">Le Meurice</a></li>
+        	<li><a href="../FineDining/taillevent.html">Taillevent</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">International &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="au-zen-garden.html">Au Zen Garden</a></li>
+        	<li><a href="benkay.html">Benkay</a></li>
+        	<li><a href="lao-lane-xang2.html">Lao Lane Xang2</a></li>
+        	<li><a href="khun-akorn.html">Khun Akorn</a></li>
+        	<li><a href="kok-ping.html">Kok Ping</a></li>
+        	<li><a href="ratn.html">Ratn</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Italian &amp; Mediterranean &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Ita-medi/casa-luca.html">Casa Luca</a></li>
+        	<li><a href="../Ita-medi/mavrommatis.html">Mavrommatis</a></li>
+        	<li><a href="../Ita-medi/bastide-blanche.html">Bastide Blanche</a></li>
+        	<li><a href="../Ita-medi/laltro.html">L'Altro</a></li>
+        	<li><a href="../Ita-medi/a-casaluna.html">A Casaluna</a></li>
+        	<li><a href="../Ita-medi/finzi.html">Finzi</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Design Restaurant &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Design/market.html">Market</a></li>
+        	<li><a href="../Design/kong.html">Kong</a></li>
+        	<li><a href="../Design/le-roland-garros.html">Le Roland Garros</a></li>
+        	<li><a href="../Design/les-ombres.html">Les Ombres</a></li>
+        	<li><a href="../Design/osmose.html">Osmose</a></li>
+        	<li><a href="../Design/georges.html">Restaurant Georges</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Bistrot &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Bistrot/la-bonne-franquette.html">La Bonne Franquette</a></li>
+        	<li><a href="../Bistrot/le-brandevin.html">Le Brandevin</a></li>
+        	<li><a href="../Bistrot/la-guinguette-de-neuilly.html">La Guinguette De Neuilly</a></li>
+        	<li><a href="../Bistrot/bistrot-de-loulette.html">Bistrot De L'Oulette</a></li>
+        	<li><a href="../Bistrot/monsieur-le-prince.html">Monsieur Le Prince</a></li>
+        	<li><a href="../Bistrot/le-tourbillon.html">Le Tourbillon</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="au-zen-garden.html"><img src="../../imgs/international1.jpg" style="float:left;" alt="Au Zen Garden" /></a>
+  <div class="subpageItemInfo"><h3><a href="au-zen-garden.html" style="text-transform:uppercase;">Au Zen Garden</a></h3>
+  15, rue Marbeuf - Paris 8ème<br /><br />
+
+  Phone: +33 1 53 23 82 82<br />
+  Fax : +33 1 53 23 01 00<br /><br />
+  <a href="mailto:paris.zengarden@wanadoo.fr">Send Email </a> | 
+  <a href="http://www.restaurantzengarden.com">Visit Our Website</a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="benkay.html"><img src="../../imgs/international2.jpg" style="float:left;" alt="Benkay" /></a>
+  <div class="subpageItemInfo"><h3><a href="benkay.html" style="text-transform:uppercase;">Benkay</a></h3>
+ 61, quai de Grenelle - Paris 15ème<br /><br />
+
+Phone : +33 1 40 58 21 26<br />
+Fax : +33 1 40 58 21 30<br /><br />
+<a href="mailto:h3546-fb4@accor.com">Send Email </a>
+  
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="lao-lane-xang2.html"><img src="../../imgs/international3.jpg" style="float:left;" alt="Lao Lane Xang2" /></a>
+  <div class="subpageItemInfo"><h3><a href="lao-lane-xang2.html" style="text-transform:uppercase;">Lao Lane Xang2</a></h3>
+
+  102, avenue d'Ivry - Paris 13ème<br /><br />
+
+  Phone : +33 1 58 89 00 00<br />
+
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="khun-akorn.html"><img src="../../imgs/international4.jpg" style="float:left;" alt="Khun Akorn" /></a>
+  <div class="subpageItemInfo"><h3><a href="khun-akorn.html" style="text-transform:uppercase;">Khun Akorn</a></h3>
+
+  8, avenue de Taillebourg - Paris 11ème<br /><br />
+
+  Phone : +33 1 43 56 20 03<br />
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="kok-ping.html"><img src="../../imgs/international5.jpg" style="float:left;" alt="Kok Ping" /></a>
+  <div class="subpageItemInfo"><h3><a href="kok-ping.html" style="text-transform:uppercase;">Kok Ping</a></h3>
+
+  4, rue Balzac - Paris 8ème<br /><br />
+
+  Phone : +33 1 42 25 28 85<br />
+<a href="http://www.kokping.com">Visit Our Website</a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="ratn.html"><img src="../../imgs/international6.jpg" style="float:left;" alt="Ratn" /></a>
+  <div class="subpageItemInfo"><h3><a href="ratn.html" style="text-transform:uppercase;">Ratn</a></h3>
+
+  9, rue de la Trémoille - Paris 8ème<br /><br />
+  
+  Phone : +33 1 40 70 01 09<br />
+Fax : +33 1 40 70 01 22<br /><br />
+<a href="mailto:contact@restaurantratn.com">Send Email </a> | 
+<a href="http://www.restaurantratn.com">Visit Our Website</a> 
+</div>
+  </div>
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

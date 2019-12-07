@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Restaurants";
+var curTopNvLink = "<a href='/Restaurants/index.html'>Restaurants</a>";
+var curSubNv = "French";
+var curSubNvLink = "<a href='/Restaurants/French/index.html'>Traditional French Cuisine</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,false);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Traditional French Cuisine</h1>
+  <p>We provides a selection of Paris leading establishments offering French cuisine. Whether seeking meats roast or in sauce, market-fresh vegetables, delicately seasoned fish or traditional French dishes, choose your traditional cuisine restaurant from the prime addresses of Best Restaurants Paris. Consult the detailed sheets of the featured establishments and choose that traditional cuisine restaurant you're looking for. The photos, extracts from the carte and comprehensive practical information will give you a clearer idea of what to expect from the traditional cuisine restaurant where you would like to lunch or dine.</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Traditional French &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="le-ciel-de-paris.html">Le Ciel De Paris</a></li>
+        	<li><a href="des-gars-dans-la-cuisine.html">Des Gars Dans La Cuisine</a></li>
+        	<li><a href="pierre-au-palais-royal.html">Pierre Au Palais Royal</a></li>
+        	<li><a href="fouquets.html">Fouquet's</a></li>
+        	<li><a href="pavillon-des-princes.html">Pavillon Des Princes</a></li>
+        	<li><a href="la-truffe-marbeuf.html">La Truffe Marbeuf</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Fine Dining &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../FineDining/la-grande-cascade.html">La Grande Cascade</a></li>
+        	<li><a href="../FineDining/le-bristol.html">Le Bristol</a></li>
+        	<li><a href="../FineDining/guy-savoy.html">Guy Savoy</a></li>
+        	<li><a href="../FineDining/lasserre.html">Lasserre</a></li>
+        	<li><a href="../FineDining/le-meurice.html">Le Meurice</a></li>
+        	<li><a href="../FineDining/taillevent.html">Taillevent</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">International &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../International/au-zen-garden.html">Au Zen Garden</a></li>
+        	<li><a href="../International/benkay.html">Benkay</a></li>
+        	<li><a href="../International/lao-lane-xang2.html">Lao Lane Xang2</a></li>
+        	<li><a href="../International/khun-akorn.html">Khun Akorn</a></li>
+        	<li><a href="../International/kok-ping.html">Kok Ping</a></li>
+        	<li><a href="../International/ratn.html">Ratn</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Italian &amp; Mediterranean &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Ita-medi/casa-luca.html">Casa Luca</a></li>
+        	<li><a href="../Ita-medi/mavrommatis.html">Mavrommatis</a></li>
+        	<li><a href="../Ita-medi/bastide-blanche.html">Bastide Blanche</a></li>
+        	<li><a href="../Ita-medi/laltro.html">L'Altro</a></li>
+        	<li><a href="../Ita-medi/a-casaluna.html">A Casaluna</a></li>
+        	<li><a href="../Ita-medi/finzi.html">Finzi</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Design Restaurant &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Design/market.html">Market</a></li>
+        	<li><a href="../Design/kong.html">Kong</a></li>
+        	<li><a href="../Design/le-roland-garros.html">Le Roland Garros</a></li>
+        	<li><a href="../Design/les-ombres.html">Les Ombres</a></li>
+        	<li><a href="../Design/osmose.html">Osmose</a></li>
+        	<li><a href="../Design/georges.html">Restaurant Georges</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Bistrot &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Bistrot/la-bonne-franquette.html">La Bonne Franquette</a></li>
+        	<li><a href="../Bistrot/le-brandevin.html">Le Brandevin</a></li>
+        	<li><a href="../Bistrot/la-guinguette-de-neuilly.html">La Guinguette De Neuilly</a></li>
+        	<li><a href="../Bistrot/bistrot-de-loulette.html">Bistrot De L'Oulette</a></li>
+        	<li><a href="../Bistrot/monsieur-le-prince.html">Monsieur Le Prince</a></li>
+        	<li><a href="../Bistrot/le-tourbillon.html">Le Tourbillon</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="le-ciel-de-paris.html"><img src="../../imgs/french1.jpg" style="float:left;" alt="French restaurant" /></a>
+  <div class="subpageItemInfo"><h3><a href="le-ciel-de-paris.html">LE CIEL DE PARIS</a></h3>
+  33, avenue du Maine - Paris 15ème<br /><br />
+  Phone: +33 1 40 64 77 64<br />
+  Fax : +33 1 43 21 48 37<br /><br />
+  <a href="mailto:reservation.cieldeparis@elior.com">Send Email </a> | 
+  <a href="http://www.cieldeparis.com">Visit Our Website</a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="des-gars-dans-la-cuisine.html"><img src="../../imgs/french2.jpg" style="float:left;" alt="French restaurant" /></a>
+  <div class="subpageItemInfo"><h3><a href="des-gars-dans-la-cuisine.html">DES GARS DANS LA CUISINE</a></h3>
+ 72, rue Vieille du Temple - Paris 3ème<br /><br />
+Phone : +33 1 42 74 88 26<br />
+Fax : +33 1 42 74 88 26<br /><br />
+<a href="mailto:resto@desgarsdanslacuisine.com">Send Email </a> |  
+<a href="http://www.desgarsdanslacuisine.com">Visit Our Website</a>
+  
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="pierre-au-palais-royal.html"><img src="../../imgs/french3.jpg" style="float:left;" alt="French restaurant" /></a>
+  <div class="subpageItemInfo"><h3><a href="pierre-au-palais-royal.html">PIERRE AU PALAIS ROYAL</a></h3>
+
+  10, rue de Richelieu ou 7, rue Montpensier - Paris 1er<br /><br />
+  Phone : +33 1 42 96 09 17<br />
+Fax : +33 1 42 96 26 40<br /><br />
+<a href="mailto:esertour@aol.com">Send Email </a> | 
+<a href="http://www.pierreaupalaisroyal.com">Visit Our Website</a>
+
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="fouquets.html"><img src="../../imgs/french4.jpg" style="float:left;" alt="French restaurant" /></a>
+  <div class="subpageItemInfo"><h3><a href="fouquets.html">FOUQUET'S</a></h3>
+
+  99, avenue des Champs-Elysées - Paris 8ème<br /><br />
+  Phone : +33 1 40 69 60 50<br />
+Fax : +33 1 40 69 60 35<br /><br />
+<a href="mailto:fouquets@lucienbarriere.com">Send Email </a> |  
+<a href="http://www.lucienbarriere.com">Visit Our Website</a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="pavillon-des-princes.html"><img src="../../imgs/french5.jpg" style="float:left;" alt="French restaurant" /></a>
+  <div class="subpageItemInfo"><h3><a href="pavillon-des-princes.html">PAVILLON DES PRINCES</a></h3>
+
+  69, avenue de la Porte d'Auteuil - Paris 16ème<br /><br />
+  Phone : +33 1 47 43 15 15<br />
+Fax : +33 1 46 51 16 94<br /><br />
+<a href="mailto:contact@pavillon-des-princes.com">Send Email</a> | 
+<a href="http://www.pavillon-des-princes.com">Visit Our Website</a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="la-truffe-marbeuf.html"><img src="../../imgs/french6.jpg" style="float:left;" alt="French restaurant" /></a>
+  <div class="subpageItemInfo"><h3><a href="la-truffe-marbeuf.html">LA TRUFFE MARBEUF</a></h3>
+
+  14, rue Marbeuf - Paris 8ème<br /><br />
+  Phone : +33 1 53 57 41 00<br />
+Fax : +33 1 53 57 41 01<br /><br />
+<a href="http://www.maison-de-la-truffe.fr">Visit Our Website</a> 
+</div>
+  </div>
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

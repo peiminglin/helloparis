@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Restaurants";
+var curTopNvLink = "<a href='/Restaurants/index.html'>Restaurants</a>";
+//var curSubNv = "French";
+//var curSubNvLink = "<a href='/Restaurants/French/index.html'>French</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../js/banner.html");
+	$("#NaviBox").load("../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+	//	setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; "+curTopNvLink + " &gt; ");
+		naviEvent();
+	});	
+	$("#Footer").load("../js/footer.html");
+	
+	setTrigger("side");
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Restaurants</h1>
+  <p>For Parisians, how food looks on a plate is just as important as how it tastes. Colors, textures, and garnishes are impeccably arranged, not only at haute cuisine establishments, but small, simple restaurants where even a humble hot chocolate is sometimes poured in a heart shape on the cup's inside edge.<br />
+  Come and enjoy the Parisian gastronomical array of restaurants that will arouse your taste buds, intriguingyou with delight and the desirability to continue savoring foods accompanied by wine. Paris restaurants await your booking reservations any day of the week!</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Traditional French &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="French/le-ciel-de-paris.html">Le Ciel De Paris</a></li>
+        	<li><a href="French/des-gars-dans-la-cuisine.html">Des Gars Dans La Cuisine</a></li>
+        	<li><a href="French/pierre-au-palais-royal.html">Pierre Au Palais Royal</a></li>
+        	<li><a href="French/fouquets.html">Fouquet's</a></li>
+        	<li><a href="French/pavillon-des-princes.html">Pavillon Des Princes</a></li>
+        	<li><a href="French/la-truffe-marbeuf.html">La Truffe Marbeuf</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Fine Dining &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="FineDining/la-grande-cascade.html">La Grande Cascade</a></li>
+        	<li><a href="FineDining/le-bristol.html">Le Bristol</a></li>
+        	<li><a href="FineDining/guy-savoy.html">Guy Savoy</a></li>
+        	<li><a href="FineDining/lasserre.html">Lasserre</a></li>
+        	<li><a href="FineDining/le-meurice.html">Le Meurice</a></li>
+        	<li><a href="FineDining/taillevent.html">Taillevent</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">International &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="International/au-zen-garden.html">Au Zen Garden</a></li>
+        	<li><a href="International/benkay.html">Benkay</a></li>
+        	<li><a href="International/lao-lane-xang2.html">Lao Lane Xang2</a></li>
+        	<li><a href="International/khun-akorn.html">Khun Akorn</a></li>
+        	<li><a href="International/kok-ping.html">Kok Ping</a></li>
+        	<li><a href="International/ratn.html">Ratn</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Italian &amp; Mediterranean &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="Ita-medi/casa-luca.html">Casa Luca</a></li>
+        	<li><a href="Ita-medi/mavrommatis.html">Mavrommatis</a></li>
+        	<li><a href="Ita-medi/bastide-blanche.html">Bastide Blanche</a></li>
+        	<li><a href="Ita-medi/laltro.html">L'Altro</a></li>
+        	<li><a href="Ita-medi/a-casaluna.html">A Casaluna</a></li>
+        	<li><a href="Ita-medi/finzi.html">Finzi</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Design Restaurant &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="Design/market.html">Market</a></li>
+        	<li><a href="Design/kong.html">Kong</a></li>
+        	<li><a href="Design/le-roland-garros.html">Le Roland Garros</a></li>
+        	<li><a href="Design/les-ombres.html">Les Ombres</a></li>
+        	<li><a href="Design/osmose.html">Osmose</a></li>
+        	<li><a href="Design/georges.html">Restaurant Georges</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Bistrot &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="Bistrot/la-bonne-franquette.html">La Bonne Franquette</a></li>
+        	<li><a href="Bistrot/le-brandevin.html">Le Brandevin</a></li>
+        	<li><a href="Bistrot/la-guinguette-de-neuilly.html">La Guinguette De Neuilly</a></li>
+        	<li><a href="Bistrot/bistrot-de-loulette.html">Bistrot De L'Oulette</a></li>
+        	<li><a href="Bistrot/monsieur-le-prince.html">Monsieur Le Prince</a></li>
+        	<li><a href="Bistrot/le-tourbillon.html">Le Tourbillon</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="French/index.html"><img src="../imgs/french1.jpg" style="float:left;" alt="French restaurant" /></a>
+  <div class="subpageItemInfo"><h3><a href="French/index.html">TRADITIONAL FRENCH CUISINE</a></h3><br /><a>Paris provides a selection of Paris leading establishments offering French cuisine. Whether seeking meats roast or in sauce, market-fresh vegetables, delicately seasoned fish or traditional French dishes, choose your traditional cuisine restaurant from the prime addresses of Best Restaurants Paris.  
+</a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="FineDining/index.html"><img src="../imgs/finedining2.jpg" style="float:left;" alt="Fine Dining" /></a>
+  <div class="subpageItemInfo"><h3><a href="FineDining/index.html">FRECH FINE DINING</a></h3><br /><a>For a top-of-the-line lunch or an exceptional evening, you're looking for a French haute cuisine restaurant. Star restaurants and refined gastronomic cuisine, on Best Restaurants Paris choose from the city's leading establishments. 
+</a></div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="International/index.html"><img src="../imgs/international3.jpg" style="float:left;" alt="International" /></a>
+  <div class="subpageItemInfo"><h3><a href="International/index.html">INTERNATIONAL CUISINE</a></h3><br /><a>Discover a selection of the best International cuisine restaurants in Paris with us. Our International cuisine restaurants are listed by district or by budget. Visit us!
+</a></div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="Ita-medi/index.html"><img src="../imgs/ita-medi4.jpg" style="float:left;" alt="Italian and Medi" /></a>
+  <div class="subpageItemInfo"><h3><a href="Ita-medi/index.html">ITALIAN AND MEDITERRANEAN CUISINE</a></h3><br /><a>Sun-drenched vegetables seasoned with olive oil, grilled fish, goat and ewe cheeses, spicy dishes, italian specialities... If you're fond of traditional recipes from a Mediterranean cuisine restaurant or italian cuisine, we proposes a selection of the city's leading places. 
+</a></div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="Design/index.html"><img src="../imgs/design5.jpg" style="float:left;" alt="Designer's Restaurants" /></a>
+  <div class="subpageItemInfo"><h3><a href="Design/index.html">DESIGNER'S RESTAURANTS</a></h3><br /><a>Daring sweet &amp; sour, impressive associations of textures,... You will choose an inventive cuisine restaurant in the heart of Paris or on your doorstep. You will select that inventive cuisine restaurant that tempts you most from the information we give you, providing you with all the elements you need to calmly book your inventive cuisine restaurant.
+</a></div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="Bistrot/index.html"><img src="../imgs/bistrot6.jpg" style="float:left;" alt="Bistrot" /></a>
+  <div class="subpageItemInfo"><h3><a href="Bistrot/index.html">BISTROT</a></h3><br /><a>Looking for a bistrot restaurant for an enjoyable, friendly meal in the heart of Paris?
+We will help you select the ideal spot from the city's leading establishments. Choose the option you would like and check out that bistrot restaurant you're looking for.
+</a></div>
+  </div>
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

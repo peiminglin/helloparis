@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Restaurants";
+var curTopNvLink = "<a href='/Restaurants/index.html'>Restaurants</a>";
+var curSubNv = "French";
+var curSubNvLink = "<a href='/Restaurants/French/index.html'>Traditional French Cuisine</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,true);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1><a href='/Restaurants/French/index.html'>Traditional French Cuisine</a></h1>
+  <p>We provides a selection of Paris leading establishments offering French cuisine. Whether seeking meats roast or in sauce, market-fresh vegetables, delicately seasoned fish or traditional French dishes, choose your traditional cuisine restaurant from the prime addresses of Best Restaurants Paris. Consult the detailed sheets of the featured establishments and choose that traditional cuisine restaurant you're looking for. The photos, extracts from the carte and comprehensive practical information will give you a clearer idea of what to expect from the traditional cuisine restaurant where you would like to lunch or dine.</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Traditional French &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="le-ciel-de-paris.html">Le Ciel De Paris</a></li>
+        	<li><a href="des-gars-dans-la-cuisine.html">Des Gars Dans La Cuisine</a></li>
+        	<li><a href="pierre-au-palais-royal.html">Pierre Au Palais Royal</a></li>
+        	<li><a href="fouquets.html">Fouquet's</a></li>
+        	<li><a href="pavillon-des-princes.html">Pavillon Des Princes</a></li>
+        	<li><a href="la-truffe-marbeuf.html">La Truffe Marbeuf</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Fine Dining &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../FineDining/la-grande-cascade.html">La Grande Cascade</a></li>
+        	<li><a href="../FineDining/le-bristol.html">Le Bristol</a></li>
+        	<li><a href="../FineDining/guy-savoy.html">Guy Savoy</a></li>
+        	<li><a href="../FineDining/lasserre.html">Lasserre</a></li>
+        	<li><a href="../FineDining/le-meurice.html">Le Meurice</a></li>
+        	<li><a href="../FineDining/taillevent.html">Taillevent</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">International &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../International/au-zen-garden.html">Au Zen Garden</a></li>
+        	<li><a href="../International/benkay.html">Benkay</a></li>
+        	<li><a href="../International/lao-lane-xang2.html">Lao Lane Xang2</a></li>
+        	<li><a href="../International/khun-akorn.html">Khun Akorn</a></li>
+        	<li><a href="../International/kok-ping.html">Kok Ping</a></li>
+        	<li><a href="../International/ratn.html">Ratn</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Italian &amp; Mediterranean &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Ita-medi/casa-luca.html">Casa Luca</a></li>
+        	<li><a href="../Ita-medi/mavrommatis.html">Mavrommatis</a></li>
+        	<li><a href="../Ita-medi/bastide-blanche.html">Bastide Blanche</a></li>
+        	<li><a href="../Ita-medi/laltro.html">L'Altro</a></li>
+        	<li><a href="../Ita-medi/a-casaluna.html">A Casaluna</a></li>
+        	<li><a href="../Ita-medi/finzi.html">Finzi</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Design Restaurant &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Design/market.html">Market</a></li>
+        	<li><a href="../Design/kong.html">Kong</a></li>
+        	<li><a href="../Design/le-roland-garros.html">Le Roland Garros</a></li>
+        	<li><a href="../Design/les-ombres.html">Les Ombres</a></li>
+        	<li><a href="../Design/osmose.html">Osmose</a></li>
+        	<li><a href="../Design/georges.html">Restaurant Georges</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Bistrot &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Bistrot/la-bonne-franquette.html">La Bonne Franquette</a></li>
+        	<li><a href="../Bistrot/le-brandevin.html">Le Brandevin</a></li>
+        	<li><a href="../Bistrot/la-guinguette-de-neuilly.html">La Guinguette De Neuilly</a></li>
+        	<li><a href="../Bistrot/bistrot-de-loulette.html">Bistrot De L'Oulette</a></li>
+        	<li><a href="../Bistrot/monsieur-le-prince.html">Monsieur Le Prince</a></li>
+        	<li><a href="../Bistrot/le-tourbillon.html">Le Tourbillon</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="padding:20px;"> 
+  <h1><a href="la-truffe-marbeuf.html">La Truffe Marbeuf</a></h1>
+  14, rue Marbeuf - Paris 8ème<br /><br />
+  <p><img src="../../imgs/la_truffe.jpg" alt="La Truffe Marbeuf" /></p>
+  <p>
+The Maison de la Truffe, in Place de la Madeleine of the 8th district, has been the benchmark in the truffle world since 1932. Today, this family restaurant has opened a second venue in Rue Marbeuf, close to the Champs-Elysées. There, you can discover the subtlety of truffles with a range of high-quality products and a menu of traditional cuisine. As for the décor, they have successfully unified art deco styling with a pure and simple design to create a luxurious and sophisticated atmosphere. 
+</p>
+
+<h2>A la carte of the restaurant La Truffe Marbeuf</h2>
+<div class="">
+<h3>Starters</h3>
+<div class="itemPrice">17,00 €</div>
+<div >Salade de roquette et copeaux de parmesan avec truffe de saison</div>
+<div class="itemPrice">37,00 €</div>
+<div >Duo d'asperges vertes et blanches en verrine avec truffe noire</div>
+<div class="itemPrice">24,00 €</div>
+<div >Salade folle et gambas avec truffe de saison</div>
+<div class="itemPrice">12,00 €</div>
+<div >Gaspacho, sorbet concombre </div>
+<div class="itemPrice">22,00 €</div>
+<div >Saumon fumé de Norvège</div>
+<p />
+</div>
+
+
+<div class="">
+<h3>Main Courses</h3>
+<div class="itemPrice">36,00 €</div>
+<div >Cabillaud braisé, légumes du moment cuits au bouillon avec truffe de saison</div>
+<div class="itemPrice">55,00 €</div>
+<div >Filets de sole, sauce vierge, poêlée d'asperges vertes avec truffe noire</div>
+<div class="itemPrice">24,00 €</div>
+<div >Tartare ou aller retour de boeuf, pommes frites maison et salade</div>
+<div class="itemPrice">39,00 €</div>
+<div >Entrecôte Black Angus, pomme frites maison avec truffe de saison</div>
+<div class="itemPrice">27,00 €</div>
+<div >Mignon de veau, condiment et son écrasée de pomme de terre</div>
+<p />
+</div>
+
+
+<div class="">
+<h3>Desserts</h3>
+<div class="itemPrice">12,00 €</div>
+<div >Déclinaison de pamplemousse, gelée au Campari</div>
+<div class="itemPrice">12,00 €</div>
+<div >Millefeuille vanille Bourbon, crème de dulce de leche</div>
+<div class="itemPrice">12,00 €</div>
+<div >Crémeux de caramel, coeur coulant et petites noisettes concassées</div>
+<div class="itemPrice">14,00 €</div>
+<div >Feuillantine aux framboises fraîches</div>
+<div class="itemPrice">15,00 €</div>
+<div >Mi-cuit au chocolat, glace vanille parfumée à la truffe blanche</div>
+<p />
+</div>
+
+
+  </div>
+
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

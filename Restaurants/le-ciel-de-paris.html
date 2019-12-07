@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+var curMain = "Restaurants";
+var curSub = "Bistrot";
+var curThird = "Le Ciel De Restaurant";
+
+$(document).ready(function(){
+	$("#Banner").load("../js/banner.html");
+	$("#NaviBox").load("../js/navigation.html",function(){
+		init();
+		setNavi(curMain);
+		setSub(curSub);
+		setCurrentPos("<a href='../index.html'>Home</a> &gt; <a href='#'>"+curMain+"</a> &gt; " + curSub);
+		naviEvent();
+		setSideNavi(curSub);
+	});	
+	$("#Footer").load("../js/footer.html");
+});
+
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Restaurants</h1>
+  <p>For Parisians, how food looks on a plate is just as important as how it tastes. Colors, textures, and garnishes are impeccably arranged, not only at haute cuisine establishments, but small, simple restaurants where even a humble hot chocolate is sometimes poured in a heart shape on the cup's inside edge.<br />
+  Come and enjoy the Parisian gastronomical array of restaurants that will arouse your taste buds, intriguingyou with delight and the desirability to continue savoring foods accompanied by wine. Paris restaurants await your booking reservations any day of the week!</p>
+  </div>
+
+  <div id="SideNavi" class="floatLayer">
+  <ul>
+  	<li>French &gt;&gt;</li>
+  	<li>Fine Dining &gt;&gt;</li>
+  	<li>Asian &gt;&gt;</li>
+  	<li>Italian &amp; Mediterranean &gt;&gt;</li>
+  	<li>Design Restaurant &gt;&gt;</li>
+  	<li>Bistrot &gt;&gt;</li>
+  </ul>
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;">
+    <img src="../imgs/french6.jpg" style="float:left;" alt="French restaurant" />
+  <div style="float:left; width: 460px; padding: 0 20px;"><spam style="font-size:12pt; font-weight:bold;">LA TRUFFE MARBEUF</spam><br /><br /><a>It takes only 38 seconds to rise to the Ciel de Paris on the 56th floor of the Tour Montparnasse in the 15th district. The uppermost restaurant in Europe, towering 200 meters above the city offers a stupendous view. 
+</a></div>
+  </div>
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Restaurants";
+var curTopNvLink = "<a href='/Restaurants/index.html'>Restaurants</a>";
+var curSubNv = "Bistrot";
+var curSubNvLink = "<a href='/Restaurants/Bistrot/index.html'>Bistrot</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,false);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Bistrot</h1>
+  <p>Looking for a bistrot restaurant for an enjoyable, friendly meal in the heart of Paris?
+Best Restaurants Paris will help you select the ideal spot from the city's leading establishments. Choose the district you would like and check out that bistrot restaurant you're looking for: the photos give you a prior feel of the atmosphere and extracts from the bistrot restaurant carte will help you finalize your choice. "Oeuf mayonnaise", "blanquette de veau", sole meunière, rice pudding... rediscover the pleasure of simple cooking in a bistrot restaurant.</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Traditional French &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../French/le-ciel-de-paris.html">Le Ciel De Paris</a></li>
+        	<li><a href="../French/des-gars-dans-la-cuisine.html">Des Gars Dans La Cuisine</a></li>
+        	<li><a href="../French/pierre-au-palais-royal.html">Pierre Au Palais Royal</a></li>
+        	<li><a href="../French/fouquets.html">Fouquet's</a></li>
+        	<li><a href="../French/pavillon-des-princes.html">Pavillon Des Princes</a></li>
+        	<li><a href="../French/la-truffe-marbeuf.html">La Truffe Marbeuf</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Fine Dining &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../FineDining/la-grande-cascade.html">La Grande Cascade</a></li>
+        	<li><a href="../FineDining/le-bristol.html">Le Bristol</a></li>
+        	<li><a href="../FineDining/guy-savoy.html">Guy Savoy</a></li>
+        	<li><a href="../FineDining/lasserre.html">Lasserre</a></li>
+        	<li><a href="../FineDining/le-meurice.html">Le Meurice</a></li>
+        	<li><a href="../FineDining/taillevent.html">Taillevent</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">International &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../International/au-zen-garden.html">Au Zen Garden</a></li>
+        	<li><a href="../International/benkay.html">Benkay</a></li>
+        	<li><a href="../International/lao-lane-xang2.html">Lao Lane Xang2</a></li>
+        	<li><a href="../International/khun-akorn.html">Khun Akorn</a></li>
+        	<li><a href="../International/kok-ping.html">Kok Ping</a></li>
+        	<li><a href="../International/ratn.html">Ratn</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Italian &amp; Mediterranean &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Ita-medi/casa-luca.html">Casa Luca</a></li>
+        	<li><a href="../Ita-medi/mavrommatis.html">Mavrommatis</a></li>
+        	<li><a href="../Ita-medi/bastide-blanche.html">Bastide Blanche</a></li>
+        	<li><a href="../Ita-medi/laltro.html">L'Altro</a></li>
+        	<li><a href="../Ita-medi/a-casaluna.html">A Casaluna</a></li>
+        	<li><a href="../Ita-medi/finzi.html">Finzi</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Design Restaurant &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Design/market.html">Market</a></li>
+        	<li><a href="../Design/kong.html">Kong</a></li>
+        	<li><a href="../Design/le-roland-garros.html">Le Roland Garros</a></li>
+        	<li><a href="../Design/les-ombres.html">Les Ombres</a></li>
+        	<li><a href="../Design/osmose.html">Osmose</a></li>
+        	<li><a href="../Design/georges.html">Restaurant Georges</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Bistrot &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="la-bonne-franquette.html">La Bonne Franquette</a></li>
+        	<li><a href="le-brandevin.html">Le Brandevin</a></li>
+        	<li><a href="la-guinguette-de-neuilly.html">La Guinguette De Neuilly</a></li>
+        	<li><a href="bistrot-de-loulette.html">bistrot De L'Oulette</a></li>
+        	<li><a href="monsieur-le-prince.html">Monsieur Le Prince</a></li>
+        	<li><a href="le-tourbillon.html">Le Tourbillon</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="la-bonne-franquette.html"><img src="../../imgs/bistrot1.jpg" style="float:left;" alt="La Bonne Franquette" /></a>
+  <div class="subpageItemInfo"><h3><a href="la-bonne-franquette.html" style="text-transform:uppercase;">La Bonne Franquette</a></h3>
+  2, rue des Saules - Paris 18ème<br /><br />
+
+  Phone: +33 1 42 52 02 42<br />
+  Fax : +33 1 42 52 14 85<br /><br />
+  <a href="mailto:paris@labonnefranquette.com">Send Email </a> | 
+  <a href="http://www.labonnefranquette.com">Visit Our Website</a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="le-brandevin.html"><img src="../../imgs/bistrot2.jpg" style="float:left;" alt="Le Brandevin" /></a>
+  <div class="subpageItemInfo"><h3><a href="le-brandevin.html" style="text-transform:uppercase;">Le Brandevin</a></h3>
+ 29, rue du Docteur Blanche - Paris 16ème<br /><br />
+
+Phone : +33 1 42 24 19 33<br />
+Fax : +33 1 45 25 38 47<br /><br />
+  <a href="mailto:lebrandevin@wanadoo.fr">Send Email </a> | 
+  <a href="http://www.lebrandevin.fr">Visit Our Website</a>
+  
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="la-guinguette-de-neuilly.html"><img src="../../imgs/bistrot3.jpg" style="float:left;" alt="La Guinguette De Neuilly" /></a>
+  <div class="subpageItemInfo"><h3><a href="la-guinguette-de-neuilly.html" style="text-transform:uppercase;">La Guinguette De Neuilly</a></h3>
+
+ 12, boulevard Georges Seurat - Neuilly-sur-Seine<br /><br />
+
+Phone : +33 1 46 24 25 04<br />
+Fax : +33 1 47 38 20 49<br /><br />
+<a href="mailto:info@laguinguette.net">Send Email </a> | 
+  <a href="http://www.la-guinguette-de-neuilly.com">Visit Our Website</a>
+
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="bistrot-de-loulette.html"><img src="../../imgs/bistrot4.jpg" style="float:left;" alt="Bistrot De L'Oulette" /></a>
+  <div class="subpageItemInfo"><h3><a href="bistrot-de-loulette.html" style="text-transform:uppercase;">Bistrot De L'Oulette</a></h3>
+
+  38, rue des Tournelles - Paris 4ème<br /><br />
+
+Phone : +33 1 42 71 43 33<br />
+Fax : +33 1 42 77 78 83<br /><br />
+  <a href="http://www.l-oulette.com">Visit Our Website</a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="monsieur-le-prince.html"><img src="../../imgs/bistrot5.jpg" style="float:left;" alt="Monsieur Le Prince" /></a>
+  <div class="subpageItemInfo"><h3><a href="monsieur-le-prince.html" style="text-transform:uppercase;">Monsieur Le Prince</a></h3>
+
+ 12, rue Monsieur le Prince - Paris 6ème<br /><br />
+
+
+Phone : +33 1 43 54 74 59<br /><br />
+  <a href="http://www.monsieurleprince.com">Visit Our Website</a>
+
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="le-tourbillon.html"><img src="../../imgs/bistrot6.jpg" style="float:left;" alt="Le Tourbillon" /></a>
+  <div class="subpageItemInfo"><h3><a href="le-tourbillon.html" style="text-transform:uppercase;">Le Tourbillon</a></h3>
+
+  45, rue Claude Bernard - Paris 5ème<br /><br />
+
+  Phone : +33 1 47 07 86 32<br />
+Fax : +33 1 45 35 25 77<br /><br />
+<a href="mailto:letourbillon@hotmail.fr">Send Email </a> | 
+  <a href="http://www.letourbillon.com">Visit Our Website</a>
+</div>
+  </div>
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

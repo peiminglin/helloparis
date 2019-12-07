@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Restaurants";
+var curTopNvLink = "<a href='/Restaurants/index.html'>Restaurants</a>";
+var curSubNv = "French";
+var curSubNvLink = "<a href='/Restaurants/French/index.html'>Traditional French Cuisine</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,true);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1><a href='/Restaurants/French/index.html'>Traditional French Cuisine</a></h1>
+  <p>We provides a selection of Paris leading establishments offering French cuisine. Whether seeking meats roast or in sauce, market-fresh vegetables, delicately seasoned fish or traditional French dishes, choose your traditional cuisine restaurant from the prime addresses of Best Restaurants Paris. Consult the detailed sheets of the featured establishments and choose that traditional cuisine restaurant you're looking for. The photos, extracts from the carte and comprehensive practical information will give you a clearer idea of what to expect from the traditional cuisine restaurant where you would like to lunch or dine.</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Traditional French &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="le-ciel-de-paris.html">Le Ciel De Paris</a></li>
+        	<li><a href="des-gars-dans-la-cuisine.html">Des Gars Dans La Cuisine</a></li>
+        	<li><a href="pierre-au-palais-royal.html">Pierre Au Palais Royal</a></li>
+        	<li><a href="fouquets.html">Fouquet's</a></li>
+        	<li><a href="pavillon-des-princes.html">Pavillon Des Princes</a></li>
+        	<li><a href="la-truffe-marbeuf.html">La Truffe Marbeuf</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Fine Dining &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../FineDining/la-grande-cascade.html">La Grande Cascade</a></li>
+        	<li><a href="../FineDining/le-bristol.html">Le Bristol</a></li>
+        	<li><a href="../FineDining/guy-savoy.html">Guy Savoy</a></li>
+        	<li><a href="../FineDining/lasserre.html">Lasserre</a></li>
+        	<li><a href="../FineDining/le-meurice.html">Le Meurice</a></li>
+        	<li><a href="../FineDining/taillevent.html">Taillevent</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">International &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../International/au-zen-garden.html">Au Zen Garden</a></li>
+        	<li><a href="../International/benkay.html">Benkay</a></li>
+        	<li><a href="../International/lao-lane-xang2.html">Lao Lane Xang2</a></li>
+        	<li><a href="../International/khun-akorn.html">Khun Akorn</a></li>
+        	<li><a href="../International/kok-ping.html">Kok Ping</a></li>
+        	<li><a href="../International/ratn.html">Ratn</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Italian &amp; Mediterranean &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Ita-medi/casa-luca.html">Casa Luca</a></li>
+        	<li><a href="../Ita-medi/mavrommatis.html">Mavrommatis</a></li>
+        	<li><a href="../Ita-medi/bastide-blanche.html">Bastide Blanche</a></li>
+        	<li><a href="../Ita-medi/laltro.html">L'Altro</a></li>
+        	<li><a href="../Ita-medi/a-casaluna.html">A Casaluna</a></li>
+        	<li><a href="../Ita-medi/finzi.html">Finzi</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Design Restaurant &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Design/market.html">Market</a></li>
+        	<li><a href="../Design/kong.html">Kong</a></li>
+        	<li><a href="../Design/le-roland-garros.html">Le Roland Garros</a></li>
+        	<li><a href="../Design/les-ombres.html">Les Ombres</a></li>
+        	<li><a href="../Design/osmose.html">Osmose</a></li>
+        	<li><a href="../Design/georges.html">Restaurant Georges</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Bistrot &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Bistrot/la-bonne-franquette.html">La Bonne Franquette</a></li>
+        	<li><a href="../Bistrot/le-brandevin.html">Le Brandevin</a></li>
+        	<li><a href="../Bistrot/la-guinguette-de-neuilly.html">La Guinguette De Neuilly</a></li>
+        	<li><a href="../Bistrot/bistrot-de-loulette.html">Bistrot De L'Oulette</a></li>
+        	<li><a href="../Bistrot/monsieur-le-prince.html">Monsieur Le Prince</a></li>
+        	<li><a href="../Bistrot/le-tourbillon.html">Le Tourbillon</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="padding:20px;"> 
+  <h1><a href="pierre-au-palais-royal.html">PIERRE AU PALAIS ROYAL</a></h1>
+  10, rue de Richelieu ou 7, rue Montpensier - Paris 1er<br /><br />
+  <p><img src="../../imgs/pierre_au.jpg" alt="PIERRE AU PALAIS ROYAL" /></p>
+  <p>
+Good-humoured "bistronomical," traditional cuisine and a fine selection of wines are to be found at Pierre au Palais Royal, located in the 1st district. This 60-year-old restaurant, taken over in September 2007 by acclaimed sommelier Eric Sertour and talented chef Pascal Bataillé. Enjoying a perfect location near the Comédie Française and the Théâtre du Palais-Royal, it is also a renowned post-show venue with its clever after 11PM supper menu (last orders at midnight). 
+</p>
+
+<h2>Menu of the restaurant Pierre au Palais Royal</h2>
+39,00 € per person<p />
+<div class="">
+<h3>Starters</h3>
+<div class="itemPrice">supp. + 7,00 €</div>
+<div >Terrine de foie gras de canard maison, compoté d'oignons</div>
+<div class="itemPrice"></div>
+<div >Millefeuille d'aubergine, tomate courgette et mozzarella, sorbet basilic</div>
+<div class="itemPrice"></div>
+<div >Méchouia de poivrons rouges à l'ail </div>
+<div class="itemPrice">supp. + 5,00 €</div>
+<div >Jambon noir de Bigorre à la tranche</div>
+<div class="itemPrice"> </div>
+<div >Terrine de poissons et son coulis du jour</div>
+<p />
+</div>
+
+
+<div class="">
+<h3>Main Courses</h3>
+<div class="itemPrice">supp. + 8,00 €</div>
+<div >Sole meunière, tagliatelles parmesan et citron</div>
+<div class="itemPrice"></div>
+<div >Pavé de lieu jaune à la vapeur, asperges vertes</div>
+<div class="itemPrice"></div>
+<div >Bar rôti, artichaut, tomates confites et olives noires</div>
+<div class="itemPrice"></div>
+<div >Parmentier de canard, jus au thym et sa sucrine</div>
+<div class="itemPrice">supp. + 8,00 €</div>
+<div >Filet de boeuf (origine française), pommes grenaille, sauce du jour </div>
+<p />
+</div>
+
+
+<div class="">
+<h3>Desserts</h3>
+<div class="itemPrice"></div>
+<div >Millefeuille à la vanille Bourbon, liqueur au Grand Marnier</div>
+<div class="itemPrice"></div>
+<div >Moelleux au chocolat mi-cuit, glace vanille</div>
+<div class="itemPrice"></div>
+<div >Tiramisu aux fruits rouges</div>
+<div class="itemPrice"></div>
+<div >Assortiments de glaces et sorbets </div>
+<div class="itemPrice"></div>
+<div >Salade de fruits de saison, sorbet à la menthe</div>
+<p />
+</div>
+
+
+  </div>
+
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

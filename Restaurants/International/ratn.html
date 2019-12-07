@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Restaurants";
+var curTopNvLink = "<a href='/Restaurants/index.html'>Restaurants</a>";
+var curSubNv = "International";
+var curSubNvLink = "<a href='/Restaurants/International/index.html'>International Cuisine</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,true);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1><a href='/Restaurants/International/index.html'>International Cuisine</a></h1>
+  <p>Discover a selection of the best International cuisine restaurants in Paris with Best Restaurants Paris. Our International cuisine restaurants are listed by district or by budget. Visit Best Restaurants Paris!</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Traditional French &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../French/le-ciel-de-paris.html">Le Ciel De Paris</a></li>
+        	<li><a href="../French/des-gars-dans-la-cuisine.html">Des Gars Dans La Cuisine</a></li>
+        	<li><a href="../French/pierre-au-palais-royal.html">Pierre Au Palais Royal</a></li>
+        	<li><a href="../French/fouquets.html">Fouquet's</a></li>
+        	<li><a href="../French/pavillon-des-princes.html">Pavillon Des Princes</a></li>
+        	<li><a href="../French/la-truffe-marbeuf.html">La Truffe Marbeuf</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Fine Dining &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../FineDining/la-grande-cascade.html">La Grande Cascade</a></li>
+        	<li><a href="../FineDining/le-bristol.html">Le Bristol</a></li>
+        	<li><a href="../FineDining/guy-savoy.html">Guy Savoy</a></li>
+        	<li><a href="../FineDining/lasserre.html">Lasserre</a></li>
+        	<li><a href="../FineDining/le-meurice.html">Le Meurice</a></li>
+        	<li><a href="../FineDining/taillevent.html">Taillevent</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">International &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="au-zen-garden.html">Au Zen Garden</a></li>
+        	<li><a href="benkay.html">Benkay</a></li>
+        	<li><a href="lao-lane-xang2.html">Lao Lane Xang2</a></li>
+        	<li><a href="khun-akorn.html">Khun Akorn</a></li>
+        	<li><a href="kok-ping.html">Kok Ping</a></li>
+        	<li><a href="ratn.html">Ratn</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Italian &amp; Mediterranean &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Ita-medi/casa-luca.html">Casa Luca</a></li>
+        	<li><a href="../Ita-medi/mavrommatis.html">Mavrommatis</a></li>
+        	<li><a href="../Ita-medi/bastide-blanche.html">Bastide Blanche</a></li>
+        	<li><a href="../Ita-medi/laltro.html">L'Altro</a></li>
+        	<li><a href="../Ita-medi/a-casaluna.html">A Casaluna</a></li>
+        	<li><a href="../Ita-medi/finzi.html">Finzi</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Design Restaurant &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Design/market.html">Market</a></li>
+        	<li><a href="../Design/kong.html">Kong</a></li>
+        	<li><a href="../Design/le-roland-garros.html">Le Roland Garros</a></li>
+        	<li><a href="../Design/les-ombres.html">Les Ombres</a></li>
+        	<li><a href="../Design/osmose.html">Osmose</a></li>
+        	<li><a href="../Design/georges.html">Restaurant Georges</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Bistrot &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Bistrot/la-bonne-franquette.html">La Bonne Franquette</a></li>
+        	<li><a href="../Bistrot/le-brandevin.html">Le Brandevin</a></li>
+        	<li><a href="../Bistrot/la-guinguette-de-neuilly.html">La Guinguette De Neuilly</a></li>
+        	<li><a href="../Bistrot/bistrot-de-loulette.html">Bistrot De L'Oulette</a></li>
+        	<li><a href="../Bistrot/monsieur-le-prince.html">Monsieur Le Prince</a></li>
+        	<li><a href="../Bistrot/le-tourbillon.html">Le Tourbillon</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="padding:20px;"> 
+  <h1><a href="ratn.html" style="text-transform:uppercase;">Ratn</a></h1>
+  9, rue de la Trémoille - Paris 8ème<br /><br />
+  <p><img src="../../imgs/ratn.jpg" alt="Ratn" /></p>
+  <p>
+Since 1976, three generations of the BHALLA family, from New Dehli, have distinguished themselves in 17th century Indian Mogul gastronomy. This is an elegant restaurant in the 8th district that exudes the Indian soul through its respect for tradition and for culinary arts. Ratn, that means "jewel", certainly lives up to its name. Here you will delight in the array of savours and in the enchanting surroundings. The wine list offers an excellent choice of grands crus.
+</p>
+
+<h2>A la carte of the restaurant RATN</h2>
+<div class="">
+<h3>Starters</h3>
+<div class="itemPrice">65,00 €</div>
+<div >Asperges vertes du Lubéron et pousses de soja cuisinées aux herbes fraîches</div>
+<div class="itemPrice">65,00 €</div>
+<div >Foie gras de canard mi-cuit au cacao, amandes en cappuccino</div>
+<div class="itemPrice">78,00 €</div>
+<div >Macaroni farcis au céleri rave, foie gras et truffes noires, gratinés au parmesa</div>
+<div class="itemPrice">65,00 €</div>
+<div >Emietté de tourteau tiédi dans une feuille de laitue émulsion vanilléee</div>
+<div class="itemPrice">62,00 €</div>
+<div >Fleurs de courgette ivres de girolles, couteaux en coque à l'huile d'olive vierge</div>
+<p />
+</div>
+
+
+<div class="">
+<h3>Main Courses</h3>
+<div class="itemPrice">70,00 €</div>
+<div >Saint-Pierre incrusté d'écorces de citron navets doux et pois gourmands au poivre Bourbon de</div>
+<div class="itemPrice">58,00 €</div>
+<div >Rouget et olives taggiasca, cuit à plat aubergine fondante, rougail de fenouil</div>
+<div class="itemPrice">65,00 €</div>
+<div >Carré d'agneau de Sisteron doré au four, petits farcis méditerranéens, pistou, pimentos</div>
+<div class="itemPrice">72,00 €</div>
+<div >Pomme de ris de veau cuite lentement, olives câpres et croûtons, herbes à tortue</div>
+<div class="itemPrice">72,00 €</div>
+<div >Coeur de filet de boeuf d'Argentine "Pampa Verde" crousti-fondant, sauce Périgueux</div>
+<p />
+</div>
+
+
+<div class="">
+<h3>Desserts</h3>
+<div class="itemPrice">25,00 €</div>
+<div >Dégustation d'un chocolat pure origine "Baïano", en provenance du Brésil</div>
+<div class="itemPrice">20,00 €</div>
+<div >Coussin aux amandes caramélisées crème anglaise, comme une île flottante inversée</div>
+<div class="itemPrice">25,00 €</div>
+<div >Soufflé au Grand-Marnier "Cuvée du Centenaire"</div>
+<div class="itemPrice">25,00 €</div>
+<div >La fraise gariguette rafraîchie au thym-citron tuile beurrée croustillante</div>
+<div class="itemPrice">25,00 €</div>
+<div >La mangue "dans tous ses états"</div>
+<p />
+</div>
+
+
+  </div>
+
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

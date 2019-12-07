@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Restaurants";
+var curTopNvLink = "<a href='/Restaurants/index.html'>Restaurants</a>";
+var curSubNv = "Design";
+var curSubNvLink = "<a href='/Restaurants/Design/index.html'>Designer's Restaurants</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,false);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Designer's Restaurants</h1>
+  <p>Best Restaurants Paris proposes a selection of the city's leading establishments. Daring sweet & sour, impressive associations of textures,... You will choose an inventive cuisine restaurant in the heart of Paris or on your doorstep. You will select that inventive cuisine restaurant that tempts you most from the information we give you: photos, extracts from the carte, and practical details, providing you with all the elements you need to calmly book your inventive cuisine restaurant.</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Traditional French &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../French/le-ciel-de-paris.html">Le Ciel De Paris</a></li>
+        	<li><a href="../French/des-gars-dans-la-cuisine.html">Des Gars Dans La Cuisine</a></li>
+        	<li><a href="../French/pierre-au-palais-royal.html">Pierre Au Palais Royal</a></li>
+        	<li><a href="../French/fouquets.html">Fouquet's</a></li>
+        	<li><a href="../French/pavillon-des-princes.html">Pavillon Des Princes</a></li>
+        	<li><a href="../French/la-truffe-marbeuf.html">La Truffe Marbeuf</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Fine Dining &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../FineDining/la-grande-cascade.html">La Grande Cascade</a></li>
+        	<li><a href="../FineDining/le-bristol.html">Le Bristol</a></li>
+        	<li><a href="../FineDining/guy-savoy.html">Guy Savoy</a></li>
+        	<li><a href="../FineDining/lasserre.html">Lasserre</a></li>
+        	<li><a href="../FineDining/le-meurice.html">Le Meurice</a></li>
+        	<li><a href="../FineDining/taillevent.html">Taillevent</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">International &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../International/au-zen-garden.html">Au Zen Garden</a></li>
+        	<li><a href="../International/benkay.html">Benkay</a></li>
+        	<li><a href="../International/lao-lane-xang2.html">Lao Lane Xang2</a></li>
+        	<li><a href="../International/khun-akorn.html">Khun Akorn</a></li>
+        	<li><a href="../International/kok-ping.html">Kok Ping</a></li>
+        	<li><a href="../International/ratn.html">Ratn</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Italian &amp; Mediterranean &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Ita-medi/casa-luca.html">Casa Luca</a></li>
+        	<li><a href="../Ita-medi/mavrommatis.html">Mavrommatis</a></li>
+        	<li><a href="../Ita-medi/bastide-blanche.html">Bastide Blanche</a></li>
+        	<li><a href="../Ita-medi/laltro.html">L'Altro</a></li>
+        	<li><a href="../Ita-medi/a-casaluna.html">A Casaluna</a></li>
+        	<li><a href="../Ita-medi/finzi.html">Finzi</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Design Restaurant &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="market.html">Market</a></li>
+        	<li><a href="kong.html">Kong</a></li>
+        	<li><a href="le-roland-garros.html">Le Roland Garros</a></li>
+        	<li><a href="les-ombres.html">Les Ombres</a></li>
+        	<li><a href="osmose.html">Osmose</a></li>
+        	<li><a href="georges.html">Restaurant Georges</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Bistrot &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Bistrot/la-bonne-franquette.html">La Bonne Franquette</a></li>
+        	<li><a href="../Bistrot/le-brandevin.html">Le Brandevin</a></li>
+        	<li><a href="../Bistrot/la-guinguette-de-neuilly.html">La Guinguette De Neuilly</a></li>
+        	<li><a href="../Bistrot/bistrot-de-loulette.html">Bistrot De L'Oulette</a></li>
+        	<li><a href="../Bistrot/monsieur-le-prince.html">Monsieur Le Prince</a></li>
+        	<li><a href="../Bistrot/le-tourbillon.html">Le Tourbillon</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="market.html"><img src="../../imgs/design1.jpg" style="float:left;" alt="Market" /></a>
+  <div class="subpageItemInfo"><h3><a href="market.html" style="text-transform:uppercase;">Market</a></h3>
+  15, avenue Matignon - Paris 8ème<br /><br />
+
+  Phone: +33 1 56 43 40 90<br />
+  Fax : +33 1 43 59 10 87<br /><br />
+  <a href="mailto:prmarketsa@aol.com">Send Email </a> | 
+  <a href="http://www.jean-georges.com">Visit Our Website</a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="kong.html"><img src="../../imgs/design2.jpg" style="float:left;" alt="Kong" /></a>
+  <div class="subpageItemInfo"><h3><a href="kong.html" style="text-transform:uppercase;">Kong</a></h3>
+ 1, rue du Pont-Neuf - Paris 1er<br /><br />
+
+Phone : +33 1 40 39 09 00<br />
+Fax : +33 1 40 39 09 10<br /><br />
+  <a href="http://www.kong.fr">Visit Our Website</a>
+  
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="le-roland-garros.html"><img src="../../imgs/design3.jpg" style="float:left;" alt="Le Roland Garros" /></a>
+  <div class="subpageItemInfo"><h3><a href="le-roland-garros.html" style="text-transform:uppercase;">Le Roland Garros</a></h3>
+
+  2 bis, avenue Gordon Bennett - Paris 16ème<br /><br />
+Phone : +33 1 47 43 49 56<br />
+Fax : +33 1 40 71 83 24<br /><br />
+<a href="mailto:le.rolandgarros@laffiche.fr">Send Email </a> | 
+  <a href="http://www.paris-exception.com">Visit Our Website</a>
+
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="les-ombres.html"><img src="../../imgs/design4.jpg" style="float:left;" alt="Les Ombres" /></a>
+  <div class="subpageItemInfo"><h3><a href="les-ombres.html" style="text-transform:uppercase;">Les Ombres</a></h3>
+
+  27, quai Branly - Paris 7ème<br /><br />
+
+Phone : +33 1 47 53 68 00<br />
+Fax : +33 1 47 53 68 18<br /><br />
+<a href="mailto:ombres.restaurant@elior.com">Send Email </a> | 
+  <a href="http://www.lesombres-restaurant.com">Visit Our Website</a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="Osmose.html"><img src="../../imgs/design5.jpg" style="float:left;" alt="Osmose" /></a>
+  <div class="subpageItemInfo"><h3><a href="Osmose.html" style="text-transform:uppercase;">Osmose</a></h3>
+
+ 31, avenue de Versailles - Paris 16ème<br /><br />
+
+Phone : +33 1 45 20 74 12<br />
+Fax : +33 1 45 20 74 17<br /><br />
+<a href="mailto:contact@osmose-paris.com">Send Email </a> | 
+  <a href="http://www.osmose-paris.com">Visit Our Website</a>
+
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="restaurant-georges.html"><img src="../../imgs/design6.jpg" style="float:left;" alt="Restaurant Georges" /></a>
+  <div class="subpageItemInfo"><h3><a href="restaurant-georges.html" style="text-transform:uppercase;">Restaurant Georges</a></h3>
+
+  19, rue Beaubourg - 6 ème étage du Centre Georges Pompidou - Paris 4ème<br /><br />
+
+  Phone : +33 1 44 78 47 99<br />
+Fax : +33 1 44 78 48 93<br /><br />
+</div>
+  </div>
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

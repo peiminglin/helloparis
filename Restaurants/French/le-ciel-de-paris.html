@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Restaurants";
+var curTopNvLink = "<a href='/Restaurants/index.html'>Restaurants</a>";
+var curSubNv = "French";
+var curSubNvLink = "<a href='/Restaurants/French/index.html'>Traditional French Cuisine</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,true);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1><a href='/Restaurants/French/index.html'>Traditional French Cuisine</a></h1>
+  <p>We provides a selection of Paris leading establishments offering French cuisine. Whether seeking meats roast or in sauce, market-fresh vegetables, delicately seasoned fish or traditional French dishes, choose your traditional cuisine restaurant from the prime addresses of Best Restaurants Paris. Consult the detailed sheets of the featured establishments and choose that traditional cuisine restaurant you're looking for. The photos, extracts from the carte and comprehensive practical information will give you a clearer idea of what to expect from the traditional cuisine restaurant where you would like to lunch or dine.</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Traditional French &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="le-ciel-de-paris.html">Le Ciel De Paris</a></li>
+        	<li><a href="des-gars-dans-la-cuisine.html">Des Gars Dans La Cuisine</a></li>
+        	<li><a href="pierre-au-palais-royal.html">Pierre Au Palais Royal</a></li>
+        	<li><a href="fouquets.html">Fouquet's</a></li>
+        	<li><a href="pavillon-des-princes.html">Pavillon Des Princes</a></li>
+        	<li><a href="la-truffe-marbeuf.html">La Truffe Marbeuf</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Fine Dining &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../FineDining/la-grande-cascade.html">La Grande Cascade</a></li>
+        	<li><a href="../FineDining/le-bristol.html">Le Bristol</a></li>
+        	<li><a href="../FineDining/guy-savoy.html">Guy Savoy</a></li>
+        	<li><a href="../FineDining/lasserre.html">Lasserre</a></li>
+        	<li><a href="../FineDining/le-meurice.html">Le Meurice</a></li>
+        	<li><a href="../FineDining/taillevent.html">Taillevent</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">International &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../International/au-zen-garden.html">Au Zen Garden</a></li>
+        	<li><a href="../International/benkay.html">Benkay</a></li>
+        	<li><a href="../International/lao-lane-xang2.html">Lao Lane Xang2</a></li>
+        	<li><a href="../International/khun-akorn.html">Khun Akorn</a></li>
+        	<li><a href="../International/kok-ping.html">Kok Ping</a></li>
+        	<li><a href="../International/ratn.html">Ratn</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Italian &amp; Mediterranean &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Ita-medi/casa-luca.html">Casa Luca</a></li>
+        	<li><a href="../Ita-medi/mavrommatis.html">Mavrommatis</a></li>
+        	<li><a href="../Ita-medi/bastide-blanche.html">Bastide Blanche</a></li>
+        	<li><a href="../Ita-medi/laltro.html">L'Altro</a></li>
+        	<li><a href="../Ita-medi/a-casaluna.html">A Casaluna</a></li>
+        	<li><a href="../Ita-medi/finzi.html">Finzi</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Design Restaurant &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Design/market.html">Market</a></li>
+        	<li><a href="../Design/kong.html">Kong</a></li>
+        	<li><a href="../Design/le-roland-garros.html">Le Roland Garros</a></li>
+        	<li><a href="../Design/les-ombres.html">Les Ombres</a></li>
+        	<li><a href="../Design/osmose.html">Osmose</a></li>
+        	<li><a href="../Design/georges.html">Restaurant Georges</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Bistrot &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Bistrot/la-bonne-franquette.html">La Bonne Franquette</a></li>
+        	<li><a href="../Bistrot/le-brandevin.html">Le Brandevin</a></li>
+        	<li><a href="../Bistrot/la-guinguette-de-neuilly.html">La Guinguette De Neuilly</a></li>
+        	<li><a href="../Bistrot/bistrot-de-loulette.html">Bistrot De L'Oulette</a></li>
+        	<li><a href="../Bistrot/monsieur-le-prince.html">Monsieur Le Prince</a></li>
+        	<li><a href="../Bistrot/le-tourbillon.html">Le Tourbillon</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="padding:20px;"> 
+  <h1><a href="le-ciel-de-paris.html">LE CIEL DE PARIS</a></h1>
+  33, avenue du Maine - Paris 15ème<br /><br />
+  <p><img src="../../imgs/le_ciel.jpg" alt="French restaurant" /></p>
+  <p>
+It takes only 38 seconds to rise to the Ciel de Paris on the 56th floor of the Tour Montparnasse in the 15th district. The uppermost restaurant in Europe, towering 200 meters above the city offers a stupendous view. While spotting the capital's famous buildings lying below, Jean-François Oyon will introduce you to his imaginative, tasty and seasonal traditional cuisine. The bar is open until 1pm.
+</p>
+
+<h2>A la carte of the restaurant Le Ciel de Paris</h2>
+<div class="">
+<h3>Starters</h3>
+<div class="itemPrice">24,00 €</div>
+<div >Burgundy snails and warm pig feet on a bed of leeks "meuniére"</div>
+<div class="itemPrice">31,00 €</div>
+<div >Fresh crab meat as a stuffed tomato</div>
+<div class="itemPrice">36,00 €</div>
+<div >Special “Ciel de Paris” Foie gras</div>
+<div class="itemPrice">42,00 €</div>
+<div >Lobster salad with herbs and string beans, truffled vinaigrette sauce</div>
+<div class="itemPrice">95,00 €</div>
+<div >Small glass 'verrine' Imperial “Baeri” caviar (30 gr), blinis and a shot of vodka</div>
+<p />
+</div>
+
+
+<div class="">
+<h3>Main Courses</h3>
+<div class="itemPrice">29,00 €</div>
+<div >Petals of Filet of cod, string beans tempura cooked and soy sauce</div>
+<div class="itemPrice">59,00 €</div>
+<div >Lobster in an open ravioli, and vegetables</div>
+<div class="itemPrice">40,00 €</div>
+<div >Fillet of beef with truffle sauce, and charlotte potatoes as risotto</div>
+<div class="itemPrice">35,00 €</div>
+<div >Minced fillet of veal with Serrano ham, fresh spinach minute cooked</div>
+<div class="itemPrice">30,00 €</div>
+<div >Schoulder of lamb from “ Aveyron” 12 hours cooked</div>
+<p />
+</div>
+
+
+<div class="">
+<h3>Desserts</h3>
+<div class="itemPrice">12,00 €</div>
+<div >Turned out crème brûlée, with spéculos</div>
+<div class="itemPrice">13,00 €</div>
+<div >Pistachio fondant cake, light meringue strawberry and orange flavoured</div>
+<div class="itemPrice">13,00 €</div>
+<div >Warm “ Guanaja” chocolate cake, vanilla ice cream</div>
+<div class="itemPrice">13,00 €</div>
+<div >Soup of red fruits, Sechuan pepper, </div>
+<div class="itemPrice">12,00 €</div>
+<div >Ice creams and fresh fruits sorbets</div>
+<p />
+</div>
+
+
+  </div>
+
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>
