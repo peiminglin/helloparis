@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Culture";
+var curTopNvLink = "<a href='/Culture/index.html'>Culture</a>";
+var curSubNv = "History";
+var curSubNvLink = "<a href='/Culture/History/index.html'>History</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,false);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>History</h1>
+  <p>Known as Lutetia (Lutece) in ancient times, Paris was conquered by Julius Caesar in 52 BC, and existed as a regional center under the Romans and in the early Middle Ages. In 987, HUGH CAPET, Count of Paris, became king of France, and under his successors, the CAPETIANS, the city's position as the nation's capital became established. Often characterized as spirited and rebellious, the people of Paris first declared themselves an independent commune under the leadership of Etienne Marcel in 1355-58. The storming of the Bastille in 1789 was the first of a series of key actions by the Parisian people during the FRENCH REVOLUTION. </p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">History &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../History/medieval.html"> Medieval </a></li>
+        	<li><a href="../History/early-modern.html"> Early Modern</a></li>
+        	<li><a href="../History/18th-19th.html"> 18th and 19th Centuries </a></li>
+        	<li><a href="../History/20th.html"> 20th Century</a></li>
+        	<li><a href="../History/general.html"> General </a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Traditional Food &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Food/food.html">Food</a></li>
+        	<li><a href="../Food/drink.html">Drink</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Festival &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Festival/parthenay.html">Parthenay</a></li>
+        	<li><a href="../Festival/cognac.html">Cognac</a></li>
+        	<li><a href="../Festival/mainfonds.html">Mainfonds</a></li>
+        	<li><a href="../Festival/confolens.html">Confolens</a></li>
+        	<li><a href="../Festival/vouvant.html"> Vouvant</a></li>
+        	<li><a href="../Festival/melle.html"> Melle</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Building &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Building/ancient.html">Ancient</a></li>
+        	<li><a href="../Building/modern.html">Modern</a></li>
+        </ul>
+    </div>
+    
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="medieval.html"><img src="../../imgs/Medieval.jpg" style="float:left;" alt="History Culture"/></a>
+  <div class="subpageItemInfo"><h3><a href="medieval.html">MEDIEVAL</a></h3>
+  The French kings initially controlled little more than Paris and the surrounding region, the Île-de-France, but over the centuries steadily expanded their territory and power. Paris itself developed an increasing degree of importance as a royal capital, an ecclesiastical and cultural centre.
+
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="early-modern.html"><img src="../../imgs/Early-Modern.jpg" style="float:left;" alt="History Culture" /></a>
+  <div class="subpageItemInfo"><h3><a href="early-modern.html"> EARLY MODERN</a></h3>
+As early as the 12th century, the distinctive character of the city's districts was emerging. The Île de la Cité, on which the Cathedral of Notre Dame building began in 1163, was the centre of government and religious life; the Left Bank was the centre of learning, focusing on the various Church-run schools established there; and the Right Bank  was the centre of commerce and finance. 
+
+  
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="18th-19th.html"><img src="../../imgs/18th-and-19th-Centuries.jpg" style="float:left;" alt="History Culture" /></a>
+  <div class="subpageItemInfo"><h3><a href="18th-19th.html"> 18th and 19th CENTURIES</a></h3>
+
+  The powers of the monarchy were in theory confined by a Charter of Liberties but in practice both Louis and Charles ran an authoritarian regime reliant on Church support. On 25 July 1830 Charles issued the repressive Ordinances of St-Cloud, abolishing the freedom of the press, dissolving the Chamber of Deputies and restricting voting rights to the landed gentry only.
+
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="20th.html"><img src="../../imgs/20th-Century-.jpg" style="float:left;" alt="History Culture" /></a>
+  <div class="subpageItemInfo"><h3><a href="20th.html"> 20th CENTURY</a></h3>
+
+  Paris in the Twentieth Century's main character is 16-year-old Michel Dufrénoy, who graduates with a major in literature and the classics, but finds they have been forgotten in a futuristic world where only business and technology are valued. Michel, whose father was a musician, is a poet born too late.
+
+
+
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="general.html"><img src="../../imgs/General.jpg" style="float:left;" alt="History Culture" /></a>
+  <div class="subpageItemInfo"><h3><a href="general.html">GENERAL</a></h3>
+
+  Paris is today one of the world's leading business and cultural centres, and its influences in politics, education, entertainment, media, fashion, science, and the arts all contribute to its status as one of the world's major global cities.
+
+</div>
+  </div>
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

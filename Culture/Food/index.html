@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Culture";
+var curTopNvLink = "<a href='/Culture/index.html'>Culture</a>";
+var curSubNv = "Traditional Food";
+var curSubNvLink = "<a href='/Culture/Traditional Food/index.html'>Traditional Food</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,false);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Traditional Food</h1>
+  <p>He was admitted to the 
+Oxford County Bar in 1858 and at Boston in 1862. He enlisted in 
+the 23d Maine Regiment, in his brother's compan3', F, and was ap- 
+pointed Orderl3' Sergeant and subsequenth' was commissioned 
+Second Lieutenant. After his regiment returned and was mustered 
+out, he moved to Roxbuiy, Mass., now a precinct of Boston. He 
+has been successful in his business, has held various positions of 
+trust and profit, and is a highl3- respected citizen. Since his removal 
+to Massachusetts he has served on the Governor's staff. He mar- 
+ried, Oct. 30, 1864, Sarah Jane Gardiner of Dixfield.. </p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">History &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../History/medieval.html"> Medieval </a></li>
+        	<li><a href="../History/early-modern.html"> Early Modern</a></li>
+        	<li><a href="../History/18th-19th.html"> 18th and 19th Centuries </a></li>
+        	<li><a href="../History/20th.html"> 20th Century</a></li>
+        	<li><a href="../History/general.html"> General </a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Traditional Food &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Food/food.html">Food</a></li>
+        	<li><a href="../Food/drink.html">Drink</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Festival &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Festival/parthenay.html">Parthenay</a></li>
+        	<li><a href="../Festival/cognac.html">Cognac</a></li>
+        	<li><a href="../Festival/mainfonds.html">Mainfonds</a></li>
+        	<li><a href="../Festival/confolens.html">Confolens</a></li>
+        	<li><a href="../Festival/vouvant.html"> Vouvant</a></li>
+        	<li><a href="../Festival/melle.html"> Melle</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Building &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Building/ancient.html">Ancient</a></li>
+        	<li><a href="../Building/modern.html">Modern</a></li>
+        </ul>
+    </div>
+     <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="food.html"><img src="../../imgs/Food.jpg" style="float:left;" alt=" Traditional Food  Culture"/></a>
+  <div class="subpageItemInfo"><h3><a href="food.html">FOOD</a></h3>
+  Rev. Sylvester Besse was the son of John Besse, Jr., whose wife 
+was Betse3% daughter of Elder John Tripp of Hebron. He was 
+born in this town June 25, 1815. He was educated in the town 
+schools and at Hebron Academy. 
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="drink.html"><img src="../../imgs/Drink.jpg" style="float:left;" alt=" Traditional Food  Culture" /></a>
+  <div class="subpageItemInfo"><h3><a href="drink.html"> DRINK</a></h3>
+Fred E. Boothby, the popular General Passenger and Ticket Agent 
+of the Maine Central Railroad Company, was born in Norway, Dec- 
+3d, 1845. When quite 3'oung, his father, Levi T. Boothby, moved 
+to South Paris, where Fred attended the town schools and also at 
+the Normal Institute. 
+  
+
+</div>
+  </div>
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

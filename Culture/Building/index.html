@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Culture";
+var curTopNvLink = "<a href='/Culture/index.html'>Culture</a>";
+var curSubNv = "Building ";
+var curSubNvLink = "<a href='/Culture/Building/index.html'>Building</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,false);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1> Building  </h1>
+  <p>Thomas Crocker died in Paris, August 22, 1872, aged 84 
+years. He was the second son of Roland Crocker of Conway, N. 
+H., and was born there April 14, 1788. While young, he chose the 
+occupation of merchant, and first came to Norwa3', where he was 
+clerk in the store of Mr. Increase Robinson.  </p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">History &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../History/medieval.html"> Medieval </a></li>
+        	<li><a href="../History/early-modern.html"> Early Modern</a></li>
+        	<li><a href="../History/18th-19th.html"> 18th and 19th Centuries </a></li>
+        	<li><a href="../History/20th.html"> 20th Century</a></li>
+        	<li><a href="../History/general.html"> General </a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Traditional Food &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Food/food.html">Food</a></li>
+        	<li><a href="../Food/drink.html">Drink</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Festival &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Festival/parthenay.html">Parthenay</a></li>
+        	<li><a href="../Festival/cognac.html">Cognac</a></li>
+        	<li><a href="../Festival/mainfonds.html">Mainfonds</a></li>
+        	<li><a href="../Festival/confolens.html">Confolens</a></li>
+        	<li><a href="../Festival/vouvant.html"> Vouvant</a></li>
+        	<li><a href="../Festival/melle.html"> Melle</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Building &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Building/ancient.html">Ancient</a></li>
+        	<li><a href="../Building/modern.html">Modern</a></li>
+        </ul>
+    </div>
+     <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="ancient.html"><img src="../../imgs/Ancient-Building.jpg" style="float:left;" alt="Festival Culture"/></a>
+  <div class="subpageItemInfo"><h3><a href="ancient.html">ANCIENT</a></h3>
+  As a clerk he gave 
+promise of his future, by his promptitude, energy and fidelity. Sub- 
+sequently he came to Paris Hill, while the count}^ was new, and in 
+the midst of the thriving, active pioneer population, laid the foun- 
+dation of his character and fortune.
+
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="modern.html"><img src="../../imgs/Modern-Building.jpg" style="float:left;" alt="Festival Culture" /></a>
+  <div class="subpageItemInfo"><h3><a href="modern.html"> MODERN</a></h3>
+During some thii% or thirty- 
+five years, his store was a place of trade and business — not onl}' of 
+Paris, but also of the adjoining towns. He was one of those rare 
+men financially, that whatever he touched prospered.
+
+  
+</div>
+ 
+  
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

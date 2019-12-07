@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Culture";
+var curTopNvLink = "<a href='/Culture/index.html'>Culture</a>";
+//var curSubNv = "French";
+//var curSubNvLink = "<a href='/Restaurants/French/index.html'>French</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../js/banner.html");
+	$("#NaviBox").load("../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+	//	setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; "+curTopNvLink + " &gt; ");
+		naviEvent();
+	});	
+	$("#Footer").load("../js/footer.html");
+	
+	setTrigger("side");
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Culture</h1>
+  <p>For centuries Paris has been a flourishing European cultural centre and a meeting point for artists from all over the world. Today the city's multicultural inheritance can be admired in hundreds of museums, galleries, and churches that grace nearly every part of the city. The spirit of Paris is also cast in the music of local artists and in the architectural splendour that gives the city its luxurious appeal.
+</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">History &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="History/medieval.html"> Medieval </a></li>
+        	<li><a href="History/early-modern.html"> Early Modern</a></li>
+        	<li><a href="History/18th-19th.html"> 18th and 19th Centuries </a></li>
+        	<li><a href="History/20th.html"> 20th Century</a></li>
+        	<li><a href="History/general.html"> General </a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Traditional Food &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="Food/food.html">Food</a></li>
+        	<li><a href="Food/drink.html">Drink</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Festival &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="Festival/parthenay.html">Parthenay</a></li>
+        	<li><a href="Festival/cognac.html">Cognac</a></li>
+        	<li><a href="Festival/mainfonds.html">Mainfonds</a></li>
+        	<li><a href="Festival/confolens.html">Confolens</a></li>
+        	<li><a href="Festival/vouvant.html"> Vouvant</a></li>
+        	<li><a href="Festival/melle.html"> Melle</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Building &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="Building/ancient.html">Ancient</a></li>
+        	<li><a href="Building/modern.html">Modern</a></li>
+        	
+        
+        </ul>
+    </div>
+    
+        
+     <p />
+     </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="History/index.html"><img src="../imgs/Medieval.jpg" style="float:left;" alt="History Culture" /></a>
+  <div class="subpageItemInfo"><h3><a href="History/index.html">HISTORY</a></h3><br /><a>PLes Halles, once a massive above-ground central market for Paris until it was demolished in 1971, now offers a subterranean shopping center (the Forum des Halles) with more than 180 stores — connected by a maze of escalators and mall-walks guaranteed to give anyone a headache. 
+</a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="Food/index.html"><img src="../imgs/Food.jpg" style="float:left;" alt="History Culture" /></a>
+  <div class="subpageItemInfo"><h3><a href="Food/index.html">TRADITIONAL FOOD</a></h3><br /><a>WFor a pleasurable and mainstream shopping experience à l'américaine, shoppers should check out the plethora of colossal department stores in Paris. Two of the most famous rivals, Printemps and Galeries Lafayette, may be found side-by-side on Boulevard Haussmann in the 9th arrondissement, carrying designer, brand name and private label merchandise.
+</a></div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="Festival/index.html"><img src="../imgs/Confolens.jpg" style="float:left;" alt="History Culture" /></a>
+  <div class="subpageItemInfo"><h3><a href="Festival/index.html">FESTIVAL</a></h3><br /><a>ILa Samaritaine, located in the 1st between Les Halles and the Pont Neuf, is a five-store complex which prides itself as the one where "on trouve tout" (closed for renovations until 2010). Bazar de l'Hôtel de Ville - BHV, located in the 4th, is better known for practical commodities.
+</a></div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="Building/index.html"><img src="../imgs/Ancient-Building.jpg" style="float:left;" alt="History Culture" /></a>
+  <div class="subpageItemInfo"><h3><a href="Building/index.html">BUILDING</a></h3><br /><a>Le Bon Marché, the only Left Bank (7th arrondissement) department store, earns top marks from both shoppers and food lovers, with its adjoining food halls and roof garden.
+
+</a></div>
+  </div>
+  
+  
+  
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

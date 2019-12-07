@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Culture";
+var curTopNvLink = "<a href='/Culture/index.html'>Culture</a>";
+var curSubNv = "History";
+var curSubNvLink = "<a href='/Culture/History/index.html'>History</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,true);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>History</h1>
+  <p>PParis today maintains its importance, character, and charm, though its appearance is being transformed by structures such as the BEAUBOURG and by the ambitious grands projets building program carried out under the presidency of François Mitterrand. In addition to the La Défense arch and the Bastille Opéra, Mitterrand's projects have included the renovation of the Louvre by architect I. M. Pei, the La Villette complex on the northeastern edge of the city, and, in the southeast, the Bibliothèque de France, a great computer-age library.
+
+</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">History &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../History/medieval.html"> Medieval </a></li>
+        	<li><a href="../History/early-modern.html"> Early Modern</a></li>
+        	<li><a href="../History/18th-19th.html"> 18th and 19th Centuries </a></li>
+        	<li><a href="../History/20th.html"> 20th Century</a></li>
+        	<li><a href="../History/general.html"> General </a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Traditional Food &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Food/food.html">Food</a></li>
+        	<li><a href="../Food/drink.html">Drink</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Festival &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Festival/parthenay.html">Parthenay</a></li>
+        	<li><a href="../Festival/cognac.html">Cognac</a></li>
+        	<li><a href="../Festival/mainfonds.html">Mainfonds</a></li>
+        	<li><a href="../Festival/confolens.html">Confolens</a></li>
+        	<li><a href="../Festival/vouvant.html"> Vouvant</a></li>
+        	<li><a href="../Festival/melle.html"> Melle</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Building &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Building/ancient.html">Ancient</a></li>
+        	<li><a href="../Building/modern.html">Modern</a></li>
+        </ul>
+    </div>
+     <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer"> 
+  <h1><a href="medieval.html">MEDIEVAL</a></h1>
+  <p><img src="../../big size img/20th Century .jpg" alt="History Culture" /></p>
+  <p>
+Planning for Paris and the Paris Basin region includes consideration of large land areas in the Seine River valley all the way to the mouth of the river. New towns, parks, industrial locations, and expanded functions of existing towns are contemplated for this corridor on both sides of the Seine.
+
+
+</p>
+<p>
+Known as Lutetia (Lutece) in ancient times, Paris was conquered by Julius Caesar in 52 BC, and existed as a regional center under the Romans and in the early Middle Ages. In 987, HUGH CAPET, Count of Paris, became king of France, and under his successors, the CAPETIANS, the city's position as the nation's capital became established. Often characterized as spirited and rebellious, the people of Paris first declared themselves an independent commune under the leadership of Etienne Marcel in 1355-58. The storming of the Bastille in 1789 was the first of a series of key actions by the Parisian people during the FRENCH REVOLUTION. Paris also played a major role in the revolutions of 1830 and 1848. In 1871, during the FRANCO-PRUSSIAN WAR , the city was besieged for four months until France surrendered. After German troops withdrew, French radicals briefly established the COMMUNE OF PARIS. During World War I the Germans were prevented from reaching Paris, but they occupied the city during World War II from 1940 to 1944. 
+
+</p>
+  </div>
+
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>
