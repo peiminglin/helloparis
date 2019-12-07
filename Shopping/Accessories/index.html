@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Shopping";
+var curTopNvLink = "<a href='/Shopping/index.html'>Shopping</a>";
+var curSubNv = "Accessories";
+var curSubNvLink = "<a href='/Shopping/ Accessories/index.html'>  Accessories </a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,false);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>  Accessories </h1>
+  <p>These may be made of glass, gemstones, metal, wood, shells, clay and polymer clay. Beaded jewellery commonly encompasses necklaces, bracelets, earrings, belts and rings. Beads may be large or small; the smallest type of beads used are known as seed beads, these are the beads used for the "woven" style of beaded jewellery. Another use of seed beads is an embroidery technique where seed beads are sewn onto fabric backings to create broad collar neck pieces and beaded bracelets.</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Souvenirs  &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Souvenirs/replicas.html">Replicas</a></li>
+        	<li><a href="../Souvenirs/key-chains.html">Key Chains</a></li>
+        	<li><a href="../Souvenirs/snowglobes.html">Snowglobes</a></li>
+        	<li><a href="../Souvenirs/magnets.html">Magnets</a></li>
+        	<li><a href="../Souvenirs/coasters.html">Coasters</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Jewellery &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Jewellery/chaumet.html">Chaumet </a></li>
+        	<li><a href="../Jewellery/boucheron.html"> Boucheron </a></li>
+            <li><a href="../Jewellery/cartier.html">Cartie</a></li>
+            <li><a href="../Jewellery/hermes.html"> Hermes </a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Perfume &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Perfume/cartier.html"> Cartier </a></li>
+        	<li><a href="../Perfume/guerlain.html">Guerlain</a></li>
+        	<li><a href="../Perfume/gucci.html">Gucci </a></li>
+        	<li><a href="../Perfume/chanel.html">Chanel</a></li>
+        	<li><a href="../Perfume/dior.html"> Dior </a></li>
+        
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Accessories &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Accessories/french-berets.html">French Berets</a></li>
+        	<li><a href="../Accessories/scarves.html"> Scarves</a></li>
+            <li><a href="../Accessories/ties.html">Ties </a></li>
+            <li><a href="../Accessories/bags.html">  Bags </a></li>
+            <li><a href="../Accessories/purses.html">Purses</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#"> Fashion &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Fashion/shoes.html"> Shoes </a></li>
+        	<li><a href="../Fashion/clothes.html"> Clothes</a></li>
+        	<li><a href="../Fashion/glasses.html">Glasses </a></li>
+        	<li><a href="../Fashion/hats.html">Hats</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="french-berets.html"><img src="../../imgs/French-Berets.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="french-berets.html">FREBCH-BERETS</a></h3>
+ Bead embroidery, a popular type of handwork during the Victorian era, is enjoying a renaissance in modern jewellery making. Beading, or beadwork, is also very popular in many African cultures.
+
+
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="scarves.html"><img src="../../imgs/Scarves.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="scarves.html">SCARVES</a></h3>
+ Advanced glass and glass beadmaking techniques by Murano and Venetian glassmasters developed crystalline glass, enamelled glass (smalto), glass with threads of gold (goldstone), multicoloured glass (millefiori), milk-glass (lattimo), and imitation gemstones made of glass.[citation needed] As early as the 13th century, Murano glass and Murano beads were popular.[
+  
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="ties.html"><img src="../../imgs/Ties.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="ties.html">TIES</a></h3>
+Pliny may have mentioned them, although there is some debate as to the exact nature of the stone he referred to as Adamas. 
+
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="bags.html"><img src="../../imgs/Bags.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="bags.html">BAGS</a></h3>
+
+  Amber, an ancient organic gemstone, is composed of tree resin that has hardened over time. The stone must be at least one million years old to be classified as amber, and some amber can be up to 120 million years old. 
+
+
+
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="purses.html"><img src="../../imgs/Purses.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="purses.html">PURSES</a></h3>
+Amethyst has historically been the most prized gemstone in the quartz family. It is treasured for its purple hue, which can range in tone from light to dark. 
+
+
+</div>
+  </div>
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Shopping";
+var curTopNvLink = "<a href='/Shopping/index.html'>Shopping</a>";
+var curSubNv = "Souvenirs";
+var curSubNvLink = "<a href='/Shopping/Souvenirs/index.html'>Souvenirs</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,false);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Souvenirs</h1>
+  <p>Paris is one of the world's premier shopping cities. Even people who hate shopping enjoy shopping in Paris. Here, everyone can find something they like, whether it's haute couture, flea markets, perfume, comic books, outdoor markets, or whatever.</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Souvenirs  &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Souvenirs/replicas.html">Replicas</a></li>
+        	<li><a href="../Souvenirs/key-chains.html">Key Chains</a></li>
+        	<li><a href="../Souvenirs/snowglobes.html">Snowglobes</a></li>
+        	<li><a href="../Souvenirs/magnets.html">Magnets</a></li>
+        	<li><a href="../Souvenirs/coasters.html">Coasters</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Jewellery &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Jewellery/chaumet.html">Chaumet </a></li>
+        	<li><a href="../Jewellery/boucheron.html"> Boucheron </a></li>
+            <li><a href="../Jewellery/cartier.html">Cartie</a></li>
+            <li><a href="../Jewellery/hermes.html"> Hermes </a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Perfume &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Perfume/cartier.html"> Cartier </a></li>
+        	<li><a href="../Perfume/guerlain.html">Guerlain</a></li>
+        	<li><a href="../Perfume/gucci.html">Gucci </a></li>
+        	<li><a href="../Perfume/chanel.html">Chanel</a></li>
+        	<li><a href="../Perfume/dior.html"> Dior </a></li>
+        
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Accessories &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Accessories/french-berets.html">French Berets</a></li>
+        	<li><a href="../Accessories/scarves.html"> Scarves</a></li>
+            <li><a href="../Accessories/ties.html">Ties </a></li>
+            <li><a href="../Accessories/bags.html">  Bags </a></li>
+            <li><a href="../Accessories/purses.html">Purses</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#"> Fashion &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Fashion/shoes.html"> Shoes </a></li>
+        	<li><a href="../Fashion/clothes.html"> Clothes</a></li>
+        	<li><a href="../Fashion/glasses.html">Glasses </a></li>
+        	<li><a href="../Fashion/hats.html">Hats</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="replicas.html"><img src="../../imgs/Replicas.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="replicas.html">REPLICAS</a></h3>
+  Serious shoppers will want to prepare before coming, and Suzy Gershman's Born to Shop Paris, a Frommer guide, provides excellent coverage of the Paris shopping scene. For an online visit to one of the most exclusive shopping streets in the world
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="key-chains.html"><img src="../../imgs/Key-Chains.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="key-chains.html">KEY CHAINS</a></h3>
+ In major cities, most stores are open from 10h to 19h Monday through Saturday. In the provinces stores are usually closed on Mondays and from noon to 14h or 13h to 15h daily. Some department stores remain open until 21h one evening each week. 
+  
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="snowglobes.html"><img src="../../imgs/Snowglobes.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="snowglobes.html">SNOWGLOBES</a></h3>
+Hypermarkets can remain open until 21h or 22h. Many food shops are open at 08h, even on Sundays. On holidays most businesses in Paris and the provinces are closed, while bakeries (boulangeries) are open only in the morning. 
+
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="magnets.html"><img src="../../imgs/Magnets.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="magnets.html">MAGNETS</a></h3>
+
+  99, avenue des Champs-Elysées - Paris 8ème<br /><br />
+  Phone : +33 1 40 69 60 50<br />
+Fax : +33 1 40 69 60 35<br /><br />
+<a href="mailto:fouquets@lucienbarriere.com">Send Email </a> |  
+<a href="http://www.lucienbarriere.com">Visit Our Website</a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="pavillon-des-princes.html"><img src="../../imgs/french5.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="pavillon-des-princes.html">PAVILLON DES PRINCES</a></h3>
+
+  69, avenue de la Porte d'Auteuil - Paris 16ème<br /><br />
+  Phone : +33 1 47 43 15 15<br />
+Fax : +33 1 46 51 16 94<br /><br />
+<a href="mailto:contact@pavillon-des-princes.com">Send Email</a> | 
+<a href="http://www.pavillon-des-princes.com">Visit Our Website</a>
+
+</div>
+  </div>
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

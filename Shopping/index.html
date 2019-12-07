@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Shopping";
+var curTopNvLink = "<a href='/Shopping/index.html'>Shopping</a>";
+//var curSubNv = "French";
+//var curSubNvLink = "<a href='/Restaurants/French/index.html'>French</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../js/banner.html");
+	$("#NaviBox").load("../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+	//	setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; "+curTopNvLink + " &gt; ");
+		naviEvent();
+	});	
+	$("#Footer").load("../js/footer.html");
+	
+	setTrigger("side");
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Shopping</h1>
+  <p>Do you live (love) to SHOP? Paris is a shopper's dream, of course, and the "glitterati" will feel quite at home in the Haute Couture shops found on Rue du Faubourg Saint-Honoré and Avenue Montaigne in the 8th arrondissement. Top quality shoes, bags, and leather goods are the province of Rue du Cherche-Midi and Rue de Grenelle in the 6th. Truly trend-setting fashions may be seen in the shops on Rue Etienne Marcel and Place des Victoires bordering the 1st and 2nd arrondissements.<br />
+  Sadly, the boulevard Champs-Elysées — formerly the bastion of fashion and class — has degenerated into a neon strip of fast food chains, banks, airline offices, malls, and cinemas aimed squarely at the tourists!</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Souvenirs  &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="Souvenirs/replicas.html">Replicas</a></li>
+        	<li><a href="Souvenirs/key-chains.html">Key Chains</a></li>
+        	<li><a href="Souvenirs/snowglobes.html">Snowglobes</a></li>
+        	<li><a href="Souvenirs/magnets.html">Magnets</a></li>
+        	<li><a href="Souvenirs/coasters.html">Coasters</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Jewellery &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="Jewellery/chaumet.html">Chaumet </a></li>
+        	<li><a href="Jewellery/boucheron.html"> Boucheron </a></li>
+            <li><a href="Jewellery/cartier.html">Cartie</a></li>
+            <li><a href="Jewellery/hermes.html"> Hermes </a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Perfume &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="Perfume/cartier.html"> Cartier </a></li>
+        	<li><a href="Perfume/guerlain.html">Guerlain</a></li>
+        	<li><a href="Perfume/gucci.html">Gucci </a></li>
+        	<li><a href="Perfume/chanel.html">Chanel</a></li>
+        	<li><a href="Perfume/dior.html"> Dior </a></li>
+        
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Accessories &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="Accessories/french-berets.html">French Berets</a></li>
+        	<li><a href="Accessories/scarves.html"> Scarves</a></li>
+            <li><a href="Accessories/ties.html">Ties </a></li>
+            <li><a href="Accessories/bags.html">  Bags </a></li>
+            <li><a href="Accessories/purses.html">Purses</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#"> Fashion &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="Fashion/shoes.html"> Shoes </a></li>
+        	<li><a href="Fashion/clothes.html"> Clothes</a></li>
+        	<li><a href="Fashion/glasses.html">Glasses </a></li>
+        	<li><a href="Fashion/hats.html">Hats</a></li>
+        </ul>
+    </div>
+    
+     <p />
+        
+      </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="Souvenirs/index.html"><img src="../imgs/Souvenirs.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="Souvenirs/index.html">SOUVENIRS</a></h3><br /><a>PLes Halles, once a massive above-ground central market for Paris until it was demolished in 1971, now offers a subterranean shopping center (the Forum des Halles) with more than 180 stores — connected by a maze of escalators and mall-walks guaranteed to give anyone a headache. 
+</a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="Jewellery/index.html"><img src="../imgs/Boucheron.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="Jewellery/index.html">JEWELLERY</a></h3><br /><a>WFor a pleasurable and mainstream shopping experience à l'américaine, shoppers should check out the plethora of colossal department stores in Paris. Two of the most famous rivals, Printemps and Galeries Lafayette, may be found side-by-side on Boulevard Haussmann in the 9th arrondissement, carrying designer, brand name and private label merchandise.
+</a></div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="Perfume/index.html"><img src="../imgs/Chanel.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="Perfume/index.html">PERFUME</a></h3><br /><a>ILa Samaritaine, located in the 1st between Les Halles and the Pont Neuf, is a five-store complex which prides itself as the one where "on trouve tout" (closed for renovations until 2010). Bazar de l'Hôtel de Ville - BHV, located in the 4th, is better known for practical commodities.
+</a></div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="Accessories/index.html"><img src="../imgs/Key-Chains.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="Accessories/index.html">ACCESSORIES</a></h3><br /><a>Le Bon Marché, the only Left Bank (7th arrondissement) department store, earns top marks from both shoppers and food lovers, with its adjoining food halls and roof garden.
+
+</a></div>
+  </div>
+  
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="Fashion/index.html"><img src="../imgs/Clothes.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="Fashion/index.html">FASHION</a></h3><br /><a>One of the most renowned places to find treasures in Paris is at the flea market. Paris has three main flea markets of ancient descent, situated around the old gates of the city. The origin of the name refers to the cast-off clothes of royalty which were commonplace in centuries of old, teeming with the little insects.
+</a>
+</div>
+  </div>
+  
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

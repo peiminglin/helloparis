@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Shopping";
+var curTopNvLink = "<a href='/Shopping/index.html'>Shopping</a>";
+var curSubNv = "Accessories";
+var curSubNvLink = "<a href='/Shopping/Accessories/index.html'>Accessories</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,true);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Accessories </h1>
+  <p>Surve^'ors of lumber, Solomon Bryant and Merodach Smith. 
+
+Constable and collector, Abiezar Andrews. 
+
+Poundkeeper, Isaac Jackson. 
+
+School committee, Daniel Stowell, Thomas Stevens, Nathan 
+Pierce, Caleb Cushman, Lemuel Jackson, Josiah Bisco, Abner Raw- 
+son and David Andrews. 
+
+It was voted that all roads laid out by the town up to this date, 
+might remain unfenced, provided the owners of the land should 
+place no obstruction across them except good gates or bars. 
+
+
+
+
+
+
+</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Souvenirs  &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Souvenirs/replicas.html">Replicas</a></li>
+        	<li><a href="../Souvenirs/key-chains.html">Key Chains</a></li>
+        	<li><a href="../Souvenirs/snowglobes.html">Snowglobes</a></li>
+        	<li><a href="../Souvenirs/magnets.html">Magnets</a></li>
+        	<li><a href="../Souvenirs/coasters.html">Coasters</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Jewellery &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Jewellery/chaumet.html">Chaumet </a></li>
+        	<li><a href="../Jewellery/boucheron.html"> Boucheron </a></li>
+            <li><a href="../Jewellery/cartier.html">Cartie</a></li>
+            <li><a href="../Jewellery/hermes.html"> Hermes </a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Perfume &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Perfume/cartier.html"> Cartier </a></li>
+        	<li><a href="../Perfume/guerlain.html">Guerlain</a></li>
+        	<li><a href="../Perfume/gucci.html">Gucci </a></li>
+        	<li><a href="../Perfume/chanel.html">Chanel</a></li>
+        	<li><a href="../Perfume/dior.html"> Dior </a></li>
+        
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Accessories &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Accessories/french-berets.html">French Berets</a></li>
+        	<li><a href="../Accessories/scarves.html"> Scarves</a></li>
+            <li><a href="../Accessories/ties.html">Ties </a></li>
+            <li><a href="../Accessories/bags.html">  Bags </a></li>
+            <li><a href="../Accessories/purses.html">Purses</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#"> Fashion &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Fashion/shoes.html"> Shoes </a></li>
+        	<li><a href="../Fashion/clothes.html"> Clothes</a></li>
+        	<li><a href="../Fashion/glasses.html">Glasses </a></li>
+        	<li><a href="../Fashion/hats.html">Hats</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer"> 
+   <h1><a href="../../Shopping/Accessories//scarves.html">SCARVES</a></h1>
+  <p><img src="../../big size img/Scarves.jpg" alt="Accessories" /></p>
+    <p>
+It was voted to raise fift}^ pounds for the support of schools, and 
+twenty pounds to purchase a stock of amunition for the town. One 
+hundred pounds were raised for the repair of ways, and thirty 
+pounds to be laid out in clearing out the new county road through 
+the town. This road was laid out from the southeast corner of the 
+town of Paris, diagonall}^ through the town, through No. 3 (Wood- 
+stock) and a part of Bethel, to Rumford. It was "voted to choose 
+a suitable person for a magistrate," and the choice fell upon Josiah 
+Bisco. The committee on accounts, reported that John Caldwell was 
+overtaxed for the year 1794, and recommended a reduction. At an 
+adjourned meeting, an abatement was made to Seth Morse and Peter 
+Durell. The votes this 3'ear stood : 
+
+Governor, Samuel Adams, 54. 
+
+Lt. Governor, Moses Gill, 27. 
+
+Increase Sumner, 13. 
+
+Senators, John K. Smith, 31. 
+
+Daniel Ilsley, • 20. 
+
+Daniel Davis, 5. 
+
+Stephen Longfellow, 4. 
+
+Jonathan Hall, 1. 
+
+It was voted to choose a committee to join any towns in any 
+proper measure respecting the proposed new county, and Isaac Bol- 
+ster, Josiah Bisco and Daniel Stow^ell were chosen. 
+
+It was voted to allow the accounts of the several persons w^ho 
+worked on the count}' road, amounting in the whole to thirt3'-one 
+
+
+
+HISTORY OF PARIS. 95 
+
+pounds, one shilling and sixpence. Among those who worked are 
+the following whose names had not before appeared in the records : 
+John Tuell, Stephen Warren, David Dudlej', James Brooks and 
+Jacob Gurney. 
+
+John Greenwood w^as allowed $4.27 as the part of Paris, for his 
+services in attending the General Court relating to the proposed new 
+county. This is the first time in the records that dollars and cents 
+are used to express the currency. 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+</p>
+  </div>
+
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

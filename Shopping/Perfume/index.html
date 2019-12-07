@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Shopping";
+var curTopNvLink = "<a href='/Shopping/index.html'>Shopping</a>";
+var curSubNv = "Perfume";
+var curSubNvLink = "<a href='/Shopping/ Perfume /index.html'>  Perfume </a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,false);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>  Perfume </h1>
+  <p>Wearing of amulets and devotional medals to provide protection or ward off evil is common in some cultures; these may take the form of symbols (such as the ankh), stones, plants, animals, body parts (such as the Khamsa), or glyphs (such as stylised versions of the Throne Verse in Islamic art).</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Souvenirs &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Culture/Souvenirs/replicas.html">Replicas</a></li>
+        	<li><a href="../Culture/Souvenirs/key-chains.html">Key Chains</a></li>
+        	<li><a href="../Culture/Souvenirs/snowglobes.htm">Snowglobes</a></li>
+        	<li><a href="../Culture/Souvenirs/magnets.html">Magnets</a></li>
+        	<li><a href="../Culture/Souvenirs/coasters.html">Coasters</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Jewellery &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Culture/Jewellery/chaumet.html">Chaumet </a></li>
+        	<li><a href="../Culture/Jewellery/boucheron.html"> Boucheron </a></li>
+            <li><a href="../Culture/Jewellery/cartier.html">Cartie</a></li>
+            <li><a href="../Culture/Jewellery/hermes.html"> Hermes </a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Perfume &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Culture/Perfume/cartier.html"> Cartier </a></li>
+        	<li><a href="../Culture/Perfume/guerlain.html">Guerlain</a></li>
+        	<li><a href="../Culture/Perfume/gucci.html">Gucci </a></li>
+        	<li><a href="../Culture/Perfume/chanel.html">Chanel</a></li>
+        	<li><a href="../Culture/Perfume/dior.html"> Dior </a></li>
+        
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Accessories &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Culture/Accessories /french-berets.html">French Berets</a></li>
+        	<li><a href="../Culture/Accessories /scarves.html"> Scarves</a></li>
+            <li><a href="../Culture/Accessories /ties.html">Ties </a></li>
+            <li><a href="../Culture/Accessories /bags.html">  Bags </a></li>
+            <li><a href="../Culture/Accessories /purses.html">Purses</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#"> Fashion &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Culture/ Fashion /shoes.html"> Shoes </a></li>
+        	<li><a href="../Culture/ Fashion /clothes.html"> Clothes</a></li>
+        	<li><a href="../Culture/ Fashion /glasses.html">Glasses </a></li>
+        	<li><a href="../Culture/ Fashion /hats.html">Hats</a></li>
+        	
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="cartier.html"><img src="../../imgs/Cartier.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="cartier.html">CARTIER</a></h3>
+  Although artistic display has clearly been a function of jewellery from the very beginning, the other roles described above tended to take primacy.[citation needed] It was only in the late 19th century, with the work of such masters as Peter Carl Fabergé and René Lalique, that art began to take primacy over function and wealth.
+
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="guerlain.html"><img src="../../imgs/Guerlain.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="guerlain.html">GUERLAIN</a></h3>
+ In creating jewellery, gemstones, coins, or other precious items are often used, and they are typically set into precious metals. Alloys of nearly every metal known have been encountered in jewellery. Bronze, for example, was common in Roman times. Modern fine jewellery usually includes gold, white gold, platinum, palladium, titanium, or silver.
+  
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="gucci.html"><img src="../../imgs/Gucci.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="gucci.html">GUCCI</a></h3>
+Most American and European gold jewellery is made of an alloy of gold, the purity of which is stated in karats, indicated by a number followed by the letter K. American gold jewellery must be of at least 10K purity (41.7% pure gold), (though in the UK the number is 9K (37.5% pure gold) and is typically found up to 18K (75% pure gold). 
+
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="chanel.html"><img src="../../imgs/Chanel.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="chanel.html">CHANEL</a></h3>
+
+  Other commonly used materials include glass, such as fused-glass or enamel; wood, often carved or turned; shells and other natural animal substances such as bone and ivory; natural clay; polymer clay; and even plastics. Hemp and other twines have been used as well to create jewellery that has more of a natural feel.
+
+
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="dior.html"><img src="../../imgs/Dior.jpg" style="float:left;" alt="Souvenirs Shopping" /></a>
+  <div class="subpageItemInfo"><h3><a href="dior.html">DIOR</a></h3>
+However, any inclusion of lead or lead solder will cause an English Assay office (the building which gives English jewellery its stamp of approval, the Hallmark) to destroy the piece.
+
+</div>
+  </div>
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

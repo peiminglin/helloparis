@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Shopping";
+var curTopNvLink = "<a href='/Shopping/index.html'>Shopping</a>";
+var curSubNv = "Accessories";
+var curSubNvLink = "<a href='/Shopping/Accessories/index.html'>Accessories</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,true);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Accessories </h1>
+  <p>Surve^'ors of lumber, Solomon Bryant and Merodach Smith. 
+
+Constable and collector, Abiezar Andrews. 
+
+Poundkeeper, Isaac Jackson. 
+
+School committee, Daniel Stowell, Thomas Stevens, Nathan 
+Pierce, Caleb Cushman, Lemuel Jackson, Josiah Bisco, Abner Raw- 
+son and David Andrews. 
+
+It was voted that all roads laid out by the town up to this date, 
+might remain unfenced, provided the owners of the land should 
+place no obstruction across them except good gates or bars. 
+
+
+
+
+
+
+</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Souvenirs  &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Souvenirs/replicas.html">Replicas</a></li>
+        	<li><a href="../Souvenirs/key-chains.html">Key Chains</a></li>
+        	<li><a href="../Souvenirs/snowglobes.html">Snowglobes</a></li>
+        	<li><a href="../Souvenirs/magnets.html">Magnets</a></li>
+        	<li><a href="../Souvenirs/coasters.html">Coasters</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Jewellery &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Jewellery/chaumet.html">Chaumet </a></li>
+        	<li><a href="../Jewellery/boucheron.html"> Boucheron </a></li>
+            <li><a href="../Jewellery/cartier.html">Cartie</a></li>
+            <li><a href="../Jewellery/hermes.html"> Hermes </a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Perfume &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Perfume/cartier.html"> Cartier </a></li>
+        	<li><a href="../Perfume/guerlain.html">Guerlain</a></li>
+        	<li><a href="../Perfume/gucci.html">Gucci </a></li>
+        	<li><a href="../Perfume/chanel.html">Chanel</a></li>
+        	<li><a href="../Perfume/dior.html"> Dior </a></li>
+        
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Accessories &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Accessories/french-berets.html">French Berets</a></li>
+        	<li><a href="../Accessories/scarves.html"> Scarves</a></li>
+            <li><a href="../Accessories/ties.html">Ties </a></li>
+            <li><a href="../Accessories/bags.html">  Bags </a></li>
+            <li><a href="../Accessories/purses.html">Purses</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#"> Fashion &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Fashion/shoes.html"> Shoes </a></li>
+        	<li><a href="../Fashion/clothes.html"> Clothes</a></li>
+        	<li><a href="../Fashion/glasses.html">Glasses </a></li>
+        	<li><a href="../Fashion/hats.html">Hats</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer"> 
+   <h1><a href="../../Shopping/Accessories//french-berets.html">French Berets</a></h1>
+  <p><img src="../../big size img/French Berets.jpg" alt="Accessories" /></p>
+    <p>
+The report of the committee to confer with Mr. James Hooper 
+^as accepted, and the town made choice of Mr. Hooper as its 
+minister. A linndred pounds were raised for the repair of ways, 
+fifty pounds for schools and sixty to defray town charges. 
+
+On the question of separating Maine from Massachusetts, the 
+TOtes stood 19 in favor, and 20 opposed. 
+
+On the same day votes were thrown for Governor and Senators as 
+follows : 
+
+For Governor, Samuel Adams, 56. 
+
+For Lt. Governor, Moses Gill, 33. 
+
+For Senators, Wm. Widger}-, ■ 20. 
+
+Joseph No3'es, 24. 
+
+Stephen Longfellow, 16. 
+
+William Martin, 11. 
+
+On the 6th day of Ma}', a meeting was held when a unanimous 
+vote was passed in favor of a revision of the constitution of the 
+commonwealth. 
+
+On the 30th of November, at a meeting called for that purpose, 
+Lemuel Jackson was chosen delegate to a convention in Waterford, 
+called to consider the question of erecting a new count}' from the 
+northerh' portions of York and Cumberland. The meeting was 
+adjourned to Dec. 7, when Mr. Jackson made a report. A com- 
+mittee was chosen to confer with the towns in the northern part of 
+Cumberland 'and York, with reference to the formation of a new 
+count}', and Josiah Bisco, Daniel !Stowell and Jonathan Hall were 
+selected as the committee. Josiah Bisco was chosen a delegate to 
+the second Waterford meeting, which was to assemble at the house of 
+Nathaniel Chamberlain. 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+</p>
+  </div>
+
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

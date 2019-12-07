@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Shopping";
+var curTopNvLink = "<a href='/Shopping/index.html'>Shopping</a>";
+var curSubNv = "Accessories";
+var curSubNvLink = "<a href='/Shopping/Accessories/index.html'>Accessories</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; " + curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,true);
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Accessories </h1>
+  <p>Surve^'ors of lumber, Solomon Bryant and Merodach Smith. 
+
+Constable and collector, Abiezar Andrews. 
+
+Poundkeeper, Isaac Jackson. 
+
+School committee, Daniel Stowell, Thomas Stevens, Nathan 
+Pierce, Caleb Cushman, Lemuel Jackson, Josiah Bisco, Abner Raw- 
+son and David Andrews. 
+
+It was voted that all roads laid out by the town up to this date, 
+might remain unfenced, provided the owners of the land should 
+place no obstruction across them except good gates or bars. 
+
+
+
+
+
+
+</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Souvenirs  &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Souvenirs/replicas.html">Replicas</a></li>
+        	<li><a href="../Souvenirs/key-chains.html">Key Chains</a></li>
+        	<li><a href="../Souvenirs/snowglobes.html">Snowglobes</a></li>
+        	<li><a href="../Souvenirs/magnets.html">Magnets</a></li>
+        	<li><a href="../Souvenirs/coasters.html">Coasters</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Jewellery &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Jewellery/chaumet.html">Chaumet </a></li>
+        	<li><a href="../Jewellery/boucheron.html"> Boucheron </a></li>
+            <li><a href="../Jewellery/cartier.html">Cartie</a></li>
+            <li><a href="../Jewellery/hermes.html"> Hermes </a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Perfume &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Perfume/cartier.html"> Cartier </a></li>
+        	<li><a href="../Perfume/guerlain.html">Guerlain</a></li>
+        	<li><a href="../Perfume/gucci.html">Gucci </a></li>
+        	<li><a href="../Perfume/chanel.html">Chanel</a></li>
+        	<li><a href="../Perfume/dior.html"> Dior </a></li>
+        
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">Accessories &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Accessories/french-berets.html">French Berets</a></li>
+        	<li><a href="../Accessories/scarves.html"> Scarves</a></li>
+            <li><a href="../Accessories/ties.html">Ties </a></li>
+            <li><a href="../Accessories/bags.html">  Bags </a></li>
+            <li><a href="../Accessories/purses.html">Purses</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#"> Fashion &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Fashion/shoes.html"> Shoes </a></li>
+        	<li><a href="../Fashion/clothes.html"> Clothes</a></li>
+        	<li><a href="../Fashion/glasses.html">Glasses </a></li>
+        	<li><a href="../Fashion/hats.html">Hats</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer"> 
+   <h1><a href="../../Shopping/Accessories//purses.html">PURSES</a></h1>
+  <p><img src="../../big size img/Purses.jpg" alt="Accessories" /></p>
+    <p>
+Isaac Bolster, Levi Hubbard and Jonathan Bemis were made 
+selectmen, and Daniel Stowell, Jairus Shaw and Abijah Hall, 
+assesors. Lemuel Jackson, Jr., again bid off the taxes and was 
+chosen collector and constable. For surveyors, Jonathan Hall, 
+Isaac Bolster, TimothA' Smith, Edward Andrews, James Bowker, 
+Elias Partridge, Asa Peny, Lemuel Jackson, Jr., Jonathan Bemis, 
+Asa Barrows and Samuel King. For Fence viewers, Nathan Pierce, 
+Isaac Bolster and Ebenezer Rawson. For Hogreeves, Caleb Pren- 
+tiss, Abraham Bolster, David Ring, Jacob Gurne}*, Joseph Ham- 
+mond, Wm. Faunce and Job Lurvey. For Field drivers, Robert 
+Wightman, Daniel Whitney and Lemuel Perham. Simeon Pond, 
+Samuel King, Thomas Stevens and Jairus Shaw, were chosen sur- 
+vej'ors of lumber. For School committee, Lemuel Jackson, Jona- 
+than Hall, Caleb Prentiss, John Besse, Lemuel Holmes, Caleb Cush- 
+man, David Andrews and Simeon Pond. Surveyors of brick 
+moulds, Thomas Stevens and Job French. 
+
+
+
+HISTORY OF PARIS. 
+
+
+
+97 
+
+
+
+Simeon Pond, Wm. Stearns, Jonathan Bemis, Job French, Aaron 
+and Caleb Fnller were declared organized into a school district. 
+"Voted that the inhabitants to the north and northeast corner of the 
+town from Mr. Gurney's, be a separate school district." At an 
+adjourned meeting at the house of Lemuel Jackson, April 2d, a move 
+to adjourn to Mr. Jackson's barn was voted upon and carried. The 
+report of the committee to regulate the road and school districts was 
+not accepted. Onl}- twenty-eight votes were thrown for Governor 
+this 3'ear, twenty-seven being for Increase Sumner. For Senators 
+Stephen Longfellow had twenty-five votes and Daniel Davis twent3'- 
+five. 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+</p>
+  </div>
+
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

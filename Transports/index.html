@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Transprot</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Transports";
+var curTopNvLink = "<a href='/Transports/index.html'>Transports</a>";
+//var curSubNv = "French";
+//var curSubNvLink = "<a href='/Restaurants/French/index.html'>French</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../js/banner.html");
+	$("#NaviBox").load("../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+	//	setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; "+curTopNvLink + " &gt; ");
+		naviEvent();
+	});	
+	$("#Footer").load("../js/footer.html");
+	
+	setTrigger("side");
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Transports</h1>
+  <p>These driving distances are in kilometres using motorways and mountain roads that are open all year, or through train tunnels that take cars. The kilometres for the loading of cars onto trains and ferries are not included. 
+</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">Tansports&gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="train.html">Train</a></li>
+        	<li><a href="bus.html">Bus </a></li>
+            <li><a href="cab.html">Cab </a></li>
+            <li><a href="car-rent.html">Car rent </a></li>
+        </ul>
+    </div>
+
+    <p />
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="train.html"><img src="../imgs/train1.jpg" style="float:left;" alt="French restaurant" /></a>
+  <div class="subpageItemInfo">
+    <h3><a href="train.html">Train</a></h3><br />
+  <a>They provide independent travelers with   low cost Paris metro pass and Paris Museum Pass along with the best City Tours   and excursions to Paris, Versailles   Tours, Giverny Tours   and more, including excursion to the Moulin Rouge in Paris.</a></div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="bus.html"><img src="../imgs/bus1.jpg" style="float:left;" alt="French restaurant" /></a>
+  <div class="subpageItemInfo"><h3><a href="bus.html">Bus</a></h3><br />
+    <p>Paris is a city to be immersed in, with boulevards, monuments, works of art   and magical lights. It's a city to taste:   cheese, chocolate, wine, bread. And it's a city to hear: opera, jazz or world   music, or perhaps you just like the sound of the metro cars whooshing by on   their rubber wheels.</p>
+  </div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="cab.html"><img src="../imgs/Taxi1.jpg" style="float:left;" alt="French restaurant" /></a>
+  <div class="subpageItemInfo"><h3><a href="cab.html">Cab</a></h3><br /><a>taxi-paris.net, is an information site about taxis in Paris.   Activity area, rules, rates, booking, practical and useful tips. On the other   pages Taxi photo gallery, greeting cards, and taxi forum, make parisian taxis   already familiar.</a></div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="car-rent.html"><img src="../imgs/rental cars1.jpg" style="float:left;" alt="French restaurant" /></a>
+  <div class="subpageItemInfo"><h3><a href="car-rent.html">Car Rent</a></h3><br /><a>The main events during April. <br/>
+  Festival of Short Shorts<br/>
+  Paris Marathon
+</a></div>
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>
