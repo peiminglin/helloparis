@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Festival of the Imagination</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Events";
+var curTopNvLink = "<a href='/Events/index.html'>Events</a>";
+var curSubNv = "Mar";
+var curSubNvLink = "<a href='/Event/Mar/index.html'>March</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../../js/banner.html");
+	$("#NaviBox").load("../../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; "+curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../../js/footer.html");
+	
+	setTrigger("side");
+	setSideNavi(curSubNv,true);
+});
+-->
+</script>
+</head>
+
+<body>
+
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1><a href="index.html">March Event</a></h1>
+  <p>Looking to find out what will be on in town during your next visit in Paris? Explore our guide to Paris events for an overview of the city's most popular and festive events year-round. You'll also find weather guides and advice on how to pack your suitcase each month.</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<p class="side_trigger"><a href="#">January &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Jan/comme-a-vienne-opera-comique.html">Comme A Vienne Opera Comique</a></li>
+        	<li><a href="../Jan/colette-winter-sale.html">Colette Winter Sale </a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">February &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Feb/andros-trophy-finals.html">Andros Trophy Finals</a></li>
+        	<li><a href="../Feb/great-wines-fair.html">Great Wines Fair</a></li>
+        	<li><a href="../Feb/st-valentine.html">Festival of St. Valentine</a></li>
+        	<li><a href="../Feb/international-agriculture-show.html">International Agriculture Show</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">March &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Mar/paris-fashion-week.html">Paris Fashion Week</a></li>
+        	<li><a href="../Mar/the-imagination.html">Festival of the Imagination</a></li>
+        	<li><a href="../Mar/stock-car-racing.html">Stock Car Racing</a></li>
+        	<li><a href="../Mar/paris-film-festival.html">Paris Fashion Week</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">April &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Apr/short-shorts.html">Festival of Short Shorts</a></li>
+        	<li><a href="../Apr/marathon.html">Paris Marathon</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">May &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../May/annual-jazz.html">Annual Jazz Festival</a></li>
+        	<li><a href="../May/environment-and-lifestyle-show.html">Environment and Lifestyle Show</a></li>
+        </ul>
+    </div>
+  	<p class="side_trigger"><a href="#">June &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Jun/international-cinema-meeting.html">International Cinema Meetings</a></li>
+        </ul>
+	</div>
+     <p class="side_trigger"><a href="#">July &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Jul/antiques-fair.html">Antiques Fair</a></li>
+        	<li><a href="../Jul/golden-league-athletics.html">Golden League Athletics</a></li>
+        	<li><a href="../Jul/international-cinema-meeting.html">International Cinema Meetings</a></li>
+        </ul>
+    </div>
+     <p class="side_trigger"><a href="#">August &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Aug/classic-music-festival.html">Classical Music Festival</a></li>
+        </ul>
+    </div>
+     <p class="side_trigger"><a href="#">September &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Sep/cocktail-dance.html">Cocktail Dance</a></li>
+        </ul>
+    </div>
+         <p class="side_trigger"><a href="#">October &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Oct/paris-fashion-week.html">Paris Fashion Week</a></li>
+        </ul>
+    </div>
+     <p class="side_trigger"><a href="#">November &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Nov/christmas-lights.html">Christmas Lights</a></li>
+        </ul>
+    </div>
+     <p class="side_trigger"><a href="#">December &gt;&gt;</a></p>
+    <div class="side_container">
+    	<ul>
+        	<li><a href="../Dec/christmas-eve-and-day.html">Christmas Eve and Christmas Day Mas</a></li>
+        </ul>
+    </div>
+    <p />
+  </div>
+
+  <div id="PrimaryContainer">
+  <div class="floatLayer"> 
+  <h1><a href="the-imagination.html">Festival of the Imagination</a></h1>
+<br />
+  <p><img src="../../imgs/Festival of the Imagination.JPG" alt="French restaurant" /></p>
+  <p>Racing began soon after the construction of the first successful gasoline-fueled<br />
+    automobiles. The first race ever organized was on April 28, 1887 by the chief editor<br />
+    of Paris publication Le Vélocipède, Monsieur Fossier. It ran 2 kilometres (1.2 mi)<br />
+    from Neuilly Bridge to the Bois de Boulogne. It was won by Georges Bouton of the<br />
+    De Dion-Bouton Company, in a car he had constructed with Albert, the Comte de<br />
+    Dion, but as he was the only competitor to show up it is rather difficult to call it a<br />
+    race.</p>
+  </div>
+
+  </div>
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

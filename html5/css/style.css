@@ -1,0 +1,10 @@
+#myCanvas {
+	border: 1px solid gray;
+}
+#canvasBox {
+	margin: 0 auto;
+}
+#main {
+	width: 100%;
+	text-align:center;
+}

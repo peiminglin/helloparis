@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Hotels";
+var curTopNvLink = "<a href='/Hotels/index.html'>Hotels</a>";
+var curSubNv = "3 Stars";
+var curSubNvLink = "<a href='/Hotels/star3.html'>3 Stars</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../js/banner.html");
+	$("#NaviBox").load("../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+		setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; "+curTopNvLink + " &gt; " + curSubNvLink);
+		naviEvent();
+	});	
+	$("#Footer").load("../js/footer.html");
+	
+	setTrigger("side");
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Hotels</h1>
+  <p>Paris is one of the most glamorous and romantic cities - the fashion capital of the world - with famous landmarks! Our wide range of Paris accommodation has been carefully chosen, covering many different regions of Paris ranging from the River Seine to the Bastille; from the Moulin Rouge to the stylish artist’s quarter. The choice is all yours as to whether it’s jazz or culture near your Paris hotel, or perhaps you’d prefer a luxury hotel Paris - more your style!</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<div class="BookTitle">
+    <h3>Find and Book Hotel</h3>
+    </div>
+    <div class="dateCheckBox">
+    	<a>CheckIn:<br /></a>
+        <div>
+        <select name="CheckInDay">
+        <option value ="1">1</option>
+        <option value ="2">2</option>
+        <option value ="3">3</option>
+        <option value ="4">4</option>
+        <option value ="5">5</option>
+        <option value ="6">6</option>
+        <option value ="7">7</option>
+        <option value ="8">8</option>
+        <option value ="9">9</option>
+        <option value ="10">10</option>
+        <option value ="11">11</option>
+        <option value ="12">12</option>
+        <option value ="13">13</option>
+        <option value ="14">14</option>
+        <option value ="15">15</option>
+        <option value ="16">16</option>
+        <option value ="17">17</option>
+        <option value ="18">18</option>
+        <option value ="19">19</option>
+        <option value ="20">20</option>
+        <option value ="21">21</option>
+        <option value ="22" selected = "selected">22</option>
+        <option value ="23">23</option>
+        <option value ="24">24</option>
+        <option value ="25">25</option>
+        <option value ="26">26</option>
+        <option value ="27">27</option>
+        <option value ="28">28</option>
+        <option value ="29">29</option>
+        <option value ="30">30</option>
+        <option value ="31">31</option>
+        </select>
+        </div>
+        <div>
+        <select name="CheckInMonth">
+        <option value ="1" selected = "selected">Sep 2011</option>
+        <option value ="2">Oct 2011</option>
+        <option value ="3">Nov 2011</option>
+        <option value ="4">Dec 2011</option>
+        <option value ="5">Jan 2012</option>
+        <option value ="6">Feb 2012</option>
+        <option value ="7">Mar 2012</option>
+        <option value ="8">Apr 2012</option>
+        <option value ="9">May 2012</option>
+        <option value ="10">Jun 2012</option>
+        <option value ="11">Jul 2012</option>
+        <option value ="12">Aug 2012</option>
+        </select>
+        </div>
+    </div>
+    <div class="dateCheckBox">
+    	<a>CheckOut:<br /></a>
+        <div>
+        <select name="CheckOutDay">
+        <option value ="1">1</option>
+        <option value ="2">2</option>
+        <option value ="3">3</option>
+        <option value ="4">4</option>
+        <option value ="5">5</option>
+        <option value ="6">6</option>
+        <option value ="7">7</option>
+        <option value ="8">8</option>
+        <option value ="9">9</option>
+        <option value ="10">10</option>
+        <option value ="11">11</option>
+        <option value ="12">12</option>
+        <option value ="13">13</option>
+        <option value ="14">14</option>
+        <option value ="15">15</option>
+        <option value ="16">16</option>
+        <option value ="17">17</option>
+        <option value ="18">18</option>
+        <option value ="19">19</option>
+        <option value ="20">20</option>
+        <option value ="21">21</option>
+        <option value ="22">22</option>
+        <option value ="23" selected = "selected">23</option>
+        <option value ="24">24</option>
+        <option value ="25">25</option>
+        <option value ="26">26</option>
+        <option value ="27">27</option>
+        <option value ="28">28</option>
+        <option value ="29">29</option>
+        <option value ="30">30</option>
+        <option value ="31">31</option>
+        </select>
+        </div>
+        <div>
+        <select name="CheckOutMonth">
+        <option value ="1" selected = "selected">Sep 2011</option>
+        <option value ="2">Oct 2011</option>
+        <option value ="3">Nov 2011</option>
+        <option value ="4">Dec 2011</option>
+        <option value ="5">Jan 2012</option>
+        <option value ="6">Feb 2012</option>
+        <option value ="7">Mar 2012</option>
+        <option value ="8">Apr 2012</option>
+        <option value ="9">May 2012</option>
+        <option value ="10">Jun 2012</option>
+        <option value ="11">Jul 2012</option>
+        <option value ="12">Aug 2012</option>
+        </select>
+        </div>
+    </div>
+    <div class="dateCheckBox">
+    	<a>Rooms:<br /></a>
+        <div>
+        <select name="Rooms">
+        <option value ="1" selected = "selected">1</option>
+        <option value ="2">2</option>
+        <option value ="3">3</option>
+        <option value ="4">4</option>
+        <option value ="5">5</option>
+        <option value ="6">6</option>
+        <option value ="7">7</option>
+        <option value ="8">8</option>
+        </select>
+        </div>
+    </div>
+    <div class="dateCheckBox">
+    	<a>Adults | Childs:<br /></a>
+        <div>
+        <select name="Adults">
+        <option value ="1" selected = "selected">1</option>
+        <option value ="2">2</option>
+        <option value ="3">3</option>
+        <option value ="4">4</option>
+        <option value ="5">5</option>
+        <option value ="6">6</option>
+        <option value ="7">7</option>
+        <option value ="8">8</option>
+        </select>
+        </div>
+        <div>
+        <select name="Childs">
+        <option value ="0" selected = "selected">0</option>
+        <option value ="1">1</option>
+        <option value ="2">2</option>
+        <option value ="3">3</option>
+        <option value ="4">4</option>
+        <option value ="5">5</option>
+        <option value ="6">6</option>
+        <option value ="7">7</option>
+        <option value ="8">8</option>
+        </select>
+        </div>
+    </div>
+    <div class="dateCheckBox">
+	<a>Star Rating:<br /></a>
+    <input name="star5" type="checkbox" value="" checked="checked" /><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/>
+    <input name="star4" type="checkbox" value="" checked="checked" /><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/>
+    <input name="star3" type="checkbox" value="" checked="checked" /><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/>
+    </div>
+    <p />
+    <div class="dateCheckBox">
+    <input name="searchHotel" type="button" disabled="disabled" value="Search" style="font-size:16pt;float:right;"/>
+    </div>
+    <p />&nbsp;
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="http://hotels.webjet.com/DirectHotel.asp?Checkin=2011-9-22&Checkout=2011-9-23&ncl=&id=170067"><img src="../imgs/balladins-hotel-les-trois-caravelles.jpg" style="float:left;" alt="Balladins Hotel Les Trois caravelles" /></a>
+  <div class="subpageItemInfo"><h3><a href="http://hotels.webjet.com/DirectHotel.asp?Checkin=2011-9-22&Checkout=2011-9-23&ncl=&id=170067">Balladins Hotel Les Trois caravelles</a><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/></h3><br /><a>
+Travellers in town for a meeting or holidaymakers who want to get away from the bustling city will find Balladins Hotel Les Trois Caravelles an ideal base with it s no-frills accommodations and convenient access to nearby attractions. Guest can explore the nearby Abbaye de Maubuisson and Cathedrale Saint-Maclou de Pontoise. </a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://hotels.webjet.com/DirectHotel.asp?Checkin=2011-9-22&Checkout=2011-9-23&ncl=&id=19633"><img src="../imgs/windsor-opera-hotel-paris.jpg" style="float:left;" alt="Windsor Opera Hotel Paris" /></a>
+  <div class="subpageItemInfo"><h3><a href="http://hotels.webjet.com/DirectHotel.asp?Checkin=2011-9-22&Checkout=2011-9-23&ncl=&id=19633">Windsor Opera Hotel Paris</a><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/></h3><br /><a>
+Offering ultimate luxury and excellent services, the Windsor Opera Hotel Paris makes your stay a truly memorable one.</a></div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://hotels.webjet.com/DirectHotel.asp?Checkin=2011-9-22&Checkout=2011-9-23&ncl=&id=19876"><img src="../imgs/vivaldi-hotel-puteaux.jpg" style="float:left;" alt="Vivaldi Hotel Puteaux" /></a>
+  <div class="subpageItemInfo"><h3><a href="http://hotels.webjet.com/DirectHotel.asp?Checkin=2011-9-22&Checkout=2011-9-23&ncl=&id=19876">Vivaldi Hotel Puteaux</a><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/></h3><br /><a>
+Contrasted with the modern and futuristic architecture of neighbouring skyscrapers, this hotel offers luxurious accommodation as well as charm and the warmth of a traditional French hotel to ensure you an unforgettable experience.</a></div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://hotels.webjet.com/DirectHotel.asp?Checkin=2011-9-22&Checkout=2011-9-23&ncl=&id=65197"><img src="../imgs/turenne-le-marais-hotel-paris.jpg" style="float:left;" alt="Turenne Le Marais Hotel Paris" /></a>
+  <div class="subpageItemInfo"><h3><a href="http://hotels.webjet.com/DirectHotel.asp?Checkin=2011-9-22&Checkout=2011-9-23&ncl=&id=65197">Turenne Le Marais Hotel Paris</a><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/></h3><br /><a>
+Turenne Le Marais Hotel Paris provides quality accommodation and friendly services for guests visiting Paris for business or leisure. Guests can enjoy a tour of city attractions such as Place des Vosges and Opera Bastille. </a></div>
+  </div>
+
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://hotels.webjet.com/DirectHotel.asp?Checkin=2011-9-22&Checkout=2011-9-23&ncl=&id=18146"><img src="../imgs/trinite-plaza-hotel-paris.jpg" style="float:left;" alt="Trinite Plaza Hotel Paris" /></a>
+  <div class="subpageItemInfo"><h3><a href="http://hotels.webjet.com/DirectHotel.asp?Checkin=2011-9-22&Checkout=2011-9-23&ncl=&id=18146">Trinite Plaza Hotel Paris</a><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/></h3><br /><a>
+Offering an essence of comfort and elegance, Trinite Plaza Hotel Paris combines casual charm with superior international style for a unique holiday experience. At walking distance from this hotel, travellers can find the Moulin Rouge, a modern cabaret live with music. They can also visit Bourse, a historic stock exchange and Palais Royal, a renowned monument and palace, both of which placed in the vicinity of this hotel. </a></div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://hotels.webjet.com/DirectHotel.asp?Checkin=2011-9-22&Checkout=2011-9-23&ncl=&id=10654"><img src="../imgs/saint-charles-hotel-paris.jpg" style="float:left;" alt="Saint Charles Hotel Paris" /></a>
+  <div class="subpageItemInfo"><h3><a href="http://hotels.webjet.com/DirectHotel.asp?Checkin=2011-9-22&Checkout=2011-9-23&ncl=&id=10654">Saint Charles Hotel Paris</a><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/></h3><br /><a>
+Saint Charles Hotel Paris offers quality accommodation and personalised services close to the Orly Airport and the train stations Montparnasse, Lyon and Austerlitz. Tourists can pay a visit the popular monument, Pantheon, which is located within a short driving distance from the hotel. They can also visit the nearby Jardin du Luxembourg, a great place for families, kids and singles on a day out in Paris. </a></div>
+  </div>
+  
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://hotels.webjet.com/DirectHotel.asp?Checkin=2011-9-22&Checkout=2011-9-23&ncl=&id=8675"><img src="../imgs/ramada-paris-tour-eiffel-hotel.jpg" style="float:left;" alt="Ramada Paris Tour Eiffel Hotel" /></a>
+  <div class="subpageItemInfo"><h3><a href="http://hotels.webjet.com/DirectHotel.asp?Checkin=2011-9-22&Checkout=2011-9-23&ncl=&id=8675">Ramada Paris Tour Eiffel Hotel</a><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/></h3><br /><a>
+Ramada Paris Tour Eiffel Hotel offers good standard of lodging and quality service. This hotel provides convenient transit options to explore Paris attractions. Eiffel Tower is just 1 kilometre from this hotel. Travellers can visit to the nearby Grand Palais, which is a large glass exhibition hall hosting many fashion shows. Palais Royal is a palace with an associated garden, which is located 4 kilometres from this hotel. </a></div>
+  </div>
+  <div class="floatLayer" style="height: 120px;">
+    <a href="http://hotels.webjet.com/DirectHotel.asp?Checkin=2011-9-22&Checkout=2011-9-23&ncl=&id=6452"><img src="../imgs/pavillon-opera-grands-boulevards-hotel.jpg" style="float:left;" alt="Pavillon Opera Grands Boulevards Hotel" /></a>
+  <div class="subpageItemInfo"><h3><a href="http://hotels.webjet.com/DirectHotel.asp?Checkin=2011-9-22&Checkout=2011-9-23&ncl=&id=6452">Pavillon Opera Grands Boulevards Hotel</a><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/></h3><br /><a>
+Boasting a contemporary design that is expressive, yet functional, the Renaissance Paris Arc De Triomphe Hotel allows you to discover a new experience and create stunning memories at the property where hints of the exotic mix with the elegance of Paris.</a></div>
+  </div>
+  
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>

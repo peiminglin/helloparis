@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hello Paris!</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.submenu.js"></script>
+<script type="text/javascript">
+<!--
+var homeLink = "<a href='/index.html'>Home</a>";
+var curTopNv = "Hotels";
+var curTopNvLink = "<a href='/Hotels/index.html'>Hotels</a>";
+//var curSubNv = "French";
+//var curSubNvLink = "<a href='/Restaurants/French/index.html'>French</a>";
+
+$(document).ready(function(){
+	$("#Banner").load("../js/banner.html");
+	$("#NaviBox").load("../js/navigation.html",function(){
+		init();
+		setNavi(curTopNv);
+	//	setSub(curSubNv);
+		setCurrentPos(homeLink + " &gt; "+curTopNvLink + " &gt; ");
+		naviEvent();
+	});	
+	$("#Footer").load("../js/footer.html");
+	
+	setTrigger("side");
+});
+-->
+</script>
+</head>
+
+<body>
+
+<div id="BodyContainer">
+
+  <!--    Banner    -->
+  <div id="Banner"></div>  
+  <!--    NaviBox will get the menu from navigation.html    -->
+  <div id="NaviBox"></div>
+
+  <!--    Main Content Container    -->
+  <div id="MainContent">
+  <!--
+    <div class="floatLayer" style="text-align: center;"><img src="imgs/Louvre.jpg" alt="Paris city view" /></div>
+    -->
+    <div id="Gap"> </div>
+    <div id="MainInfo"> <!--http://www.parisrestaurants.com/-->
+<h1>Hotels</h1>
+  <p>Paris is one of the most glamorous and romantic cities - the fashion capital of the world - with famous landmarks! Our wide range of Paris accommodation has been carefully chosen, covering many different regions of Paris ranging from the River Seine to the Bastille; from the Moulin Rouge to the stylish artist’s quarter. The choice is all yours as to whether it’s jazz or culture near your Paris hotel, or perhaps you’d prefer a luxury hotel Paris - more your style!</p>
+  </div>
+
+  <div id="SideNaviTog" class="floatLayer">
+  <p />
+  	<div class="BookTitle">
+    <h3>Find and Book Hotel</h3>
+    </div>
+    <div class="dateCheckBox">
+    	<a>CheckIn:<br /></a>
+        <div>
+        <select name="CheckInDay">
+        <option value ="1">1</option>
+        <option value ="2">2</option>
+        <option value ="3">3</option>
+        <option value ="4">4</option>
+        <option value ="5">5</option>
+        <option value ="6">6</option>
+        <option value ="7">7</option>
+        <option value ="8">8</option>
+        <option value ="9">9</option>
+        <option value ="10">10</option>
+        <option value ="11">11</option>
+        <option value ="12">12</option>
+        <option value ="13">13</option>
+        <option value ="14">14</option>
+        <option value ="15">15</option>
+        <option value ="16">16</option>
+        <option value ="17">17</option>
+        <option value ="18">18</option>
+        <option value ="19">19</option>
+        <option value ="20">20</option>
+        <option value ="21">21</option>
+        <option value ="22" selected = "selected">22</option>
+        <option value ="23">23</option>
+        <option value ="24">24</option>
+        <option value ="25">25</option>
+        <option value ="26">26</option>
+        <option value ="27">27</option>
+        <option value ="28">28</option>
+        <option value ="29">29</option>
+        <option value ="30">30</option>
+        <option value ="31">31</option>
+        </select>
+        </div>
+        <div>
+        <select name="CheckInMonth">
+        <option value ="1" selected = "selected">Sep 2011</option>
+        <option value ="2">Oct 2011</option>
+        <option value ="3">Nov 2011</option>
+        <option value ="4">Dec 2011</option>
+        <option value ="5">Jan 2012</option>
+        <option value ="6">Feb 2012</option>
+        <option value ="7">Mar 2012</option>
+        <option value ="8">Apr 2012</option>
+        <option value ="9">May 2012</option>
+        <option value ="10">Jun 2012</option>
+        <option value ="11">Jul 2012</option>
+        <option value ="12">Aug 2012</option>
+        </select>
+        </div>
+    </div>
+    <div class="dateCheckBox">
+    	<a>CheckOut:<br /></a>
+        <div>
+        <select name="CheckOutDay">
+        <option value ="1">1</option>
+        <option value ="2">2</option>
+        <option value ="3">3</option>
+        <option value ="4">4</option>
+        <option value ="5">5</option>
+        <option value ="6">6</option>
+        <option value ="7">7</option>
+        <option value ="8">8</option>
+        <option value ="9">9</option>
+        <option value ="10">10</option>
+        <option value ="11">11</option>
+        <option value ="12">12</option>
+        <option value ="13">13</option>
+        <option value ="14">14</option>
+        <option value ="15">15</option>
+        <option value ="16">16</option>
+        <option value ="17">17</option>
+        <option value ="18">18</option>
+        <option value ="19">19</option>
+        <option value ="20">20</option>
+        <option value ="21">21</option>
+        <option value ="22">22</option>
+        <option value ="23" selected = "selected">23</option>
+        <option value ="24">24</option>
+        <option value ="25">25</option>
+        <option value ="26">26</option>
+        <option value ="27">27</option>
+        <option value ="28">28</option>
+        <option value ="29">29</option>
+        <option value ="30">30</option>
+        <option value ="31">31</option>
+        </select>
+        </div>
+        <div>
+        <select name="CheckOutMonth">
+        <option value ="1" selected = "selected">Sep 2011</option>
+        <option value ="2">Oct 2011</option>
+        <option value ="3">Nov 2011</option>
+        <option value ="4">Dec 2011</option>
+        <option value ="5">Jan 2012</option>
+        <option value ="6">Feb 2012</option>
+        <option value ="7">Mar 2012</option>
+        <option value ="8">Apr 2012</option>
+        <option value ="9">May 2012</option>
+        <option value ="10">Jun 2012</option>
+        <option value ="11">Jul 2012</option>
+        <option value ="12">Aug 2012</option>
+        </select>
+        </div>
+    </div>
+    <div class="dateCheckBox">
+    	<a>Rooms:<br /></a>
+        <div>
+        <select name="Rooms">
+        <option value ="1" selected = "selected">1</option>
+        <option value ="2">2</option>
+        <option value ="3">3</option>
+        <option value ="4">4</option>
+        <option value ="5">5</option>
+        <option value ="6">6</option>
+        <option value ="7">7</option>
+        <option value ="8">8</option>
+        </select>
+        </div>
+    </div>
+    <div class="dateCheckBox">
+    	<a>Adults | Childs:<br /></a>
+        <div>
+        <select name="Adults">
+        <option value ="1" selected = "selected">1</option>
+        <option value ="2">2</option>
+        <option value ="3">3</option>
+        <option value ="4">4</option>
+        <option value ="5">5</option>
+        <option value ="6">6</option>
+        <option value ="7">7</option>
+        <option value ="8">8</option>
+        </select>
+        </div>
+        <div>
+        <select name="Childs">
+        <option value ="0" selected = "selected">0</option>
+        <option value ="1">1</option>
+        <option value ="2">2</option>
+        <option value ="3">3</option>
+        <option value ="4">4</option>
+        <option value ="5">5</option>
+        <option value ="6">6</option>
+        <option value ="7">7</option>
+        <option value ="8">8</option>
+        </select>
+        </div>
+    </div>
+    <div class="dateCheckBox">
+	<a>Star Rating:<br /></a>
+    <input name="star5" type="checkbox" value="" checked="checked" /><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/>
+    <input name="star4" type="checkbox" value="" checked="checked" /><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/>
+    <input name="star3" type="checkbox" value="" checked="checked" /><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/>
+    </div>
+    <p />
+    <div class="dateCheckBox">
+    <input name="searchHotel" type="button" disabled="disabled" value="Search" style="font-size:16pt;float:right;"/>
+    </div>
+    <p />&nbsp;
+  </div>
+ 
+  <div id="PrimaryContainer">
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="star5.html"><img src="../imgs/renaissance-paris-le-parc-trocadero-hotel.jpg" style="float:left;" alt="renaissance-paris-le-parc-trocadero-hotel" /></a>
+  <div class="subpageItemInfo"><h3><a href="star5.html">5 Stars: Renaissance Paris Le Parc Trocadero Hotel</a><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/></h3><br /><a>
+Providing all the modern facilities and conveniences, Renaissance Paris Le Parc Trocadero Hotel is a luxury hotel which combines charm and character in its architecture.</a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="star4.html"><img src="../imgs/washington-opera-hotel-paris.jpg" style="float:left;" alt="Washington Opera Hotel Paris" /></a>
+  <div class="subpageItemInfo"><h3><a href="star4.html">4 Stars: Washington Opera Hotel Paris</a><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/></h3><br /><a>
+Washington Opera Hotel Paris features quality-lodging facilities in a Louis XV style building. Whether it is watching a show at Opera-Comique or checking the stock market at Bourse, guests of this charming hotel are just a few steps away. </a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="star3.html"><img src="../imgs/balladins-hotel-les-trois-caravelles.jpg" style="float:left;" alt="Balladins Hotel Les Trois caravelles" /></a>
+  <div class="subpageItemInfo"><h3><a href="star3.html">3 Stars: Balladins Hotel Les Trois caravelles</a><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/></h3><br /><a>
+Travellers in town for a meeting or holidaymakers who want to get away from the bustling city will find Balladins Hotel Les Trois Caravelles an ideal base with it s no-frills accommodations and convenient access to nearby attractions. Guest can explore the nearby Abbaye de Maubuisson and Cathedrale Saint-Maclou de Pontoise. </a>
+</div>
+  </div>
+  <div class="floatLayer" style="height: 120px;"> 
+  <a href="star2.html"><img src="../imgs/hotel-balladins-de-savigny-le-temple.jpg" style="float:left;" alt="Hotel Balladins De Savigny Le Temple" /></a>
+  <div class="subpageItemInfo"><h3><a href="star2.html">2 Stars: Hotel Balladins De Savigny Le Temple</a><img src="../imgs/star.gif" alt="star"/><img src="../imgs/star.gif" alt="star"/></h3><br /><a>
+With a strategic location, Hotel Balladins De Savigny Le Temple lets travellers combine business and pleasure during their trip to Ile-de-France. This modern Savigny le Temple hotel places corporate visitors near Millenaire Events Venue. Tourists can also discover the locale by viewing the fascinating collections on display at Safran Aerospace Museum, hiking at the verdant Foret Regionale de Rougeau or exploring the beautiful Baroque castle Chateau de Vaux-Le-Vicomte.</a>
+</div>
+  </div>
+
+  </div>
+
+  </div>
+
+  
+  <!--    Footer    -->
+  <div id="Footer"></div>
+  </div>
+</body>
+</html>
