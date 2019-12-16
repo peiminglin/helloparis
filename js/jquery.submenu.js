@@ -22,19 +22,19 @@ function init(){
 }
 
 function imgPreload(){
-	var image1 = $('<img />').attr('src', '/imgs/Homebg.jpg');
-	var image2 = $('<img />').attr('src', '/imgs/Culturebg.jpg');
-	var image3 = $('<img />').attr('src', '/imgs/Shoppingbg.jpg');
-	var image4 = $('<img />').attr('src', '/imgs/Eventsbg.jpg');
-	var image5 = $('<img />').attr('src', '/imgs/Restaurantsbg.jpg');
-	var image6 = $('<img />').attr('src', '/imgs/Hotelsbg.jpg');
-	var image7 = $('<img />').attr('src', '/imgs/TravelPointsbg.jpg');
-	var image8 = $('<img />').attr('src', '/imgs/Transports.jpg');
+	var image1 = $('<img />').attr('src', './imgs/Homebg.jpg');
+	var image2 = $('<img />').attr('src', './imgs/Culturebg.jpg');
+	var image3 = $('<img />').attr('src', './imgs/Shoppingbg.jpg');
+	var image4 = $('<img />').attr('src', './imgs/Eventsbg.jpg');
+	var image5 = $('<img />').attr('src', './imgs/Restaurantsbg.jpg');
+	var image6 = $('<img />').attr('src', './imgs/Hotelsbg.jpg');
+	var image7 = $('<img />').attr('src', './imgs/TravelPointsbg.jpg');
+	var image8 = $('<img />').attr('src', './imgs/Transports.jpg');
 }
 
 function setNavi(current){
 	curTop = current;
-	$("#BodyContainer").css("background-image","url(/imgs/"+current+"bg.jpg)");
+	$("#BodyContainer").css("background-image","url(./imgs/"+current+"bg.jpg)");
 	$("li:contains('"+current+"')").addClass("CurrentNav");
 }
 
@@ -59,8 +59,8 @@ function naviEvent(){
 				}
 			
 				$(subNavi).addClass("active").slideDown();
-				//$("#BodyContainer").css({'background-image':'url(/imgs/'+$(this).text()+'bg.jpg)', 'opacity':'0'}).animate("opacity:1","fast");
-				$("#BodyContainer").css("background-image","url(/imgs/"+$(this).text()+"bg.jpg)");
+				//$("#BodyContainer").css({'background-image':'url(./imgs/'+$(this).text()+'bg.jpg)', 'opacity':'0'}).animate("opacity:1","fast");
+				$("#BodyContainer").css("background-image","url(./imgs/"+$(this).text()+"bg.jpg)");
 				showSub = 1;
 			},
 			function(){
@@ -75,7 +75,7 @@ function naviEvent(){
 			if (showSub == 0)
 			{
 				$(".active").removeClass("active").slideUp("fast");
-				$("#BodyContainer").css("background-image","url(/imgs/"+$(".CurrentNav").text()+"bg.jpg)");
+				$("#BodyContainer").css("background-image","url(./imgs/"+$(".CurrentNav").text()+"bg.jpg)");
 			//	$("#BodyContainer").css({'background-image':'url(/imgs/'+$(this).text()+'bg.jpg)', 'opacity':'0'}).animate("opacity:1","fast");
 			}
 		});
